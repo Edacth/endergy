@@ -1,0 +1,72 @@
+{
+	"file_path": "C:\\Users\\cadea\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_behavior_packs\\Endergy BP/items/end_nacre.json",
+	"file_type": "item",
+	"format_version": 1,
+	"file_uuid": "5d716089_ac85_4d75_b87d_4984be71bda4",
+	"file_version": 1,
+	"cache_content": {
+		"children": [
+			{
+				"open": {
+					"format_version": "1.11.0",
+					"minecraft:item": {
+						"description": {
+							"identifier": "endergy:end_nacre"
+						},
+						"components": {
+							"minecraft:max_stack_size": 64
+						}
+					}
+				},
+				"data": "1.11.0",
+				"key": "format_version"
+			},
+			{
+				"open": {
+					"format_version": "1.11.0",
+					"minecraft:item": {
+						"description": {
+							"identifier": "endergy:end_nacre"
+						},
+						"components": {
+							"minecraft:max_stack_size": 64
+						}
+					}
+				},
+				"key": "minecraft:item",
+				"children": [
+					{
+						"open": {
+							"description": {
+								"identifier": "endergy:end_nacre"
+							},
+							"components": {
+								"minecraft:max_stack_size": 64
+							}
+						},
+						"key": "description",
+						"is_minified": true,
+						"children": {
+							"identifier": "endergy:end_nacre"
+						}
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "endergy:end_nacre"
+							},
+							"components": {
+								"minecraft:max_stack_size": 64
+							}
+						},
+						"key": "components",
+						"is_minified": true,
+						"children": {
+							"minecraft:max_stack_size": 64
+						}
+					}
+				]
+			}
+		]
+	}
+}

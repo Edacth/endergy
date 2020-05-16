@@ -1,0 +1,163 @@
+{
+	"BP/entities/player.json": {
+		"data": {}
+	},
+	"BP/animation_controllers/bridge/custom_item_behavior.json": {
+		"data": {
+			"5d716089_ac85_4d75_b87d_4984be71bda4": {
+				"format_version": "1.10.0",
+				"animation_controllers": {
+					"controller.animation.bridge_custom_item_behavior": {
+						"states": {
+							"default": {}
+						}
+					}
+				}
+			}
+		}
+	},
+	"BP/items/end_nacre.json": {
+		"data": {}
+	},
+	"RP/items/end_nacre.json": {
+		"data": {}
+	},
+	"BP/entities/endermite.e.json": {
+		"data": {}
+	},
+	"BP/animation_controllers/endermite.ac.json": {
+		"data": {}
+	},
+	"BP/entities/collector.e.json": {
+		"data": {}
+	},
+	"RP/entity/collector.ce.json": {
+		"data": {}
+	},
+	"BP/ner BP/entities/tortoise/dragon_tortoise_female.json": {
+		"data": {}
+	},
+	"BP/ner BP/entities/tortoise/dragon_tortoise_male.json": {
+		"data": {}
+	},
+	"BP/ner BP/entities/draco_lizard/dragon_draco_lizard_female.json": {
+		"data": {}
+	},
+	"BP/ner BP/entities/draco_lizard/dragon_draco_lizard_male.json": {
+		"data": {}
+	},
+	"BP/ner BP/entities/frill_lizard/dragon_frill_lizard_female.json": {
+		"data": {}
+	},
+	"BP/ner BP/entities/frill_lizard/dragon_frill_lizard_male.json": {
+		"data": {}
+	},
+	"BP/ner BP/entities/frog/dragon_frog_female.entity.json": {
+		"data": {}
+	},
+	"BP/ner BP/entities/frog/dragon_frog_male.entity.json": {
+		"data": {}
+	},
+	"BP/ner BP/entities/serpent/dragon_serpent_female.entity.json": {
+		"data": {}
+	},
+	"BP/ner BP/entities/serpent/dragon_serpent_male.entity.json": {
+		"data": {}
+	},
+	"BP/ner BP/entities/slug/dragon_slug_female.entity.json": {
+		"data": {}
+	},
+	"BP/ner BP/entities/slug/dragon_slug_male.entity.json": {
+		"data": {}
+	},
+	"BP/ner BP/entities/lizard/dragon_lizard_female.json": {
+		"data": {}
+	},
+	"BP/ner BP/entities/lizard/dragon_lizard_male.json": {
+		"data": {}
+	},
+	"BP/ner BP/entities/bat/dragon_bat_child.entity.json": {
+		"data": {}
+	},
+	"BP/ner BP/entities/bat/dragon_bat_whelp.entity.json": {
+		"data": {}
+	},
+	"BP/ner BP/entities/chameleon/dragon_chameleon_child.entity.json": {
+		"data": {}
+	},
+	"BP/ner BP/entities/chameleon/dragon_chameleon_whelp.entity.json": {
+		"data": {}
+	},
+	"BP/ner BP/entities/draco_lizard/dragon_draco_lizard_child.entity.json": {
+		"data": {}
+	},
+	"BP/ner BP/entities/draco_lizard/dragon_draco_lizard_whelp.entity.json": {
+		"data": {}
+	},
+	"BP/ner BP/entities/frill_lizard/dragon_frill_lizard_child.entity.json": {
+		"data": {}
+	},
+	"BP/ner BP/entities/frill_lizard/dragon_frill_lizard_whelp.entity.json": {
+		"data": {}
+	},
+	"BP/ner BP/entities/frog/dragon_frog_child.entity.json": {
+		"data": {}
+	},
+	"BP/ner BP/entities/frog/dragon_frog_whelp.entity.json": {
+		"data": {}
+	},
+	"BP/ner BP/entities/serpent/dragon_serpent_child.entity.json": {
+		"data": {}
+	},
+	"BP/ner BP/entities/serpent/dragon_serpent_whelp.entity.json": {
+		"data": {}
+	},
+	"BP/ner BP/entities/slug/dragon_slug_child.entity.json": {
+		"data": {}
+	},
+	"BP/ner BP/entities/slug/dragon_slug_whelp.entity.json": {
+		"data": {}
+	},
+	"BP/ner BP/entities/tortoise/dragon_tortoise_child.json": {
+		"data": {}
+	},
+	"BP/ner BP/entities/tortoise/dragon_tortoise_whelp.entity.json": {
+		"data": {}
+	},
+	"BP/ner BP/entities/lizard/dragon_lizard_whelp.entity.json": {
+		"data": {}
+	},
+	"BP/ner BP/entities/lizard/dragon_lizard_child.entity.json": {
+		"data": {}
+	},
+	"BP/ner BP/entities/bat/dragon_bat_egg.entity.json": {
+		"data": {}
+	},
+	"BP/ner BP/entities/chameleon/dragon_chameleon_egg.entity.json": {
+		"data": {}
+	},
+	"BP/ner BP/entities/draco_lizard/dragon_draco_lizard_egg.entity.json": {
+		"data": {}
+	},
+	"BP/ner BP/entities/frill_lizard/dragon_frill_lizard_egg.entity.json": {
+		"data": {}
+	},
+	"BP/ner BP/entities/frog/dragon_frog_egg.entity.json": {
+		"data": {}
+	},
+	"BP/ner BP/entities/serpent/dragon_serpent_egg.entity.json": {
+		"data": {}
+	},
+	"BP/ner BP/entities/slug/dragon_slug_egg.entity.json": {
+		"data": {}
+	},
+	"BP/ner BP/entities/tortoise/dragon_tortoise_egg.entity.json": {
+		"data": {}
+	},
+	"BP/ner BP/entities/lizard/dragon_lizard_egg.entity.json": {
+		"data": {}
+	},
+	"BP/ner BP/entities/misc/spawning_demo.json": {
+		"data": {}
+	}
+}

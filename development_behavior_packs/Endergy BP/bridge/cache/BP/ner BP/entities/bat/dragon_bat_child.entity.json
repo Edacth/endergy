@@ -1,0 +1,1200 @@
+{
+	"file_path": "C:\\Users\\cadea\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_behavior_packs\\Dragontrainer BP\\entities\\bat\\dragon_bat_child.entity.json",
+	"file_type": "entity",
+	"cache_content": {
+		"minecraft:entity": {
+			"description": {
+				"animations": {
+					"spawn_init": "controller.animation.dragon_functions.spawn_init",
+					"maturation_controller": "controller.animation.dragon_functions.maturation",
+					"maturation_checker": "animation.dragon_functions.maturation_checker",
+					"maturation_particles": "animation.dragon_functions.maturation_particles",
+					"flap": "controller.animation.dragon_functions.flap",
+					"plummet_toggle": "controller.animation.dragon_functions.plummet_toggle",
+					"in_air_tag_setter": "controller.animation.dragon_functions.in_air_tag_setter",
+					"in_air": "animation.dragon_functions.in_air"
+				},
+				"scripts": {
+					"animate": [
+						"spawn_init",
+						"maturation_controller",
+						"flap",
+						"plummet_toggle",
+						"in_air_tag_setter",
+						"in_air"
+					]
+				},
+				"identifier": "dragon:bat_child",
+				"is_spawnable": true,
+				"is_summonable": true,
+				"is_experimental": false
+			},
+			"component_groups": {
+				"dragon:standard_ai": {
+					"minecraft:behavior.random_stroll": {
+						"priority": 9,
+						"speed_multiplier": 0.6,
+						"xz_dist": 10
+					},
+					"minecraft:behavior.look_at_player": {
+						"priority": 16
+					},
+					"minecraft:behavior.random_look_around": {
+						"priority": 20
+					}
+				},
+				"dragon:shaking": {
+					"minecraft:is_shaking": {}
+				},
+				"dragon:child_stage_0": {
+					"minecraft:skin_id": {
+						"value": 0
+					},
+					"minecraft:scale": {
+						"value": 0.73
+					}
+				},
+				"dragon:child_stage_0_growth": {
+					"minecraft:skin_id": {
+						"value": 0
+					},
+					"minecraft:ageable": {
+						"duration": 1,
+						"grow_up": {
+							"event": "dragon:child_exit_stage_growth"
+						}
+					},
+					"minecraft:scale_by_age": {
+						"start_scale": 0.73,
+						"end_scale": 0.787
+					}
+				},
+				"dragon:child_stage_1": {
+					"minecraft:skin_id": {
+						"value": 1
+					},
+					"minecraft:scale": {
+						"value": 0.787
+					}
+				},
+				"dragon:child_stage_1_growth": {
+					"minecraft:skin_id": {
+						"value": 1
+					},
+					"minecraft:ageable": {
+						"duration": 1,
+						"grow_up": {
+							"event": "dragon:child_exit_stage_growth"
+						}
+					},
+					"minecraft:scale_by_age": {
+						"start_scale": 0.787,
+						"end_scale": 0.844
+					}
+				},
+				"dragon:child_stage_2": {
+					"minecraft:skin_id": {
+						"value": 2
+					},
+					"minecraft:scale": {
+						"value": 0.844
+					}
+				},
+				"dragon:child_stage_2_growth": {
+					"minecraft:skin_id": {
+						"value": 2
+					},
+					"minecraft:ageable": {
+						"duration": 1,
+						"grow_up": {
+							"event": "dragon:child_exit_stage_growth"
+						}
+					},
+					"minecraft:scale_by_age": {
+						"start_scale": 0.844,
+						"end_scale": 0.901
+					}
+				},
+				"dragon:child_stage_3": {
+					"minecraft:skin_id": {
+						"value": 3
+					},
+					"minecraft:scale": {
+						"value": 0.901
+					}
+				},
+				"dragon:child_stage_3_growth": {
+					"minecraft:skin_id": {
+						"value": 3
+					},
+					"minecraft:ageable": {
+						"duration": 1,
+						"grow_up": {
+							"event": "dragon:child_exit_stage_growth"
+						}
+					},
+					"minecraft:scale_by_age": {
+						"start_scale": 0.901,
+						"end_scale": 0.958
+					}
+				},
+				"dragon:child_stage_4": {
+					"minecraft:skin_id": {
+						"value": 4
+					},
+					"minecraft:scale": {
+						"value": 0.958
+					}
+				},
+				"dragon:child_stage_4_growth": {
+					"minecraft:skin_id": {
+						"value": 4
+					},
+					"minecraft:ageable": {
+						"duration": 1,
+						"grow_up": {
+							"event": "dragon:child_exit_stage_growth"
+						}
+					},
+					"minecraft:scale_by_age": {
+						"start_scale": 0.958,
+						"end_scale": 1.0150000000000001
+					}
+				},
+				"dragon:child_stage_5": {
+					"minecraft:skin_id": {
+						"value": 5
+					},
+					"minecraft:scale": {
+						"value": 1.0150000000000001
+					}
+				},
+				"dragon:child_stage_5_growth": {
+					"minecraft:skin_id": {
+						"value": 5
+					},
+					"minecraft:ageable": {
+						"duration": 1,
+						"grow_up": {
+							"event": "dragon:child_exit_stage_growth"
+						}
+					},
+					"minecraft:scale_by_age": {
+						"start_scale": 1.0150000000000001,
+						"end_scale": 1.072
+					}
+				},
+				"dragon:child_stage_6": {
+					"minecraft:skin_id": {
+						"value": 6
+					},
+					"minecraft:scale": {
+						"value": 1.072
+					}
+				},
+				"dragon:child_stage_6_growth": {
+					"minecraft:skin_id": {
+						"value": 6
+					},
+					"minecraft:ageable": {
+						"duration": 1,
+						"grow_up": {
+							"event": "dragon:child_exit_stage_growth"
+						}
+					},
+					"minecraft:scale_by_age": {
+						"start_scale": 1.072,
+						"end_scale": 1.129
+					}
+				},
+				"dragon:child_stage_7": {
+					"minecraft:skin_id": {
+						"value": 7
+					},
+					"minecraft:scale": {
+						"value": 1.129
+					}
+				},
+				"dragon:child_stage_7_growth": {
+					"minecraft:skin_id": {
+						"value": 7
+					},
+					"minecraft:ageable": {
+						"duration": 1,
+						"grow_up": {
+							"event": "dragon:child_exit_stage_growth"
+						}
+					},
+					"minecraft:scale_by_age": {
+						"start_scale": 1.129,
+						"end_scale": 1.186
+					}
+				},
+				"dragon:child_stage_8": {
+					"minecraft:skin_id": {
+						"value": 8
+					},
+					"minecraft:scale": {
+						"value": 1.186
+					}
+				},
+				"dragon:child_stage_8_growth": {
+					"minecraft:skin_id": {
+						"value": 8
+					},
+					"minecraft:ageable": {
+						"duration": 1,
+						"grow_up": {
+							"event": "dragon:child_exit_stage_growth"
+						}
+					},
+					"minecraft:scale_by_age": {
+						"start_scale": 1.186,
+						"end_scale": 1.243
+					}
+				},
+				"dragon:child_stage_9": {
+					"minecraft:skin_id": {
+						"value": 9
+					},
+					"minecraft:scale": {
+						"value": 1.243
+					}
+				},
+				"dragon:child_stage_9_growth": {
+					"minecraft:skin_id": {
+						"value": 9
+					},
+					"minecraft:ageable": {
+						"duration": 1,
+						"grow_up": {
+							"event": "dragon:child_mature"
+						}
+					},
+					"minecraft:scale_by_age": {
+						"start_scale": 1.243,
+						"end_scale": 1.3
+					}
+				},
+				"dragon:child_mature_female": {
+					"minecraft:transformation": {
+						"into": "dragon:bat_female",
+						"delay": 0,
+						"transformation_sound": "plop",
+						"keep_owner": true
+					}
+				},
+				"dragon:child_mature_male": {
+					"minecraft:transformation": {
+						"into": "dragon:bat_male",
+						"delay": 0,
+						"transformation_sound": "plop",
+						"keep_owner": true
+					}
+				},
+				"dragon:func_flap": {
+					"minecraft:is_charged": {}
+				},
+				"dragon:func_plummet_toggle": {
+					"minecraft:is_chested": {}
+				},
+				"dragon:state_rideable": {
+					"minecraft:rideable": {
+						"seat_count": 1,
+						"crouching_skip_interact": true,
+						"rider_can_interact": true,
+						"controlling_seat": 0,
+						"family_types": [
+							"player"
+						],
+						"interact_text": "action.interact.ride.boat",
+						"seats": [
+							{
+								"position": [
+									0,
+									1.125,
+									0.125
+								]
+							}
+						]
+					},
+					"minecraft:behavior.player_ride_tamed": {
+						"priority": 1
+					},
+					"minecraft:input_ground_controlled": {},
+					"minecraft:is_saddled": {}
+				},
+				"dragon:state_default_speed": {
+					"minecraft:movement": {
+						"value": 0.25
+					}
+				},
+				"dragon:state_flight_speed": {
+					"minecraft:movement": {
+						"value": 0.3
+					},
+					"minecraft:behavior.mingle": {
+						"priority": 100
+					}
+				},
+				"dragon:state_is_flying": {
+					"minecraft:is_ignited": {},
+					"minecraft:friction_modifier": {
+						"value": 1
+					}
+				}
+			},
+			"components": {
+				"minecraft:health": {
+					"value": 80
+				},
+				"minecraft:navigation.generic": {
+					"avoid_water": true
+				},
+				"minecraft:behavior.float": {
+					"priority": 1
+				},
+				"minecraft:movement.generic": {},
+				"minecraft:physics": {},
+				"minecraft:jump.static": {},
+				"minecraft:type_family": {
+					"family": [
+						"dragon"
+					]
+				},
+				"minecraft:pushable": {
+					"is_pushable": true
+				},
+				"minecraft:damage_sensor": {
+					"triggers": [
+						{
+							"on_damage": {
+								"filters": {
+									"all_of": [
+										{
+											"test": "has_damage",
+											"value": "fall"
+										}
+									]
+								}
+							},
+							"deals_damage": false
+						},
+						{
+							"on_damage": {
+								"filters": {
+									"all_of": [
+										{
+											"test": "is_family",
+											"subject": "other",
+											"value": "player"
+										},
+										{
+											"test": "has_component",
+											"value": "minecraft:is_tamed"
+										}
+									]
+								}
+							},
+							"deals_damage": false
+						}
+					]
+				},
+				"minecraft:fire_immune": false,
+				"minecraft:inventory": {
+					"container_type": "horse",
+					"inventory_size": 1
+				},
+				"minecraft:is_tamed": {},
+				"minecraft:equippable": {
+					"slots": [
+						{
+							"item": "minecraft:saddle",
+							"interact_text": "action.interact.saddle",
+							"accepted_items": [
+								"minecraft:saddle"
+							],
+							"on_equip": {
+								"event": "dragon:add_rideable"
+							},
+							"on_unequip": {
+								"event": "dragon:remove_rideable"
+							}
+						}
+					]
+				},
+				"minecraft:scale": {
+					"value": 0.73
+				},
+				"minecraft:interact": {
+					"interactions": [
+						{
+							"on_interact": {
+								"filters": {
+									"all_of": [
+										{
+											"test": "has_equipment",
+											"value": "minecraft:wooden_axe",
+											"domain": "hand",
+											"subject": "other"
+										}
+									]
+								},
+								"event": "dragon:child_max_growth"
+							},
+							"swing": true,
+							"use_item": true
+						},
+						{
+							"on_interact": {
+								"filters": {
+									"all_of": [
+										{
+											"test": "has_equipment",
+											"value": "minecraft:stick",
+											"domain": "hand",
+											"subject": "other"
+										}
+									]
+								},
+								"event": "dragon:child_mature"
+							},
+							"swing": true,
+							"use_item": true
+						},
+						{
+							"on_interact": {
+								"filters": {
+									"all_of": [
+										{
+											"test": "has_equipment",
+											"value": "minecraft:potato",
+											"domain": "hand",
+											"subject": "other"
+										},
+										{
+											"test": "has_component",
+											"value": "minecraft:is_shaking"
+										}
+									]
+								},
+								"event": "dragon:child_enter_stage_growth"
+							},
+							"swing": true,
+							"use_item": true
+						},
+						{
+							"on_interact": {
+								"filters": {
+									"all_of": [
+										{
+											"test": "is_riding",
+											"subject": "other",
+											"value": true
+										},
+										{
+											"test": "has_component",
+											"value": "minecraft:rideable",
+											"subject": "self"
+										}
+									]
+								},
+								"event": "dragon:on_plummet_toggle_start",
+								"target": "self"
+							}
+						},
+						{
+							"on_interact": {
+								"filters": {
+									"all_of": [
+										{
+											"any_of": [
+												{
+													"test": "has_equipment",
+													"domain": "hand",
+													"subject": "other",
+													"value": "minecraft:blaze_rod",
+													"operator": "!="
+												}
+											]
+										},
+										{
+											"test": "is_riding",
+											"subject": "other",
+											"value": true
+										},
+										{
+											"test": "has_component",
+											"value": "minecraft:rideable",
+											"subject": "self"
+										}
+									]
+								}
+							}
+						}
+					]
+				},
+				"minecraft:environment_sensor": {
+					"triggers": [
+						{
+							"filters": {
+								"all_of": [
+									{
+										"test": "has_component",
+										"operator": "!=",
+										"value": "minecraft:is_ignited"
+									},
+									{
+										"all_of": [
+											{
+												"test": "on_ground",
+												"operator": "!="
+											},
+											{
+												"test": "in_water",
+												"operator": "!="
+											}
+										]
+									}
+								]
+							},
+							"event": "dragon:on_flying_start"
+						},
+						{
+							"filters": {
+								"all_of": [
+									{
+										"test": "has_component",
+										"operator": "==",
+										"value": "minecraft:is_ignited"
+									},
+									{
+										"any_of": [
+											{
+												"test": "on_ground"
+											},
+											{
+												"test": "in_water"
+											}
+										]
+									}
+								]
+							},
+							"event": "dragon:on_flying_end"
+						},
+						{
+							"filters": {
+								"all_of": [
+									{
+										"test": "has_component",
+										"operator": "!=",
+										"value": "minecraft:behavior.mingle"
+									},
+									{
+										"test": "has_tag",
+										"value": "flight_speed"
+									}
+								]
+							},
+							"event": "dragon:on_flight_speed"
+						},
+						{
+							"filters": {
+								"all_of": [
+									{
+										"test": "has_component",
+										"value": "minecraft:behavior.mingle"
+									},
+									{
+										"test": "has_tag",
+										"operator": "!=",
+										"value": "flight_speed"
+									}
+								]
+							},
+							"event": "dragon:on_default_speed"
+						},
+						{
+							"filters": {
+								"all_of": [
+									{
+										"test": "has_tag",
+										"value": "on_flap"
+									},
+									{
+										"test": "has_tag",
+										"value": "can_flap"
+									}
+								]
+							},
+							"event": "dragon:on_flap_start"
+						},
+						{
+							"filters": {
+								"all_of": [
+									{
+										"test": "has_tag",
+										"value": "maturation_ready"
+									},
+									{
+										"test": "has_component",
+										"value": "minecraft:is_shaking",
+										"operator": "!="
+									}
+								]
+							},
+							"event": "dragon:shaking"
+						}
+					]
+				},
+				"minecraft:behavior.tempt": {
+					"priority": 5,
+					"speed_multiplier": 1,
+					"items": [
+						"minecraft:potato"
+					]
+				},
+				"minecraft:behavior.beg": {
+					"priority": 6,
+					"look_distance": 8,
+					"look_time": [
+						2,
+						4
+					],
+					"items": [
+						"minecraft:potato"
+					]
+				}
+			},
+			"events": {
+				"minecraft:entity_spawned": {
+					"sequence": [
+						{
+							"add": {
+								"component_groups": [
+									"dragon:standard_ai"
+								]
+							}
+						},
+						{
+							"add": {
+								"component_groups": [
+									"dragon:state_default_speed"
+								]
+							}
+						}
+					],
+					"add": {
+						"component_groups": [
+							"dragon:child_stage_0"
+						]
+					}
+				},
+				"minecraft:entity_transformed": {
+					"sequence": [
+						{
+							"add": {
+								"component_groups": [
+									"dragon:standard_ai"
+								]
+							}
+						}
+					],
+					"add": {
+						"component_groups": [
+							"dragon:child_stage_0"
+						]
+					}
+				},
+				"dragon:child_max_growth": {
+					"add": {
+						"component_groups": [
+							"dragon:child_stage_9"
+						]
+					},
+					"remove": {
+						"component_groups": [
+							"dragon:child_stage_0",
+							"dragon:child_stage_0_growth",
+							"dragon:child_stage_1",
+							"dragon:child_stage_1_growth",
+							"dragon:child_stage_2",
+							"dragon:child_stage_2_growth",
+							"dragon:child_stage_3",
+							"dragon:child_stage_3_growth",
+							"dragon:child_stage_4",
+							"dragon:child_stage_4_growth",
+							"dragon:child_stage_5",
+							"dragon:child_stage_5_growth",
+							"dragon:child_stage_6",
+							"dragon:child_stage_6_growth",
+							"dragon:child_stage_7",
+							"dragon:child_stage_7_growth",
+							"dragon:child_stage_8",
+							"dragon:child_stage_8_growth"
+						]
+					}
+				},
+				"minecraft:entity_born": {
+					"add": {
+						"component_groups": [
+							"dragon:child_stage_0"
+						]
+					}
+				},
+				"dragon:shaking": {
+					"add": {
+						"component_groups": [
+							"dragon:shaking"
+						]
+					}
+				},
+				"dragon:child_enter_stage_growth": {
+					"sequence": [
+						{
+							"filters": {
+								"test": "is_skin_id",
+								"value": 9
+							},
+							"add": {
+								"component_groups": [
+									"dragon:child_stage_9_growth"
+								]
+							},
+							"remove": {
+								"component_groups": [
+									"dragon:shaking",
+									"dragon:child_stage_9"
+								]
+							}
+						},
+						{
+							"filters": {
+								"test": "is_skin_id",
+								"value": 8
+							},
+							"add": {
+								"component_groups": [
+									"dragon:child_stage_8_growth"
+								]
+							},
+							"remove": {
+								"component_groups": [
+									"dragon:shaking",
+									"dragon:child_stage_8"
+								]
+							}
+						},
+						{
+							"filters": {
+								"test": "is_skin_id",
+								"value": 7
+							},
+							"add": {
+								"component_groups": [
+									"dragon:child_stage_7_growth"
+								]
+							},
+							"remove": {
+								"component_groups": [
+									"dragon:shaking",
+									"dragon:child_stage_7"
+								]
+							}
+						},
+						{
+							"filters": {
+								"test": "is_skin_id",
+								"value": 6
+							},
+							"add": {
+								"component_groups": [
+									"dragon:child_stage_6_growth"
+								]
+							},
+							"remove": {
+								"component_groups": [
+									"dragon:shaking",
+									"dragon:child_stage_6"
+								]
+							}
+						},
+						{
+							"filters": {
+								"test": "is_skin_id",
+								"value": 5
+							},
+							"add": {
+								"component_groups": [
+									"dragon:child_stage_5_growth"
+								]
+							},
+							"remove": {
+								"component_groups": [
+									"dragon:shaking",
+									"dragon:child_stage_5"
+								]
+							}
+						},
+						{
+							"filters": {
+								"test": "is_skin_id",
+								"value": 4
+							},
+							"add": {
+								"component_groups": [
+									"dragon:child_stage_4_growth"
+								]
+							},
+							"remove": {
+								"component_groups": [
+									"dragon:shaking",
+									"dragon:child_stage_4"
+								]
+							}
+						},
+						{
+							"filters": {
+								"test": "is_skin_id",
+								"value": 3
+							},
+							"add": {
+								"component_groups": [
+									"dragon:child_stage_3_growth"
+								]
+							},
+							"remove": {
+								"component_groups": [
+									"dragon:shaking",
+									"dragon:child_stage_3"
+								]
+							}
+						},
+						{
+							"filters": {
+								"test": "is_skin_id",
+								"value": 2
+							},
+							"add": {
+								"component_groups": [
+									"dragon:child_stage_2_growth"
+								]
+							},
+							"remove": {
+								"component_groups": [
+									"dragon:shaking",
+									"dragon:child_stage_2"
+								]
+							}
+						},
+						{
+							"filters": {
+								"test": "is_skin_id",
+								"value": 1
+							},
+							"add": {
+								"component_groups": [
+									"dragon:child_stage_1_growth"
+								]
+							},
+							"remove": {
+								"component_groups": [
+									"dragon:shaking",
+									"dragon:child_stage_1"
+								]
+							}
+						},
+						{
+							"filters": {
+								"test": "is_skin_id",
+								"value": 0
+							},
+							"add": {
+								"component_groups": [
+									"dragon:child_stage_0_growth"
+								]
+							},
+							"remove": {
+								"component_groups": [
+									"dragon:shaking",
+									"dragon:child_stage_0"
+								]
+							}
+						}
+					]
+				},
+				"dragon:child_exit_stage_growth": {
+					"sequence": [
+						{
+							"filters": {
+								"test": "is_skin_id",
+								"value": 8
+							},
+							"add": {
+								"component_groups": [
+									"dragon:child_stage_9"
+								]
+							},
+							"remove": {
+								"component_groups": [
+									"dragon:shaking",
+									"dragon:child_stage_8_growth"
+								]
+							}
+						},
+						{
+							"filters": {
+								"test": "is_skin_id",
+								"value": 7
+							},
+							"add": {
+								"component_groups": [
+									"dragon:child_stage_8"
+								]
+							},
+							"remove": {
+								"component_groups": [
+									"dragon:shaking",
+									"dragon:child_stage_7_growth"
+								]
+							}
+						},
+						{
+							"filters": {
+								"test": "is_skin_id",
+								"value": 6
+							},
+							"add": {
+								"component_groups": [
+									"dragon:child_stage_7"
+								]
+							},
+							"remove": {
+								"component_groups": [
+									"dragon:shaking",
+									"dragon:child_stage_6_growth"
+								]
+							}
+						},
+						{
+							"filters": {
+								"test": "is_skin_id",
+								"value": 5
+							},
+							"add": {
+								"component_groups": [
+									"dragon:child_stage_6"
+								]
+							},
+							"remove": {
+								"component_groups": [
+									"dragon:shaking",
+									"dragon:child_stage_5_growth"
+								]
+							}
+						},
+						{
+							"filters": {
+								"test": "is_skin_id",
+								"value": 4
+							},
+							"add": {
+								"component_groups": [
+									"dragon:child_stage_5"
+								]
+							},
+							"remove": {
+								"component_groups": [
+									"dragon:shaking",
+									"dragon:child_stage_4_growth"
+								]
+							}
+						},
+						{
+							"filters": {
+								"test": "is_skin_id",
+								"value": 3
+							},
+							"add": {
+								"component_groups": [
+									"dragon:child_stage_4"
+								]
+							},
+							"remove": {
+								"component_groups": [
+									"dragon:shaking",
+									"dragon:child_stage_3_growth"
+								]
+							}
+						},
+						{
+							"filters": {
+								"test": "is_skin_id",
+								"value": 2
+							},
+							"add": {
+								"component_groups": [
+									"dragon:child_stage_3"
+								]
+							},
+							"remove": {
+								"component_groups": [
+									"dragon:shaking",
+									"dragon:child_stage_2_growth"
+								]
+							}
+						},
+						{
+							"filters": {
+								"test": "is_skin_id",
+								"value": 1
+							},
+							"add": {
+								"component_groups": [
+									"dragon:child_stage_2"
+								]
+							},
+							"remove": {
+								"component_groups": [
+									"dragon:shaking",
+									"dragon:child_stage_1_growth"
+								]
+							}
+						},
+						{
+							"filters": {
+								"test": "is_skin_id",
+								"value": 0
+							},
+							"add": {
+								"component_groups": [
+									"dragon:child_stage_1"
+								]
+							},
+							"remove": {
+								"component_groups": [
+									"dragon:shaking",
+									"dragon:child_stage_0_growth"
+								]
+							}
+						}
+					]
+				},
+				"dragon:child_mature": {
+					"randomize": [
+						{
+							"weight": 1,
+							"add": {
+								"component_groups": [
+									"dragon:child_mature_male"
+								]
+							}
+						},
+						{
+							"weight": 1,
+							"add": {
+								"component_groups": [
+									"dragon:child_mature_female"
+								]
+							}
+						}
+					]
+				},
+				"dragon:on_flap_start": {
+					"add": {
+						"component_groups": [
+							"dragon:func_flap"
+						]
+					}
+				},
+				"dragon:on_flap_end": {
+					"remove": {
+						"component_groups": [
+							"dragon:func_flap"
+						]
+					}
+				},
+				"dragon:on_plummet_toggle_start": {
+					"add": {
+						"component_groups": [
+							"dragon:func_plummet_toggle"
+						]
+					}
+				},
+				"dragon:on_plummet_toggle_end": {
+					"remove": {
+						"component_groups": [
+							"dragon:func_plummet_toggle"
+						]
+					}
+				},
+				"dragon:on_flying_start": {
+					"add": {
+						"component_groups": [
+							"dragon:state_is_flying"
+						]
+					},
+					"remove": {
+						"component_groups": [
+							"dragon:state_default_speed"
+						]
+					}
+				},
+				"dragon:on_flying_end": {
+					"add": {
+						"component_groups": [
+							"dragon:state_default_speed"
+						]
+					},
+					"remove": {
+						"component_groups": [
+							"dragon:state_is_flying"
+						]
+					}
+				},
+				"dragon:add_rideable": {
+					"add": {
+						"component_groups": [
+							"dragon:state_rideable"
+						]
+					}
+				},
+				"dragon:remove_rideable": {
+					"remove": {
+						"component_groups": [
+							"dragon:state_rideable"
+						]
+					}
+				},
+				"dragon:on_flight_speed": {
+					"add": {
+						"component_groups": [
+							"dragon:state_flight_speed"
+						]
+					},
+					"remove": {
+						"component_groups": [
+							"dragon:state_default_speed"
+						]
+					}
+				},
+				"dragon:on_default_speed": {
+					"add": {
+						"component_groups": [
+							"dragon:state_default_speed"
+						]
+					},
+					"remove": {
+						"component_groups": [
+							"dragon:state_flight_speed"
+						]
+					}
+				}
+			}
+		},
+		"format_version": "1.14.0"
+	},
+	"format_version": 0,
+	"file_version": 0,
+	"file_uuid": "0ca2108a_a93d_48a8_bc42_f18c931c56f7"
+}

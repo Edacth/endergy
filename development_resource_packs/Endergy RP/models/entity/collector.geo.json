@@ -1,0 +1,38 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.collector",
+				"texture_width": 48,
+				"texture_height": 16,
+				"visible_bounds_width": 3,
+				"visible_bounds_height": 2,
+				"visible_bounds_offset": [0, 0, 0]
+			},
+			"bones": [
+				{
+					"name": "root",
+					"pivot": [0, 1.83333, 0],
+					"cubes": [
+						{"origin": [-2, 0, -2], "size": [4, 4, 4], "uv": [32, 8]},
+						{"origin": [-4, 4, -4], "size": [8, 6, 8], "uv": [0, 0]}
+					]
+				},
+				{
+					"name": "top",
+					"parent": "root",
+					"pivot": [-6, 14, 0],
+					"cubes": [
+						{"origin": [-8, 10, -8], "size": [16, 2, 16.1], "uv": [0, 0]},
+						{"origin": [-8, 12, -8], "size": [3, 4, 16], "uv": [0, 0]},
+						{"origin": [5, 12, -8], "size": [3, 4, 16], "uv": [0, 0]},
+						{"origin": [-5, 12, 5], "size": [10, 4, 3.1], "uv": [0, 0]},
+						{"origin": [-5, 12, -8], "size": [10, 4, 3], "uv": [0, 0]},
+						{"origin": [-5, 7, -5], "size": [10, 2, 10], "uv": [0, 0]}
+					]
+				}
+			]
+		}
+	]
+}

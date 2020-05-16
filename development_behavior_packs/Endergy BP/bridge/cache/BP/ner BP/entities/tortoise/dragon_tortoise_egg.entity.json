@@ -1,0 +1,215 @@
+{
+	"file_path": "C:\\Users\\cadea\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_behavior_packs\\Dragontrainer BP\\entities\\tortoise\\dragon_tortoise_egg.entity.json",
+	"file_type": "entity",
+	"cache_content": {
+		"minecraft:entity": {
+			"description": {
+				"animations": {
+					"in_pool": "animation.dragon_egg_functions.in_pool",
+					"egg": "controller.animation.nest.egg"
+				},
+				"scripts": {
+					"animate": [
+						{
+							"in_pool": "(1.0)"
+						},
+						{
+							"egg": "(1.0)"
+						}
+					]
+				},
+				"identifier": "dragon:tortoise_egg",
+				"is_summonable": true,
+				"is_spawnable": true
+			},
+			"component_groups": {
+				"dragon:egg_wild": {
+					"minecraft:environment_sensor": {
+						"triggers": [
+							{
+								"filters": {
+									"test": "has_tag",
+									"value": "in_pool"
+								},
+								"event": "dragon:on_in_pool"
+							}
+						]
+					}
+				},
+				"dragon:egg_in_pool": {
+					"minecraft:tameable": {
+						"probability": 1,
+						"tame_event": {
+							"event": "dragon:egg_imprint"
+						},
+						"tame_items": [
+							"minecraft:potato"
+						]
+					}
+				},
+				"dragon:egg_growing": {
+					"minecraft:ageable": {
+						"duration": 10,
+						"grow_up": {
+							"event": "dragon:egg_fully_grown"
+						}
+					}
+				},
+				"dragon:egg_fully_grown": {
+					"minecraft:is_shaking": {}
+				},
+				"dragon:egg_imprinted": {
+					"minecraft:is_tamed": {},
+					"minecraft:environment_sensor": {
+						"triggers": [
+							{
+								"filters": {
+									"test": "has_component",
+									"value": "minecraft:is_shaking"
+								},
+								"event": "dragon:egg_hatch_ready"
+							}
+						]
+					}
+				},
+				"dragon:egg_hatch_ready": {
+					"minecraft:environment_sensor": {
+						"triggers": [
+							{
+								"filters": {
+									"test": "distance_to_nearest_player",
+									"operator": "<=",
+									"value": 3
+								},
+								"event": "dragon:egg_hatch"
+							}
+						]
+					}
+				},
+				"dragon:egg_hatch": {
+					"minecraft:transformation": {
+						"transformation_sound": "plop",
+						"into": "dragon:tortoise_whelp",
+						"delay": {
+							"value": 3
+						},
+						"keep_owner": true
+					}
+				},
+				"dragon:egg_break": {
+					"minecraft:spawn_entity": [
+						{
+							"single_use": true,
+							"num_to_spawn": 1,
+							"spawn_entity": "dragon:loot_dropper",
+							"spawn_event": "dragon:add_tortoise_egg",
+							"min_wait_time": 0,
+							"max_wait_time": 0
+						}
+					],
+					"minecraft:explode": {
+						"fuse_length": 0.05,
+						"power": 0,
+						"fuse_lit": true
+					},
+					"minecraft:is_saddled": {}
+				}
+			},
+			"components": {
+				"minecraft:physics": {},
+				"minecraft:damage_sensor": {
+					"triggers": [
+						{
+							"on_damage": {
+								"event": "dragon:add_egg_break"
+							},
+							"deals_damage": false
+						}
+					]
+				}
+			},
+			"events": {
+				"minecraft:entity_spawned": {
+					"add": {
+						"component_groups": [
+							"dragon:egg_wild"
+						]
+					}
+				},
+				"dragon:on_in_pool": {
+					"add": {
+						"component_groups": [
+							"dragon:egg_in_pool",
+							"dragon:egg_growing"
+						]
+					},
+					"remove": {
+						"component_groups": [
+							"dragon:egg_wild"
+						]
+					}
+				},
+				"dragon:egg_fully_grown": {
+					"add": {
+						"component_groups": [
+							"dragon:egg_fully_grown"
+						]
+					},
+					"remove": {
+						"component_groups": [
+							"dragon:egg_growing"
+						]
+					}
+				},
+				"dragon:egg_imprint": {
+					"add": {
+						"component_groups": [
+							"dragon:egg_imprinted"
+						]
+					},
+					"remove": {
+						"component_groups": [
+							"dragon:egg_wild"
+						]
+					}
+				},
+				"dragon:egg_hatch_ready": {
+					"add": {
+						"component_groups": [
+							"dragon:egg_hatch_ready"
+						]
+					},
+					"remove": {
+						"component_groups": [
+							"dragon:egg_imprinted",
+							"dragon:egg_fully_grown"
+						]
+					}
+				},
+				"dragon:egg_hatch": {
+					"add": {
+						"component_groups": [
+							"dragon:egg_hatch"
+						]
+					},
+					"remove": {
+						"component_groups": [
+							"dragon:egg_hatch_ready"
+						]
+					}
+				},
+				"dragon:add_egg_break": {
+					"add": {
+						"component_groups": [
+							"dragon:egg_break"
+						]
+					}
+				}
+			}
+		},
+		"format_version": "1.14.0"
+	},
+	"format_version": 0,
+	"file_version": 0,
+	"file_uuid": "b012d7d7_63dc_4078_bdaa_0988c57590cc"
+}

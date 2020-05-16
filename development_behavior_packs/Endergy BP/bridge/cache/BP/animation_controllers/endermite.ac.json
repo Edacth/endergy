@@ -1,0 +1,290 @@
+{
+	"file_path": "C:\\Users\\cadea\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_behavior_packs\\Endergy BP/animation_controllers/endermite.ac.json",
+	"file_type": "animation_controller",
+	"format_version": 1,
+	"file_uuid": "08e2f97a_f730_4cf4_97a6_9ddf8416d534",
+	"file_version": 5,
+	"cache_content": {
+		"children": [
+			{
+				"data": "1.10.0",
+				"key": "format_version"
+			},
+			{
+				"open": {
+					"format_version": "1.10.0",
+					"animation_controllers": {
+						"controller.animation.entermite.skin_id_triggers": {
+							"initial_state": "none",
+							"states": {
+								"none": {
+									"on_entry": [
+										"/say none"
+									],
+									"transitions": [
+										{
+											"expell_energy": "query.skin_id == 1"
+										}
+									]
+								},
+								"expell_energy": {
+									"on_entry": [
+										"/say expell",
+										"@s endergy:reset_skin_id"
+									],
+									"transitions": [
+										{
+											"none": "query.skin_id != 1"
+										}
+									]
+								}
+							}
+						}
+					}
+				},
+				"key": "animation_controllers",
+				"children": [
+					{
+						"open": {
+							"controller.animation.entermite.skin_id_triggers": {
+								"initial_state": "none",
+								"states": {
+									"none": {
+										"on_entry": [
+											"/say none"
+										],
+										"transitions": [
+											{
+												"expell_energy": "query.skin_id == 1"
+											}
+										]
+									},
+									"expell_energy": {
+										"on_entry": [
+											"/say expell",
+											"@s endergy:reset_skin_id"
+										],
+										"transitions": [
+											{
+												"none": "query.skin_id != 1"
+											}
+										]
+									}
+								}
+							}
+						},
+						"key": "controller.animation.entermite.skin_id_triggers",
+						"children": [
+							{
+								"open": {
+									"initial_state": "none",
+									"states": {
+										"none": {
+											"on_entry": [
+												"/say none"
+											],
+											"transitions": [
+												{
+													"expell_energy": "query.skin_id == 1"
+												}
+											]
+										},
+										"expell_energy": {
+											"on_entry": [
+												"/say expell",
+												"@s endergy:reset_skin_id"
+											],
+											"transitions": [
+												{
+													"none": "query.skin_id != 1"
+												}
+											]
+										}
+									}
+								},
+								"data": "none",
+								"key": "initial_state"
+							},
+							{
+								"open": {
+									"initial_state": "none",
+									"states": {
+										"none": {
+											"on_entry": [
+												"/say none"
+											],
+											"transitions": [
+												{
+													"expell_energy": "query.skin_id == 1"
+												}
+											]
+										},
+										"expell_energy": {
+											"on_entry": [
+												"/say expell",
+												"@s endergy:reset_skin_id"
+											],
+											"transitions": [
+												{
+													"none": "query.skin_id != 1"
+												}
+											]
+										}
+									}
+								},
+								"key": "states",
+								"children": [
+									{
+										"open": {
+											"none": {
+												"on_entry": [
+													"/say none"
+												],
+												"transitions": [
+													{
+														"expell_energy": "query.skin_id == 1"
+													}
+												]
+											},
+											"expell_energy": {
+												"on_entry": [
+													"/say expell",
+													"@s endergy:reset_skin_id"
+												],
+												"transitions": [
+													{
+														"none": "query.skin_id != 1"
+													}
+												]
+											}
+										},
+										"key": "none",
+										"children": [
+											{
+												"open": {
+													"on_entry": [
+														"/say none"
+													],
+													"transitions": [
+														{
+															"expell_energy": "query.skin_id == 1"
+														}
+													]
+												},
+												"key": "on_entry",
+												"is_minified": true,
+												"array": [
+													"/say none"
+												]
+											},
+											{
+												"open": {
+													"on_entry": [
+														"/say none"
+													],
+													"transitions": [
+														{
+															"expell_energy": "query.skin_id == 1"
+														}
+													]
+												},
+												"key": "transitions",
+												"array": [
+													{
+														"open": [
+															{
+																"expell_energy": "query.skin_id == 1"
+															}
+														],
+														"is_minified": true,
+														"children": {
+															"expell_energy": "query.skin_id == 1"
+														}
+													}
+												]
+											}
+										]
+									},
+									{
+										"open": {
+											"none": {
+												"on_entry": [
+													"/say none"
+												],
+												"transitions": [
+													{
+														"expell_energy": "query.skin_id == 1"
+													}
+												]
+											},
+											"expell_energy": {
+												"on_entry": [
+													"/say expell",
+													"@s endergy:reset_skin_id"
+												],
+												"transitions": [
+													{
+														"none": "query.skin_id != 1"
+													}
+												]
+											}
+										},
+										"key": "expell_energy",
+										"children": [
+											{
+												"open": {
+													"on_entry": [
+														"/say expell",
+														"@s endergy:reset_skin_id"
+													],
+													"transitions": [
+														{
+															"none": "query.skin_id != 1"
+														}
+													]
+												},
+												"key": "on_entry",
+												"is_minified": true,
+												"array": [
+													"/say expell",
+													"@s endergy:reset_skin_id"
+												]
+											},
+											{
+												"open": {
+													"on_entry": [
+														"/say expell",
+														"@s endergy:reset_skin_id"
+													],
+													"transitions": [
+														{
+															"none": "query.skin_id != 1"
+														}
+													]
+												},
+												"key": "transitions",
+												"array": [
+													{
+														"open": [
+															{
+																"none": "query.skin_id != 1"
+															}
+														],
+														"is_minified": true,
+														"children": {
+															"none": "query.skin_id != 1"
+														}
+													}
+												]
+											}
+										]
+									}
+								]
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+}

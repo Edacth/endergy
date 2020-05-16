@@ -1,0 +1,200 @@
+{
+	"entity": {
+		"BP/entities/player.json": {
+			"custom_components": []
+		},
+		"BP/entities/endermite.e.json": {
+			"events": [
+				"minecraft:entity_spawned",
+				"endergy:on_feed",
+				"endergy:reset_skin_id"
+			],
+			"custom_components": [],
+			"bridge_core_tags": [],
+			"identifiers": [
+				"minecraft:endermite"
+			],
+			"animation_references": [
+				"skin_id_triggers"
+			],
+			"families": [
+				"endermite",
+				"arthropod",
+				"monster",
+				"mob"
+			]
+		},
+		"BP/entities/collector.e.json": {
+			"events": [],
+			"custom_components": [],
+			"bridge_core_tags": [],
+			"identifiers": [
+				"endergy:collector"
+			],
+			"animation_references": [],
+			"families": []
+		},
+		"BP/ner BP/entities/tortoise/dragon_tortoise_female.json": {
+			"custom_components": []
+		},
+		"BP/ner BP/entities/tortoise/dragon_tortoise_male.json": {
+			"custom_components": []
+		},
+		"BP/ner BP/entities/draco_lizard/dragon_draco_lizard_female.json": {
+			"custom_components": []
+		},
+		"BP/ner BP/entities/draco_lizard/dragon_draco_lizard_male.json": {
+			"custom_components": []
+		},
+		"BP/ner BP/entities/frill_lizard/dragon_frill_lizard_female.json": {
+			"custom_components": []
+		},
+		"BP/ner BP/entities/frill_lizard/dragon_frill_lizard_male.json": {
+			"custom_components": []
+		},
+		"BP/ner BP/entities/frog/dragon_frog_female.entity.json": {
+			"custom_components": []
+		},
+		"BP/ner BP/entities/frog/dragon_frog_male.entity.json": {
+			"custom_components": []
+		},
+		"BP/ner BP/entities/serpent/dragon_serpent_female.entity.json": {
+			"custom_components": []
+		},
+		"BP/ner BP/entities/serpent/dragon_serpent_male.entity.json": {
+			"custom_components": []
+		},
+		"BP/ner BP/entities/slug/dragon_slug_female.entity.json": {
+			"custom_components": []
+		},
+		"BP/ner BP/entities/slug/dragon_slug_male.entity.json": {
+			"custom_components": []
+		},
+		"BP/ner BP/entities/lizard/dragon_lizard_female.json": {
+			"custom_components": []
+		},
+		"BP/ner BP/entities/lizard/dragon_lizard_male.json": {
+			"custom_components": []
+		},
+		"BP/ner BP/entities/bat/dragon_bat_child.entity.json": {
+			"custom_components": []
+		},
+		"BP/ner BP/entities/bat/dragon_bat_whelp.entity.json": {
+			"custom_components": []
+		},
+		"BP/ner BP/entities/chameleon/dragon_chameleon_child.entity.json": {
+			"custom_components": []
+		},
+		"BP/ner BP/entities/chameleon/dragon_chameleon_whelp.entity.json": {
+			"custom_components": []
+		},
+		"BP/ner BP/entities/draco_lizard/dragon_draco_lizard_child.entity.json": {
+			"custom_components": []
+		},
+		"BP/ner BP/entities/draco_lizard/dragon_draco_lizard_whelp.entity.json": {
+			"custom_components": []
+		},
+		"BP/ner BP/entities/frill_lizard/dragon_frill_lizard_child.entity.json": {
+			"custom_components": []
+		},
+		"BP/ner BP/entities/frill_lizard/dragon_frill_lizard_whelp.entity.json": {
+			"custom_components": []
+		},
+		"BP/ner BP/entities/frog/dragon_frog_child.entity.json": {
+			"custom_components": []
+		},
+		"BP/ner BP/entities/frog/dragon_frog_whelp.entity.json": {
+			"custom_components": []
+		},
+		"BP/ner BP/entities/serpent/dragon_serpent_child.entity.json": {
+			"custom_components": []
+		},
+		"BP/ner BP/entities/serpent/dragon_serpent_whelp.entity.json": {
+			"custom_components": []
+		},
+		"BP/ner BP/entities/slug/dragon_slug_child.entity.json": {
+			"custom_components": []
+		},
+		"BP/ner BP/entities/slug/dragon_slug_whelp.entity.json": {
+			"custom_components": []
+		},
+		"BP/ner BP/entities/tortoise/dragon_tortoise_child.json": {
+			"custom_components": []
+		},
+		"BP/ner BP/entities/tortoise/dragon_tortoise_whelp.entity.json": {
+			"custom_components": []
+		},
+		"BP/ner BP/entities/lizard/dragon_lizard_whelp.entity.json": {
+			"custom_components": []
+		},
+		"BP/ner BP/entities/lizard/dragon_lizard_child.entity.json": {
+			"custom_components": []
+		},
+		"BP/ner BP/entities/bat/dragon_bat_egg.entity.json": {
+			"custom_components": []
+		},
+		"BP/ner BP/entities/chameleon/dragon_chameleon_egg.entity.json": {
+			"custom_components": []
+		},
+		"BP/ner BP/entities/draco_lizard/dragon_draco_lizard_egg.entity.json": {
+			"custom_components": []
+		},
+		"BP/ner BP/entities/frill_lizard/dragon_frill_lizard_egg.entity.json": {
+			"custom_components": []
+		},
+		"BP/ner BP/entities/frog/dragon_frog_egg.entity.json": {
+			"custom_components": []
+		},
+		"BP/ner BP/entities/serpent/dragon_serpent_egg.entity.json": {
+			"custom_components": []
+		},
+		"BP/ner BP/entities/slug/dragon_slug_egg.entity.json": {
+			"custom_components": []
+		},
+		"BP/ner BP/entities/tortoise/dragon_tortoise_egg.entity.json": {
+			"custom_components": []
+		},
+		"BP/ner BP/entities/lizard/dragon_lizard_egg.entity.json": {
+			"custom_components": []
+		},
+		"BP/ner BP/entities/misc/spawning_demo.json": {
+			"custom_components": []
+		}
+	},
+	"item": {
+		"BP/items/end_nacre.json": {
+			"identifiers": [
+				"endergy:end_nacre"
+			]
+		}
+	},
+	"animation_controller": {
+		"BP/animation_controllers/endermite.ac.json": {
+			"ids": [
+				"controller.animation.entermite.skin_id_triggers"
+			]
+		}
+	},
+	"client_entity": {
+		"RP/entity/collector.ce.json": {
+			"identifiers": [
+				"endergy:collector"
+			],
+			"particle_references": [],
+			"animation_references": [],
+			"sound_references": [],
+			"texture_references": [
+				"default"
+			],
+			"material_references": [
+				"default"
+			],
+			"geometry_references": [
+				"default"
+			],
+			"geometry_identifiers": [
+				"geometry.collector"
+			]
+		}
+	}
+}

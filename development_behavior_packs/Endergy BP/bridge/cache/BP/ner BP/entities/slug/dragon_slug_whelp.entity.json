@@ -1,0 +1,296 @@
+{
+	"file_path": "C:\\Users\\cadea\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_behavior_packs\\Dragontrainer BP\\entities\\slug\\dragon_slug_whelp.entity.json",
+	"file_type": "entity",
+	"cache_content": {
+		"minecraft:entity": {
+			"description": {
+				"animations": {
+					"spawn_init": "controller.animation.dragon_functions.spawn_init",
+					"training_controller": "controller.animation.dragon_whelp.training"
+				},
+				"scripts": {
+					"animate": [
+						"spawn_init",
+						"training_controller"
+					]
+				},
+				"identifier": "dragon:slug_whelp",
+				"is_spawnable": true,
+				"is_summonable": true,
+				"is_experimental": false
+			},
+			"component_groups": {
+				"dragon:standard_ai": {
+					"minecraft:behavior.random_stroll": {
+						"priority": 9,
+						"speed_multiplier": 0.6,
+						"xz_dist": 10
+					},
+					"minecraft:behavior.look_at_player": {
+						"priority": 16
+					},
+					"minecraft:behavior.random_look_around": {
+						"priority": 20
+					}
+				},
+				"dragon:whelp_tamed": {
+					"minecraft:is_tamed": {},
+					"minecraft:behavior.follow_owner": {
+						"priority": 1
+					}
+				},
+				"dragon:whelp_grow": {
+					"minecraft:transformation": {
+						"into": "dragon:slug_child",
+						"delay": 1,
+						"transformation_sound": "plop",
+						"keep_owner": true
+					}
+				},
+				"dragon:whelp_look_for_stick": {
+					"minecraft:behavior.nearest_attackable_target": {
+						"priority": 0,
+						"must_reach": true,
+						"entity_types": [
+							{
+								"filters": {
+									"test": "is_family",
+									"value": "stick",
+									"subject": "other"
+								}
+							}
+						]
+					},
+					"minecraft:attack": {
+						"damage": 1
+					},
+					"minecraft:behavior.melee_attack": {
+						"priority": 1
+					},
+					"minecraft:environment_sensor": {
+						"triggers": [
+							{
+								"filters": {
+									"test": "has_tag",
+									"value": "has_stick"
+								},
+								"event": "dragon:whelp_fetch_stick"
+							},
+							{
+								"filters": {
+									"test": "has_tag",
+									"value": "maturation_ready"
+								},
+								"event": "dragon:whelp_maturation_ready"
+							}
+						]
+					}
+				},
+				"dragon:whelp_return_stick": {
+					"minecraft:is_tamed": {},
+					"minecraft:is_ignited": {},
+					"minecraft:behavior.follow_owner": {
+						"priority": 0,
+						"start_distance": 2
+					},
+					"minecraft:environment_sensor": {
+						"triggers": {
+							"filters": {
+								"test": "distance_to_nearest_player",
+								"value": 3,
+								"operator": "<="
+							},
+							"event": "dragon:whelp_drop_stick"
+						}
+					}
+				},
+				"dragon:whelp_drop_stick": {
+					"minecraft:is_saddled": {}
+				},
+				"dragon:whelp_training_event_success": {
+					"minecraft:is_charged": {}
+				},
+				"dragon:whelp_maturation_ready": {
+					"minecraft:is_shaking": {},
+					"minecraft:interact": {
+						"interactions": [
+							{
+								"on_interact": {
+									"event": "dragon:whelp_grow",
+									"filters": {
+										"test": "has_equipment",
+										"value": "minecraft:potato",
+										"subject": "other"
+									}
+								},
+								"use_item": true,
+								"swing": true
+							}
+						]
+					}
+				}
+			},
+			"components": {
+				"minecraft:health": {
+					"value": 50
+				},
+				"minecraft:navigation.generic": {
+					"avoid_water": true
+				},
+				"minecraft:behavior.float": {
+					"priority": 1
+				},
+				"minecraft:movement.generic": {},
+				"minecraft:physics": {},
+				"minecraft:jump.static": {},
+				"minecraft:type_family": {
+					"family": [
+						"dragon",
+						"dragon_whelp"
+					]
+				},
+				"minecraft:pushable": {
+					"is_pushable": true
+				},
+				"minecraft:damage_sensor": {
+					"triggers": [
+						{
+							"on_damage": {
+								"filters": {
+									"all_of": [
+										{
+											"test": "has_damage",
+											"value": "fall"
+										}
+									]
+								}
+							},
+							"deals_damage": false
+						}
+					]
+				},
+				"minecraft:fire_immune": false,
+				"minecraft:movement": {
+					"value": 0.5
+				},
+				"minecraft:behavior.beg": {
+					"priority": 5,
+					"items": [
+						"minecraft:potato"
+					]
+				}
+			},
+			"events": {
+				"minecraft:entity_spawned": {
+					"sequence": [
+						{
+							"add": {
+								"component_groups": [
+									"dragon:standard_ai"
+								]
+							}
+						}
+					]
+				},
+				"minecraft:entity_transformed": {
+					"sequence": [
+						{
+							"add": {
+								"component_groups": [
+									"dragon:standard_ai"
+								]
+							}
+						},
+						{
+							"add": {
+								"component_groups": [
+									"dragon:whelp_tamed",
+									"dragon:whelp_look_for_stick"
+								]
+							}
+						}
+					]
+				},
+				"dragon:whelp_grow": {
+					"add": {
+						"component_groups": [
+							"dragon:whelp_grow"
+						]
+					}
+				},
+				"dragon:whelp_fetch_stick": {
+					"add": {
+						"component_groups": [
+							"dragon:whelp_return_stick"
+						]
+					},
+					"remove": {
+						"component_groups": [
+							"dragon:whelp_look_for_stick"
+						]
+					}
+				},
+				"dragon:whelp_drop_stick": {
+					"sequence": [
+						{
+							"add": {
+								"component_groups": [
+									"dragon:whelp_drop_stick"
+								]
+							},
+							"remove": {
+								"component_groups": [
+									"dragon:whelp_return_stick"
+								]
+							}
+						},
+						{
+							"randomize": [
+								{
+									"weight": 25,
+									"add": {
+										"component_groups": [
+											"dragon:whelp_training_event_success"
+										]
+									}
+								},
+								{
+									"weight": 75,
+									"remove": {
+										"component_groups": [
+											"dragon:whelp_training_event_success"
+										]
+									}
+								}
+							]
+						}
+					]
+				},
+				"dragon:whelp_remove_drop_stick": {
+					"remove": {
+						"component_groups": [
+							"dragon:whelp_drop_stick",
+							"dragon:whelp_training_event_success"
+						]
+					},
+					"add": {
+						"component_groups": [
+							"dragon:whelp_look_for_stick"
+						]
+					}
+				},
+				"dragon:whelp_maturation_ready": {
+					"add": {
+						"component_groups": [
+							"dragon:whelp_maturation_ready"
+						]
+					}
+				}
+			}
+		},
+		"format_version": "1.14.0"
+	},
+	"format_version": 0,
+	"file_version": 0,
+	"file_uuid": "5d3577e4_490d_45b6_9e57_cd014aef28eb"
+}

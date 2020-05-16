@@ -1,0 +1,32 @@
+//bridge-file-version: #5
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.entermite.skin_id_triggers": {
+			"initial_state": "none",
+			"states": {
+				"none": {
+					"on_entry": [
+						"/say none"
+					],
+					"transitions": [
+						{
+							"expell_energy": "query.skin_id == 1"
+						}
+					]
+				},
+				"expell_energy": {
+					"on_entry": [
+						"/say expell",
+						"@s endergy:reset_skin_id"
+					],
+					"transitions": [
+						{
+							"none": "query.skin_id != 1"
+						}
+					]
+				}
+			}
+		}
+	}
+}

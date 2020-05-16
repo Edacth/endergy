@@ -1,0 +1,233 @@
+{
+	"file_path": "C:\\Users\\cadea\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_behavior_packs\\Dragontrainer BP\\entities\\misc\\spawning_demo.json",
+	"file_type": "entity",
+	"cache_content": {
+		"minecraft:entity": {
+			"component_groups": {
+				"bridge:spawner_cooldown": {
+					"minecraft:timer": {
+						"looping": false,
+						"time": 6000,
+						"time_down_event": {
+							"event": "bridge:on_remove_cooldown"
+						}
+					}
+				},
+				"dragon:inv": {
+					"minecraft:equippable": {
+						"slots": [
+							{
+								"accepted_items": [
+									"minecraft:saddle"
+								],
+								"item": "minecraft:saddle"
+							},
+							{
+								"accepted_items": [
+									"minecraft:horsearmoriron",
+									"minecraft:horsearmordiamond",
+									"minecraft:horsearmorgold",
+									"minecraft:horsearmorleather"
+								],
+								"item": "minecraft:horsearmoriron"
+							}
+						]
+					},
+					"minecraft:inventory": {
+						"private": false,
+						"inventory_size": 5,
+						"container_type": "horse"
+					},
+					"minecraft:is_chested": {}
+				},
+				"bridge:spawn_entity": {
+					"minecraft:spawn_entity": [
+						{
+							"min_wait_time": 0,
+							"max_wait_time": 0,
+							"single_use": false,
+							"filters": {
+								"test": "has_component",
+								"value": "minecraft:timer",
+								"operator": "not"
+							},
+							"spawn_entity": "dragon:bat_male"
+						}
+					]
+				},
+				"dragon:add_back_inv_group": {
+					"minecraft:timer": {
+						"time": 0,
+						"looping": true,
+						"time_down_event": {
+							"event": "dragon:add_inv"
+						}
+					},
+					"minecraft:inventory": {
+						"inventory_size": 0
+					},
+					"minecraft:scale": {
+						"value": 2
+					}
+				}
+			},
+			"events": {
+				"bridge:on_spawn_entity": {
+					"add": {
+						"component_groups": [
+							"bridge:spawner_cooldown",
+							"bridge:spawn_entity"
+						]
+					}
+				},
+				"bridge:on_remove_cooldown": {
+					"remove": {
+						"component_groups": [
+							"bridge:spawner_cooldown"
+						]
+					}
+				},
+				"minecraft:entity_spawned": {
+					"add": {
+						"component_groups": [
+							"dragon:inv"
+						]
+					}
+				},
+				"dragon:reset_inv": {
+					"remove": {
+						"component_groups": [
+							"dragon:inv"
+						]
+					},
+					"add": {
+						"component_groups": [
+							"dragon:add_back_inv_group"
+						]
+					}
+				},
+				"dragon:add_inv": {
+					"add": {
+						"component_groups": [
+							"dragon:inv"
+						]
+					},
+					"remove": {
+						"component_groups": [
+							"dragon:add_back_inv_group"
+						]
+					}
+				}
+			},
+			"components": {
+				"minecraft:entity_sensor": {
+					"sensor_range": 5,
+					"minimum_count": 1,
+					"event_filters": {
+						"all_of": [
+							{
+								"test": "is_family",
+								"subject": "other",
+								"value": "player"
+							},
+							{
+								"test": "has_ability",
+								"operator": "not",
+								"subject": "other",
+								"value": "instabuild"
+							},
+							{
+								"test": "has_component",
+								"operator": "not",
+								"value": "minecraft:timer"
+							}
+						]
+					},
+					"event": "bridge:on_spawn_entity"
+				},
+				"minecraft:behavior.send_event": {
+					"priority": 1,
+					"event_choices": [
+						{
+							"min_activation_range": 0,
+							"max_activation_range": 16,
+							"cooldown_time": 0.05,
+							"cast_duration": 0.05,
+							"weight": 1,
+							"filters": {
+								"test": "is_family",
+								"subject": "other",
+								"value": "player"
+							},
+							"sequence": [
+								{
+									"base_delay": 0.05,
+									"event": "dragon:on_level_3"
+								}
+							]
+						}
+					]
+				},
+				"minecraft:damage_sensor": {
+					"triggers": [
+						{
+							"on_damage": {
+								"event": "dragon:reset_inv"
+							},
+							"deals_damage": false
+						}
+					]
+				},
+				"minecraft:type_family": {
+					"family": [
+						"armor_stand",
+						"inanimate",
+						"mob"
+					]
+				},
+				"minecraft:collision_box": {
+					"width": 0.5,
+					"height": 1.975
+				},
+				"minecraft:health": {
+					"value": 6,
+					"max": 6
+				},
+				"minecraft:hurt_on_condition": {
+					"damage_conditions": [
+						{
+							"filters": {
+								"test": "in_lava",
+								"subject": "self",
+								"operator": "==",
+								"value": true
+							},
+							"cause": "lava",
+							"damage_per_tick": 4
+						}
+					]
+				},
+				"minecraft:loot": {
+					"table": "loot_tables/entities/armor_stand.json"
+				},
+				"minecraft:nameable": {},
+				"minecraft:persistent": {},
+				"minecraft:physics": {},
+				"minecraft:pushable": {
+					"is_pushable": false,
+					"is_pushable_by_piston": true
+				}
+			},
+			"description": {
+				"identifier": "minecraft:chicken",
+				"is_spawnable": true,
+				"is_summonable": true,
+				"is_experimental": false
+			}
+		},
+		"format_version": "1.13.0"
+	},
+	"format_version": 0,
+	"file_version": 0,
+	"file_uuid": "5d9ad29a_b98a_4506_b36c_7237bc2c4566"
+}
