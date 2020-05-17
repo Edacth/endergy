@@ -3,7 +3,7 @@
 	"file_type": "entity",
 	"format_version": 1,
 	"file_uuid": "4c0749b7_cfe2_4fa1_9278_4bbfd3cebd93",
-	"file_version": 18,
+	"file_version": 20,
 	"cache_content": {
 		"children": [
 			{
@@ -20,13 +20,13 @@
 							"is_spawnable": true
 						},
 						"component_groups": {},
+						"events": {},
 						"components": {
 							"minecraft:collision_box": {
 								"width": 1,
 								"height": 1
 							}
-						},
-						"events": {}
+						}
 					}
 				},
 				"key": "minecraft:entity",
@@ -39,13 +39,13 @@
 								"is_spawnable": true
 							},
 							"component_groups": {},
+							"events": {},
 							"components": {
 								"minecraft:collision_box": {
 									"width": 1,
 									"height": 1
 								}
-							},
-							"events": {}
+							}
 						},
 						"key": "description",
 						"is_minified": true,
@@ -63,13 +63,13 @@
 								"is_spawnable": true
 							},
 							"component_groups": {},
+							"events": {},
 							"components": {
 								"minecraft:collision_box": {
 									"width": 1,
 									"height": 1
 								}
-							},
-							"events": {}
+							}
 						},
 						"key": "component_groups",
 						"is_minified": true,
@@ -83,13 +83,33 @@
 								"is_spawnable": true
 							},
 							"component_groups": {},
+							"events": {},
 							"components": {
 								"minecraft:collision_box": {
 									"width": 1,
 									"height": 1
 								}
+							}
+						},
+						"key": "events",
+						"is_minified": true,
+						"children": {}
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "endergy:collector",
+								"is_summonable": true,
+								"is_spawnable": true
 							},
-							"events": {}
+							"component_groups": {},
+							"events": {},
+							"components": {
+								"minecraft:collision_box": {
+									"width": 1,
+									"height": 1
+								}
+							}
 						},
 						"key": "components",
 						"children": [
@@ -108,26 +128,6 @@
 								}
 							}
 						]
-					},
-					{
-						"open": {
-							"description": {
-								"identifier": "endergy:collector",
-								"is_summonable": true,
-								"is_spawnable": true
-							},
-							"component_groups": {},
-							"components": {
-								"minecraft:collision_box": {
-									"width": 1,
-									"height": 1
-								}
-							},
-							"events": {}
-						},
-						"key": "events",
-						"is_minified": true,
-						"children": {}
 					}
 				]
 			}
