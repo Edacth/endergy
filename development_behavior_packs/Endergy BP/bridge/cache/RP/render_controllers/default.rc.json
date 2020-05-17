@@ -1,0 +1,114 @@
+{
+	"file_path": "C:\\Users\\cadea\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_resource_packs\\Endergy RP/render_controllers/default.rc.json",
+	"file_type": "render_controller",
+	"format_version": 1,
+	"file_uuid": "65847eac_d3fc_4ff2_b152_8cb3ffb3f376",
+	"file_version": 0,
+	"cache_content": {
+		"children": [
+			{
+				"data": "1.8.0",
+				"key": "format_version"
+			},
+			{
+				"open": {
+					"format_version": "1.8.0",
+					"render_controllers": {
+						"controller.render.default": {
+							"geometry": "Geometry.default",
+							"materials": [
+								{
+									"*": "Material.default"
+								}
+							],
+							"textures": [
+								"Texture.default"
+							]
+						}
+					}
+				},
+				"key": "render_controllers",
+				"children": [
+					{
+						"open": {
+							"controller.render.default": {
+								"geometry": "Geometry.default",
+								"materials": [
+									{
+										"*": "Material.default"
+									}
+								],
+								"textures": [
+									"Texture.default"
+								]
+							}
+						},
+						"key": "controller.render.default",
+						"children": [
+							{
+								"open": {
+									"geometry": "Geometry.default",
+									"materials": [
+										{
+											"*": "Material.default"
+										}
+									],
+									"textures": [
+										"Texture.default"
+									]
+								},
+								"data": "Geometry.default",
+								"key": "geometry"
+							},
+							{
+								"open": {
+									"geometry": "Geometry.default",
+									"materials": [
+										{
+											"*": "Material.default"
+										}
+									],
+									"textures": [
+										"Texture.default"
+									]
+								},
+								"key": "materials",
+								"array": [
+									{
+										"open": [
+											{
+												"*": "Material.default"
+											}
+										],
+										"is_minified": true,
+										"children": {
+											"*": "Material.default"
+										}
+									}
+								]
+							},
+							{
+								"open": {
+									"geometry": "Geometry.default",
+									"materials": [
+										{
+											"*": "Material.default"
+										}
+									],
+									"textures": [
+										"Texture.default"
+									]
+								},
+								"key": "textures",
+								"is_minified": true,
+								"array": [
+									"Texture.default"
+								]
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+}

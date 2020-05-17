@@ -1,9 +1,9 @@
 {
-	"file_path": "C:\\Users\\cadea\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_behavior_packs\\Endergy BP\\entities\\collector.e.json",
+	"file_path": "C:\\Users\\cadea\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_behavior_packs\\Endergy BP\\entities\\relay.e.json",
 	"file_type": "entity",
 	"format_version": 1,
-	"file_uuid": "4c0749b7_cfe2_4fa1_9278_4bbfd3cebd93",
-	"file_version": 18,
+	"file_uuid": "ed9a0660_9357_4833_a12e_0df3d7e39069",
+	"file_version": 6,
 	"cache_content": {
 		"children": [
 			{
@@ -15,15 +15,15 @@
 					"format_version": "1.14.0",
 					"minecraft:entity": {
 						"description": {
-							"identifier": "endergy:collector",
+							"identifier": "endergy:relay",
 							"is_summonable": true,
 							"is_spawnable": true
 						},
 						"component_groups": {},
 						"components": {
 							"minecraft:collision_box": {
-								"width": 1,
-								"height": 1
+								"width": 0.6,
+								"height": 0.6
 							}
 						},
 						"events": {}
@@ -34,15 +34,15 @@
 					{
 						"open": {
 							"description": {
-								"identifier": "endergy:collector",
+								"identifier": "endergy:relay",
 								"is_summonable": true,
 								"is_spawnable": true
 							},
 							"component_groups": {},
 							"components": {
 								"minecraft:collision_box": {
-									"width": 1,
-									"height": 1
+									"width": 0.6,
+									"height": 0.6
 								}
 							},
 							"events": {}
@@ -50,7 +50,7 @@
 						"key": "description",
 						"is_minified": true,
 						"children": {
-							"identifier": "endergy:collector",
+							"identifier": "endergy:relay",
 							"is_summonable": true,
 							"is_spawnable": true
 						}
@@ -58,15 +58,15 @@
 					{
 						"open": {
 							"description": {
-								"identifier": "endergy:collector",
+								"identifier": "endergy:relay",
 								"is_summonable": true,
 								"is_spawnable": true
 							},
 							"component_groups": {},
 							"components": {
 								"minecraft:collision_box": {
-									"width": 1,
-									"height": 1
+									"width": 0.6,
+									"height": 0.6
 								}
 							},
 							"events": {}
@@ -78,49 +78,40 @@
 					{
 						"open": {
 							"description": {
-								"identifier": "endergy:collector",
+								"identifier": "endergy:relay",
 								"is_summonable": true,
 								"is_spawnable": true
 							},
 							"component_groups": {},
 							"components": {
 								"minecraft:collision_box": {
-									"width": 1,
-									"height": 1
+									"width": 0.6,
+									"height": 0.6
 								}
 							},
 							"events": {}
 						},
 						"key": "components",
-						"children": [
-							{
-								"open": {
-									"minecraft:collision_box": {
-										"width": 1,
-										"height": 1
-									}
-								},
-								"key": "minecraft:collision_box",
-								"is_minified": true,
-								"children": {
-									"width": 1,
-									"height": 1
-								}
+						"is_minified": true,
+						"children": {
+							"minecraft:collision_box": {
+								"width": 0.6,
+								"height": 0.6
 							}
-						]
+						}
 					},
 					{
 						"open": {
 							"description": {
-								"identifier": "endergy:collector",
+								"identifier": "endergy:relay",
 								"is_summonable": true,
 								"is_spawnable": true
 							},
 							"component_groups": {},
 							"components": {
 								"minecraft:collision_box": {
-									"width": 1,
-									"height": 1
+									"width": 0.6,
+									"height": 0.6
 								}
 							},
 							"events": {}

@@ -1,7 +1,26 @@
 {
+	"animation_controller": {
+		"BP/animation_controllers/bridge/custom_item_behavior.json": {
+			"ids": [
+				"controller.animation.bridge_custom_item_behavior"
+			]
+		},
+		"BP/animation_controllers/endermite.ac.json": {
+			"ids": [
+				"controller.animation.entermite.skin_id_triggers"
+			]
+		}
+	},
 	"entity": {
-		"BP/entities/player.json": {
-			"custom_components": []
+		"BP/entities/collector.e.json": {
+			"events": [],
+			"custom_components": [],
+			"bridge_core_tags": [],
+			"identifiers": [
+				"endergy:collector"
+			],
+			"animation_references": [],
+			"families": []
 		},
 		"BP/entities/endermite.e.json": {
 			"events": [
@@ -24,14 +43,59 @@
 				"mob"
 			]
 		},
-		"BP/entities/collector.e.json": {
+		"BP/entities/player.json": {
+			"events": [
+				"minecraft:gain_bad_omen",
+				"minecraft:clear_add_bad_omen",
+				"minecraft:trigger_raid",
+				"minecraft:remove_raid_trigger"
+			],
+			"custom_components": [],
+			"bridge_core_tags": [],
+			"identifiers": [
+				"minecraft:player"
+			],
+			"animation_references": [],
+			"families": [
+				"player"
+			]
+		},
+		"BP/entities/relay.e.json": {
 			"events": [],
 			"custom_components": [],
 			"bridge_core_tags": [],
 			"identifiers": [
-				"endergy:collector"
+				"endergy:relay"
 			],
 			"animation_references": [],
+			"families": []
+		},
+		"BP/tags/block_immitation.json": {
+			"events": [],
+			"custom_components": [],
+			"bridge_core_tags": [],
+			"identifiers": [
+				"endergy:block_immitation"
+			],
+			"animation_references": [],
+			"families": []
+		},
+		"BP/tags/test.json": {
+			"events": [
+				"minecraft:entity_spawned",
+				"gm1:add_clockwise",
+				"gm1:add_counter_clockwise",
+				"gm1:reset_skin_id"
+			],
+			"custom_components": [],
+			"bridge_core_tags": [],
+			"identifiers": [
+				"gm1:decor"
+			],
+			"animation_references": [
+				"decor_init",
+				"rotate"
+			],
 			"families": []
 		},
 		"BP/ner BP/entities/tortoise/dragon_tortoise_female.json": {
@@ -168,13 +232,6 @@
 			]
 		}
 	},
-	"animation_controller": {
-		"BP/animation_controllers/endermite.ac.json": {
-			"ids": [
-				"controller.animation.entermite.skin_id_triggers"
-			]
-		}
-	},
 	"client_entity": {
 		"RP/entity/collector.ce.json": {
 			"identifiers": [
@@ -194,6 +251,45 @@
 			],
 			"geometry_identifiers": [
 				"geometry.collector"
+			]
+		},
+		"RP/entity/relay.ce.json": {
+			"identifiers": [
+				"endergy:relay"
+			],
+			"particle_references": [],
+			"animation_references": [],
+			"sound_references": [],
+			"texture_references": [
+				"default"
+			],
+			"material_references": [
+				"default"
+			],
+			"geometry_references": [
+				"default"
+			],
+			"geometry_identifiers": [
+				"geometry.relay"
+			]
+		}
+	},
+	"entity_model": {
+		"RP/models/entity/collector.geo.json": {
+			"identifiers": [
+				"geometry.collector"
+			]
+		},
+		"RP/models/entity/relay.geo.json": {
+			"identifiers": [
+				"geometry.relay"
+			]
+		}
+	},
+	"render_controller": {
+		"RP/render_controllers/default.rc.json": {
+			"ids": [
+				"controller.render.default"
 			]
 		}
 	}

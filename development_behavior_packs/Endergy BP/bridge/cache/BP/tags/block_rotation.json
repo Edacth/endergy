@@ -1,0 +1,161 @@
+{
+	"file_path": "C:\\Users\\cadea\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_behavior_packs\\Endergy BP\\tags\\block_rotation.json",
+	"file_type": "entity_tag",
+	"format_version": 1,
+	"file_uuid": "1d04667c_670f_4325_9141_6b11c7718c57",
+	"file_version": 3,
+	"cache_content": {
+		"children": [
+			{
+				"open": {
+					"bridge:tag": {
+						"description": {
+							"identifier": "endergy:block_rotation"
+						},
+						"component_groups": {},
+						"components": {
+							"minecraft:health": {
+								"value": 1,
+								"max": 1
+							},
+							"minecraft:physics": {
+								"has_collision": false,
+								"has_gravity": false
+							}
+						},
+						"events": {}
+					}
+				},
+				"key": "bridge:tag",
+				"children": [
+					{
+						"open": {
+							"description": {
+								"identifier": "endergy:block_rotation"
+							},
+							"component_groups": {},
+							"components": {
+								"minecraft:health": {
+									"value": 1,
+									"max": 1
+								},
+								"minecraft:physics": {
+									"has_collision": false,
+									"has_gravity": false
+								}
+							},
+							"events": {}
+						},
+						"key": "description",
+						"is_minified": true,
+						"children": {
+							"identifier": "endergy:block_rotation"
+						}
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "endergy:block_rotation"
+							},
+							"component_groups": {},
+							"components": {
+								"minecraft:health": {
+									"value": 1,
+									"max": 1
+								},
+								"minecraft:physics": {
+									"has_collision": false,
+									"has_gravity": false
+								}
+							},
+							"events": {}
+						},
+						"key": "component_groups",
+						"is_minified": true,
+						"children": {}
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "endergy:block_rotation"
+							},
+							"component_groups": {},
+							"components": {
+								"minecraft:health": {
+									"value": 1,
+									"max": 1
+								},
+								"minecraft:physics": {
+									"has_collision": false,
+									"has_gravity": false
+								}
+							},
+							"events": {}
+						},
+						"key": "components",
+						"children": [
+							{
+								"open": {
+									"minecraft:health": {
+										"value": 1,
+										"max": 1
+									},
+									"minecraft:physics": {
+										"has_collision": false,
+										"has_gravity": false
+									}
+								},
+								"key": "minecraft:health",
+								"is_minified": true,
+								"children": {
+									"value": 1,
+									"max": 1
+								}
+							},
+							{
+								"open": {
+									"minecraft:health": {
+										"value": 1,
+										"max": 1
+									},
+									"minecraft:physics": {
+										"has_collision": false,
+										"has_gravity": false
+									}
+								},
+								"key": "minecraft:physics",
+								"is_minified": true,
+								"children": {
+									"has_collision": false,
+									"has_gravity": false
+								}
+							}
+						]
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "endergy:block_rotation"
+							},
+							"component_groups": {},
+							"components": {
+								"minecraft:health": {
+									"value": 1,
+									"max": 1
+								},
+								"minecraft:physics": {
+									"has_collision": false,
+									"has_gravity": false
+								}
+							},
+							"events": {}
+						},
+						"key": "events",
+						"is_minified": true,
+						"children": {}
+					}
+				]
+			}
+		]
+	}
+}

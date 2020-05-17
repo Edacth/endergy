@@ -1,0 +1,44 @@
+//bridge-file-version: #8
+{
+	"bridge:tag": {
+		"description": {
+			"identifier": "endergy:block_immitation"
+		},
+		"component_groups": {},
+		"components": {
+			"minecraft:health": {
+				"value": 1,
+				"max": 1
+			},
+			"minecraft:physics": {
+				"has_collision": false,
+				"has_gravity": false
+			},
+			"minecraft:damage_sensor": {
+				"triggers": [
+					{
+						"on_damage": {
+							"filters": {
+								"all_of": [
+									{
+										"subject": "other",
+										"test": "is_family",
+										"value": "player"
+									}
+								]
+							}
+						}
+					},
+					{
+						"deals_damage": false
+					}
+				]
+			},
+			"minecraft:pushable": {
+				"is_pushable": false,
+				"is_pushable_by_piston": true
+			}
+		},
+		"events": {}
+	}
+}

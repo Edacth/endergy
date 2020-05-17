@@ -1,29 +1,29 @@
 {
-	"file_path": "C:\\Users\\cadea\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_resource_packs\\Endergy RP\\entity\\collector.ce.json",
+	"file_path": "C:\\Users\\cadea\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_resource_packs\\Endergy RP\\entity\\relay.ce.json",
 	"file_type": "client_entity",
 	"format_version": 1,
-	"file_uuid": "b90c1610_abc1_4b99_a053_b9630ce0ef58",
-	"file_version": 8,
+	"file_uuid": "055b550a_46e3_4c67_ba4c_80606b36b3f6",
+	"file_version": 2,
 	"cache_content": {
 		"children": [
 			{
-				"data": "1.8.0",
+				"data": "1.10.0",
 				"key": "format_version"
 			},
 			{
 				"open": {
-					"format_version": "1.8.0",
+					"format_version": "1.10.0",
 					"minecraft:client_entity": {
 						"description": {
-							"identifier": "endergy:collector",
+							"identifier": "endergy:relay",
 							"materials": {
 								"default": "villager"
 							},
 							"textures": {
-								"default": "textures/entity/collector"
+								"default": "textures/entity/relay_entity"
 							},
 							"geometry": {
-								"default": "geometry.collector"
+								"default": "geometry.relay"
 							},
 							"render_controllers": [
 								"controller.render.default"
@@ -40,15 +40,15 @@
 					{
 						"open": {
 							"description": {
-								"identifier": "endergy:collector",
+								"identifier": "endergy:relay",
 								"materials": {
 									"default": "villager"
 								},
 								"textures": {
-									"default": "textures/entity/collector"
+									"default": "textures/entity/relay_entity"
 								},
 								"geometry": {
-									"default": "geometry.collector"
+									"default": "geometry.relay"
 								},
 								"render_controllers": [
 									"controller.render.default"
@@ -62,20 +62,20 @@
 						"key": "description",
 						"children": [
 							{
-								"data": "endergy:collector",
+								"data": "endergy:relay",
 								"key": "identifier"
 							},
 							{
 								"open": {
-									"identifier": "endergy:collector",
+									"identifier": "endergy:relay",
 									"materials": {
 										"default": "villager"
 									},
 									"textures": {
-										"default": "textures/entity/collector"
+										"default": "textures/entity/relay_entity"
 									},
 									"geometry": {
-										"default": "geometry.collector"
+										"default": "geometry.relay"
 									},
 									"render_controllers": [
 										"controller.render.default"
@@ -93,15 +93,15 @@
 							},
 							{
 								"open": {
-									"identifier": "endergy:collector",
+									"identifier": "endergy:relay",
 									"materials": {
 										"default": "villager"
 									},
 									"textures": {
-										"default": "textures/entity/collector"
+										"default": "textures/entity/relay_entity"
 									},
 									"geometry": {
-										"default": "geometry.collector"
+										"default": "geometry.relay"
 									},
 									"render_controllers": [
 										"controller.render.default"
@@ -114,20 +114,20 @@
 								"key": "textures",
 								"is_minified": true,
 								"children": {
-									"default": "textures/entity/collector"
+									"default": "textures/entity/relay_entity"
 								}
 							},
 							{
 								"open": {
-									"identifier": "endergy:collector",
+									"identifier": "endergy:relay",
 									"materials": {
 										"default": "villager"
 									},
 									"textures": {
-										"default": "textures/entity/collector"
+										"default": "textures/entity/relay_entity"
 									},
 									"geometry": {
-										"default": "geometry.collector"
+										"default": "geometry.relay"
 									},
 									"render_controllers": [
 										"controller.render.default"
@@ -140,20 +140,20 @@
 								"key": "geometry",
 								"is_minified": true,
 								"children": {
-									"default": "geometry.collector"
+									"default": "geometry.relay"
 								}
 							},
 							{
 								"open": {
-									"identifier": "endergy:collector",
+									"identifier": "endergy:relay",
 									"materials": {
 										"default": "villager"
 									},
 									"textures": {
-										"default": "textures/entity/collector"
+										"default": "textures/entity/relay_entity"
 									},
 									"geometry": {
-										"default": "geometry.collector"
+										"default": "geometry.relay"
 									},
 									"render_controllers": [
 										"controller.render.default"
@@ -171,15 +171,15 @@
 							},
 							{
 								"open": {
-									"identifier": "endergy:collector",
+									"identifier": "endergy:relay",
 									"materials": {
 										"default": "villager"
 									},
 									"textures": {
-										"default": "textures/entity/collector"
+										"default": "textures/entity/relay_entity"
 									},
 									"geometry": {
-										"default": "geometry.collector"
+										"default": "geometry.relay"
 									},
 									"render_controllers": [
 										"controller.render.default"

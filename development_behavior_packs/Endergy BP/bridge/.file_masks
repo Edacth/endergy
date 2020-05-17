@@ -159,5 +159,23 @@
 	},
 	"BP/ner BP/entities/misc/spawning_demo.json": {
 		"data": {}
+	},
+	"BP/entities/relay.e.json": {
+		"data": {}
+	},
+	"RP/entity/relay.ce.json": {
+		"data": {}
+	},
+	"RP/render_controllers/default.rc.json": {
+		"data": {}
+	},
+	"BP/tags/block_immitation.json/block_rotation.json": {
+		"data": {}
+	},
+	"BP/tags/block_immitation.json": {
+		"data": {}
+	},
+	"BP/tags/test.json": {
+		"data": {}
 	}
 }
