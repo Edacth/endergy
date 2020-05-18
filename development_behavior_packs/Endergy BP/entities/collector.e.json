@@ -1,19 +1,64 @@
-//bridge-file-version: #20
+//bridge-file-version: #0
 {
-	"format_version": "1.14.0",
 	"minecraft:entity": {
 		"description": {
 			"identifier": "endergy:collector",
 			"is_summonable": true,
-			"is_spawnable": true
+			"is_spawnable": true,
+			"animations": {
+				"block_immitation.init": "controller.animation.block_immitation.init"
+			},
+			"scripts": {
+				"animate": [
+					{
+						"block_immitation.init": "(1.0)"
+					}
+				]
+			}
 		},
 		"component_groups": {},
-		"events": {},
 		"components": {
+			"minecraft:health": {
+				"value": 1,
+				"max": 1
+			},
+			"minecraft:physics": {
+				"has_collision": true,
+				"has_gravity": false
+			},
+			"minecraft:damage_sensor": {
+				"triggers": [
+					{
+						"on_damage": {
+							"filters": {
+								"all_of": [
+									{
+										"subject": "other",
+										"test": "is_family",
+										"value": "player"
+									}
+								]
+							}
+						}
+					},
+					{
+						"deals_damage": false
+					}
+				]
+			},
+			"minecraft:pushable": {
+				"is_pushable": false,
+				"is_pushable_by_piston": true
+			},
 			"minecraft:collision_box": {
 				"width": 1,
 				"height": 1
+			},
+			"minecraft:loot": {
+				"table": "loot_tables/collector_egg.loot.json"
 			}
-		}
-	}
+		},
+		"events": {}
+	},
+	"format_version": "1.14.0"
 }

@@ -3,7 +3,7 @@
 	"file_type": "client_entity",
 	"format_version": 1,
 	"file_uuid": "b90c1610_abc1_4b99_a053_b9630ce0ef58",
-	"file_version": 8,
+	"file_version": 9,
 	"cache_content": {
 		"children": [
 			{
@@ -29,8 +29,7 @@
 								"controller.render.default"
 							],
 							"spawn_egg": {
-								"texture": "spawn_egg",
-								"texture_index": 25
+								"texture": "spawn_egg_collector"
 							}
 						}
 					}
@@ -54,8 +53,7 @@
 									"controller.render.default"
 								],
 								"spawn_egg": {
-									"texture": "spawn_egg",
-									"texture_index": 25
+									"texture": "spawn_egg_collector"
 								}
 							}
 						},
@@ -81,8 +79,7 @@
 										"controller.render.default"
 									],
 									"spawn_egg": {
-										"texture": "spawn_egg",
-										"texture_index": 25
+										"texture": "spawn_egg_collector"
 									}
 								},
 								"key": "materials",
@@ -107,8 +104,7 @@
 										"controller.render.default"
 									],
 									"spawn_egg": {
-										"texture": "spawn_egg",
-										"texture_index": 25
+										"texture": "spawn_egg_collector"
 									}
 								},
 								"key": "textures",
@@ -133,8 +129,7 @@
 										"controller.render.default"
 									],
 									"spawn_egg": {
-										"texture": "spawn_egg",
-										"texture_index": 25
+										"texture": "spawn_egg_collector"
 									}
 								},
 								"key": "geometry",
@@ -159,8 +154,7 @@
 										"controller.render.default"
 									],
 									"spawn_egg": {
-										"texture": "spawn_egg",
-										"texture_index": 25
+										"texture": "spawn_egg_collector"
 									}
 								},
 								"key": "render_controllers",
@@ -185,15 +179,13 @@
 										"controller.render.default"
 									],
 									"spawn_egg": {
-										"texture": "spawn_egg",
-										"texture_index": 25
+										"texture": "spawn_egg_collector"
 									}
 								},
 								"key": "spawn_egg",
 								"is_minified": true,
 								"children": {
-									"texture": "spawn_egg",
-									"texture_index": 25
+									"texture": "spawn_egg_collector"
 								}
 							}
 						]

@@ -1,0 +1,75 @@
+//bridge-file-version: #0
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.relay.direction": {
+			"initial_state": "default",
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"direction_0": "query.mark_variant == 0"
+						},
+						{
+							"direction_1": "query.mark_variant == 1"
+						},
+						{
+							"direction_2": "query.mark_variant == 2"
+						},
+						{
+							"direction_3": "query.mark_variant == 3"
+						},
+						{
+							"direction_4": "query.mark_variant == 4"
+						},
+						{
+							"direction_5": "query.mark_variant == 5"
+						}
+					]
+				},
+				"direction_0": {
+					"transitions": [
+						{
+							"default": "query.mark_variant != 0"
+						}
+					]
+				},
+				"direction_1": {
+					"transitions": [
+						{
+							"default": "query.mark_variant != 1"
+						}
+					]
+				},
+				"direction_2": {
+					"transitions": [
+						{
+							"default": "query.mark_variant != 2"
+						}
+					]
+				},
+				"direction_3": {
+					"transitions": [
+						{
+							"default": "query.mark_variant != 3"
+						}
+					]
+				},
+				"direction_4": {
+					"transitions": [
+						{
+							"default": "query.mark_variant != 4"
+						}
+					]
+				},
+				"direction_5": {
+					"transitions": [
+						{
+							"default": "query.mark_variant != 5"
+						}
+					]
+				}
+			}
+		}
+	}
+}

@@ -4,6 +4,15 @@
   "texture_data": {
     "end_nacre": {
       "textures": "textures/items/end_nacre"
+    },
+    "spawn_egg_collector": {
+      "textures": "textures/items/collector_item"
+    },
+    "spawn_egg_relay": {
+      "textures": "textures/items/relay_item"
+    },
+    "spawn_egg_reservoir": {
+      "textures": "textures/items/reservoir_item"
     }
   }
-}
+}  

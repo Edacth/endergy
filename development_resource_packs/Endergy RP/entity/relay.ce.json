@@ -1,4 +1,4 @@
-//bridge-file-version: #2
+//bridge-file-version: #8
 {
 	"format_version": "1.10.0",
 	"minecraft:client_entity": {
@@ -17,8 +17,37 @@
 				"controller.render.default"
 			],
 			"spawn_egg": {
-				"texture": "spawn_egg",
-				"texture_index": 25
+				"texture": "spawn_egg_relay"
+			},
+			"animations": {
+				"direction_0": "animation.relay.direction_0",
+				"direction_1": "animation.relay.direction_1",
+				"direction_2": "animation.relay.direction_2",
+				"direction_3": "animation.relay.direction_3",
+				"direction_4": "animation.relay.direction_4",
+				"direction_5": "animation.relay.direction_5"
+			},
+			"scripts": {
+				"animate": [
+					{
+						"direction_0": "query.mark_variant == 0"
+					},
+					{
+						"direction_1": "query.mark_variant == 1"
+					},
+					{
+						"direction_2": "query.mark_variant == 2"
+					},
+					{
+						"direction_3": "query.mark_variant == 3"
+					},
+					{
+						"direction_4": "query.mark_variant == 4"
+					},
+					{
+						"direction_5": "query.mark_variant == 5"
+					}
+				]
 			}
 		}
 	}

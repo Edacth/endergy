@@ -1,0 +1,142 @@
+{
+	"file_path": "C:\\Users\\cadea\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_behavior_packs\\Endergy BP/loot_tables/relay_drop.loot.json",
+	"file_type": "loot_table",
+	"format_version": 1,
+	"file_uuid": "cd89ab0f_e80a_42ae_b5d7_b5ff83a33c28",
+	"file_version": 0,
+	"cache_content": {
+		"children": [
+			{
+				"open": {
+					"pools": [
+						{
+							"rolls": 1,
+							"entries": [
+								{
+									"type": "item",
+									"name": "minecraft:spawn_egg",
+									"functions": [
+										{
+											"function": "set_actor_id",
+											"id": "endergy:relay"
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				"key": "pools",
+				"array": [
+					{
+						"open": [
+							{
+								"rolls": 1,
+								"entries": [
+									{
+										"type": "item",
+										"name": "minecraft:spawn_egg",
+										"functions": [
+											{
+												"function": "set_actor_id",
+												"id": "endergy:relay"
+											}
+										]
+									}
+								]
+							}
+						],
+						"children": [
+							{
+								"data": "1",
+								"key": "rolls"
+							},
+							{
+								"open": {
+									"rolls": 1,
+									"entries": [
+										{
+											"type": "item",
+											"name": "minecraft:spawn_egg",
+											"functions": [
+												{
+													"function": "set_actor_id",
+													"id": "endergy:relay"
+												}
+											]
+										}
+									]
+								},
+								"key": "entries",
+								"array": [
+									{
+										"open": [
+											{
+												"type": "item",
+												"name": "minecraft:spawn_egg",
+												"functions": [
+													{
+														"function": "set_actor_id",
+														"id": "endergy:relay"
+													}
+												]
+											}
+										],
+										"children": [
+											{
+												"data": "item",
+												"key": "type"
+											},
+											{
+												"open": {
+													"type": "item",
+													"name": "minecraft:spawn_egg",
+													"functions": [
+														{
+															"function": "set_actor_id",
+															"id": "endergy:relay"
+														}
+													]
+												},
+												"data": "minecraft:spawn_egg",
+												"key": "name"
+											},
+											{
+												"open": {
+													"type": "item",
+													"name": "minecraft:spawn_egg",
+													"functions": [
+														{
+															"function": "set_actor_id",
+															"id": "endergy:relay"
+														}
+													]
+												},
+												"key": "functions",
+												"array": [
+													{
+														"open": [
+															{
+																"function": "set_actor_id",
+																"id": "endergy:relay"
+															}
+														],
+														"is_minified": true,
+														"children": {
+															"function": "set_actor_id",
+															"id": "endergy:relay"
+														}
+													}
+												]
+											}
+										]
+									}
+								]
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+}

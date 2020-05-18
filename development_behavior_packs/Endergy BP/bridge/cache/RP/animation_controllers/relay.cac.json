@@ -1,0 +1,1135 @@
+{
+	"file_path": "C:\\Users\\cadea\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_resource_packs\\Endergy RP/animation_controllers/relay.cac.json",
+	"file_type": "rp_animation_controller",
+	"format_version": 1,
+	"file_uuid": "cb2e9ee1_f1c0_4cc9_a1d3_4c1163b0e7f1",
+	"file_version": 0,
+	"cache_content": {
+		"children": [
+			{
+				"data": "1.10.0",
+				"key": "format_version"
+			},
+			{
+				"open": {
+					"format_version": "1.10.0",
+					"animation_controllers": {
+						"controller.animation.relay.direction": {
+							"initial_state": "default",
+							"states": {
+								"default": {
+									"transitions": [
+										{
+											"direction_0": "query.mark_variant == 0"
+										},
+										{
+											"direction_1": "query.mark_variant == 1"
+										},
+										{
+											"direction_2": "query.mark_variant == 2"
+										},
+										{
+											"direction_3": "query.mark_variant == 3"
+										},
+										{
+											"direction_4": "query.mark_variant == 4"
+										},
+										{
+											"direction_5": "query.mark_variant == 5"
+										}
+									]
+								},
+								"direction_0": {
+									"transitions": [
+										{
+											"default": "query.mark_variant != 0"
+										}
+									]
+								},
+								"direction_1": {
+									"transitions": [
+										{
+											"default": "query.mark_variant != 1"
+										}
+									]
+								},
+								"direction_2": {
+									"transitions": [
+										{
+											"default": "query.mark_variant != 2"
+										}
+									]
+								},
+								"direction_3": {
+									"transitions": [
+										{
+											"default": "query.mark_variant != 3"
+										}
+									]
+								},
+								"direction_4": {
+									"transitions": [
+										{
+											"default": "query.mark_variant != 4"
+										}
+									]
+								},
+								"direction_5": {
+									"transitions": [
+										{
+											"default": "query.mark_variant != 5"
+										}
+									]
+								}
+							}
+						}
+					}
+				},
+				"key": "animation_controllers",
+				"children": [
+					{
+						"open": {
+							"controller.animation.relay.direction": {
+								"initial_state": "default",
+								"states": {
+									"default": {
+										"transitions": [
+											{
+												"direction_0": "query.mark_variant == 0"
+											},
+											{
+												"direction_1": "query.mark_variant == 1"
+											},
+											{
+												"direction_2": "query.mark_variant == 2"
+											},
+											{
+												"direction_3": "query.mark_variant == 3"
+											},
+											{
+												"direction_4": "query.mark_variant == 4"
+											},
+											{
+												"direction_5": "query.mark_variant == 5"
+											}
+										]
+									},
+									"direction_0": {
+										"transitions": [
+											{
+												"default": "query.mark_variant != 0"
+											}
+										]
+									},
+									"direction_1": {
+										"transitions": [
+											{
+												"default": "query.mark_variant != 1"
+											}
+										]
+									},
+									"direction_2": {
+										"transitions": [
+											{
+												"default": "query.mark_variant != 2"
+											}
+										]
+									},
+									"direction_3": {
+										"transitions": [
+											{
+												"default": "query.mark_variant != 3"
+											}
+										]
+									},
+									"direction_4": {
+										"transitions": [
+											{
+												"default": "query.mark_variant != 4"
+											}
+										]
+									},
+									"direction_5": {
+										"transitions": [
+											{
+												"default": "query.mark_variant != 5"
+											}
+										]
+									}
+								}
+							}
+						},
+						"key": "controller.animation.relay.direction",
+						"children": [
+							{
+								"open": {
+									"initial_state": "default",
+									"states": {
+										"default": {
+											"transitions": [
+												{
+													"direction_0": "query.mark_variant == 0"
+												},
+												{
+													"direction_1": "query.mark_variant == 1"
+												},
+												{
+													"direction_2": "query.mark_variant == 2"
+												},
+												{
+													"direction_3": "query.mark_variant == 3"
+												},
+												{
+													"direction_4": "query.mark_variant == 4"
+												},
+												{
+													"direction_5": "query.mark_variant == 5"
+												}
+											]
+										},
+										"direction_0": {
+											"transitions": [
+												{
+													"default": "query.mark_variant != 0"
+												}
+											]
+										},
+										"direction_1": {
+											"transitions": [
+												{
+													"default": "query.mark_variant != 1"
+												}
+											]
+										},
+										"direction_2": {
+											"transitions": [
+												{
+													"default": "query.mark_variant != 2"
+												}
+											]
+										},
+										"direction_3": {
+											"transitions": [
+												{
+													"default": "query.mark_variant != 3"
+												}
+											]
+										},
+										"direction_4": {
+											"transitions": [
+												{
+													"default": "query.mark_variant != 4"
+												}
+											]
+										},
+										"direction_5": {
+											"transitions": [
+												{
+													"default": "query.mark_variant != 5"
+												}
+											]
+										}
+									}
+								},
+								"data": "default",
+								"key": "initial_state"
+							},
+							{
+								"open": {
+									"initial_state": "default",
+									"states": {
+										"default": {
+											"transitions": [
+												{
+													"direction_0": "query.mark_variant == 0"
+												},
+												{
+													"direction_1": "query.mark_variant == 1"
+												},
+												{
+													"direction_2": "query.mark_variant == 2"
+												},
+												{
+													"direction_3": "query.mark_variant == 3"
+												},
+												{
+													"direction_4": "query.mark_variant == 4"
+												},
+												{
+													"direction_5": "query.mark_variant == 5"
+												}
+											]
+										},
+										"direction_0": {
+											"transitions": [
+												{
+													"default": "query.mark_variant != 0"
+												}
+											]
+										},
+										"direction_1": {
+											"transitions": [
+												{
+													"default": "query.mark_variant != 1"
+												}
+											]
+										},
+										"direction_2": {
+											"transitions": [
+												{
+													"default": "query.mark_variant != 2"
+												}
+											]
+										},
+										"direction_3": {
+											"transitions": [
+												{
+													"default": "query.mark_variant != 3"
+												}
+											]
+										},
+										"direction_4": {
+											"transitions": [
+												{
+													"default": "query.mark_variant != 4"
+												}
+											]
+										},
+										"direction_5": {
+											"transitions": [
+												{
+													"default": "query.mark_variant != 5"
+												}
+											]
+										}
+									}
+								},
+								"key": "states",
+								"children": [
+									{
+										"open": {
+											"default": {
+												"transitions": [
+													{
+														"direction_0": "query.mark_variant == 0"
+													},
+													{
+														"direction_1": "query.mark_variant == 1"
+													},
+													{
+														"direction_2": "query.mark_variant == 2"
+													},
+													{
+														"direction_3": "query.mark_variant == 3"
+													},
+													{
+														"direction_4": "query.mark_variant == 4"
+													},
+													{
+														"direction_5": "query.mark_variant == 5"
+													}
+												]
+											},
+											"direction_0": {
+												"transitions": [
+													{
+														"default": "query.mark_variant != 0"
+													}
+												]
+											},
+											"direction_1": {
+												"transitions": [
+													{
+														"default": "query.mark_variant != 1"
+													}
+												]
+											},
+											"direction_2": {
+												"transitions": [
+													{
+														"default": "query.mark_variant != 2"
+													}
+												]
+											},
+											"direction_3": {
+												"transitions": [
+													{
+														"default": "query.mark_variant != 3"
+													}
+												]
+											},
+											"direction_4": {
+												"transitions": [
+													{
+														"default": "query.mark_variant != 4"
+													}
+												]
+											},
+											"direction_5": {
+												"transitions": [
+													{
+														"default": "query.mark_variant != 5"
+													}
+												]
+											}
+										},
+										"key": "default",
+										"children": [
+											{
+												"open": {
+													"transitions": [
+														{
+															"direction_0": "query.mark_variant == 0"
+														},
+														{
+															"direction_1": "query.mark_variant == 1"
+														},
+														{
+															"direction_2": "query.mark_variant == 2"
+														},
+														{
+															"direction_3": "query.mark_variant == 3"
+														},
+														{
+															"direction_4": "query.mark_variant == 4"
+														},
+														{
+															"direction_5": "query.mark_variant == 5"
+														}
+													]
+												},
+												"key": "transitions",
+												"array": [
+													{
+														"open": [
+															{
+																"direction_0": "query.mark_variant == 0"
+															},
+															{
+																"direction_1": "query.mark_variant == 1"
+															},
+															{
+																"direction_2": "query.mark_variant == 2"
+															},
+															{
+																"direction_3": "query.mark_variant == 3"
+															},
+															{
+																"direction_4": "query.mark_variant == 4"
+															},
+															{
+																"direction_5": "query.mark_variant == 5"
+															}
+														],
+														"is_minified": true,
+														"children": {
+															"direction_0": "query.mark_variant == 0"
+														}
+													},
+													{
+														"open": [
+															{
+																"direction_0": "query.mark_variant == 0"
+															},
+															{
+																"direction_1": "query.mark_variant == 1"
+															},
+															{
+																"direction_2": "query.mark_variant == 2"
+															},
+															{
+																"direction_3": "query.mark_variant == 3"
+															},
+															{
+																"direction_4": "query.mark_variant == 4"
+															},
+															{
+																"direction_5": "query.mark_variant == 5"
+															}
+														],
+														"is_minified": true,
+														"children": {
+															"direction_1": "query.mark_variant == 1"
+														}
+													},
+													{
+														"open": [
+															{
+																"direction_0": "query.mark_variant == 0"
+															},
+															{
+																"direction_1": "query.mark_variant == 1"
+															},
+															{
+																"direction_2": "query.mark_variant == 2"
+															},
+															{
+																"direction_3": "query.mark_variant == 3"
+															},
+															{
+																"direction_4": "query.mark_variant == 4"
+															},
+															{
+																"direction_5": "query.mark_variant == 5"
+															}
+														],
+														"is_minified": true,
+														"children": {
+															"direction_2": "query.mark_variant == 2"
+														}
+													},
+													{
+														"open": [
+															{
+																"direction_0": "query.mark_variant == 0"
+															},
+															{
+																"direction_1": "query.mark_variant == 1"
+															},
+															{
+																"direction_2": "query.mark_variant == 2"
+															},
+															{
+																"direction_3": "query.mark_variant == 3"
+															},
+															{
+																"direction_4": "query.mark_variant == 4"
+															},
+															{
+																"direction_5": "query.mark_variant == 5"
+															}
+														],
+														"is_minified": true,
+														"children": {
+															"direction_3": "query.mark_variant == 3"
+														}
+													},
+													{
+														"open": [
+															{
+																"direction_0": "query.mark_variant == 0"
+															},
+															{
+																"direction_1": "query.mark_variant == 1"
+															},
+															{
+																"direction_2": "query.mark_variant == 2"
+															},
+															{
+																"direction_3": "query.mark_variant == 3"
+															},
+															{
+																"direction_4": "query.mark_variant == 4"
+															},
+															{
+																"direction_5": "query.mark_variant == 5"
+															}
+														],
+														"is_minified": true,
+														"children": {
+															"direction_4": "query.mark_variant == 4"
+														}
+													},
+													{
+														"open": [
+															{
+																"direction_0": "query.mark_variant == 0"
+															},
+															{
+																"direction_1": "query.mark_variant == 1"
+															},
+															{
+																"direction_2": "query.mark_variant == 2"
+															},
+															{
+																"direction_3": "query.mark_variant == 3"
+															},
+															{
+																"direction_4": "query.mark_variant == 4"
+															},
+															{
+																"direction_5": "query.mark_variant == 5"
+															}
+														],
+														"is_minified": true,
+														"children": {
+															"direction_5": "query.mark_variant == 5"
+														}
+													}
+												]
+											}
+										]
+									},
+									{
+										"open": {
+											"default": {
+												"transitions": [
+													{
+														"direction_0": "query.mark_variant == 0"
+													},
+													{
+														"direction_1": "query.mark_variant == 1"
+													},
+													{
+														"direction_2": "query.mark_variant == 2"
+													},
+													{
+														"direction_3": "query.mark_variant == 3"
+													},
+													{
+														"direction_4": "query.mark_variant == 4"
+													},
+													{
+														"direction_5": "query.mark_variant == 5"
+													}
+												]
+											},
+											"direction_0": {
+												"transitions": [
+													{
+														"default": "query.mark_variant != 0"
+													}
+												]
+											},
+											"direction_1": {
+												"transitions": [
+													{
+														"default": "query.mark_variant != 1"
+													}
+												]
+											},
+											"direction_2": {
+												"transitions": [
+													{
+														"default": "query.mark_variant != 2"
+													}
+												]
+											},
+											"direction_3": {
+												"transitions": [
+													{
+														"default": "query.mark_variant != 3"
+													}
+												]
+											},
+											"direction_4": {
+												"transitions": [
+													{
+														"default": "query.mark_variant != 4"
+													}
+												]
+											},
+											"direction_5": {
+												"transitions": [
+													{
+														"default": "query.mark_variant != 5"
+													}
+												]
+											}
+										},
+										"key": "direction_0",
+										"children": [
+											{
+												"open": {
+													"transitions": [
+														{
+															"default": "query.mark_variant != 0"
+														}
+													]
+												},
+												"key": "transitions",
+												"array": [
+													{
+														"open": [
+															{
+																"default": "query.mark_variant != 0"
+															}
+														],
+														"is_minified": true,
+														"children": {
+															"default": "query.mark_variant != 0"
+														}
+													}
+												]
+											}
+										]
+									},
+									{
+										"open": {
+											"default": {
+												"transitions": [
+													{
+														"direction_0": "query.mark_variant == 0"
+													},
+													{
+														"direction_1": "query.mark_variant == 1"
+													},
+													{
+														"direction_2": "query.mark_variant == 2"
+													},
+													{
+														"direction_3": "query.mark_variant == 3"
+													},
+													{
+														"direction_4": "query.mark_variant == 4"
+													},
+													{
+														"direction_5": "query.mark_variant == 5"
+													}
+												]
+											},
+											"direction_0": {
+												"transitions": [
+													{
+														"default": "query.mark_variant != 0"
+													}
+												]
+											},
+											"direction_1": {
+												"transitions": [
+													{
+														"default": "query.mark_variant != 1"
+													}
+												]
+											},
+											"direction_2": {
+												"transitions": [
+													{
+														"default": "query.mark_variant != 2"
+													}
+												]
+											},
+											"direction_3": {
+												"transitions": [
+													{
+														"default": "query.mark_variant != 3"
+													}
+												]
+											},
+											"direction_4": {
+												"transitions": [
+													{
+														"default": "query.mark_variant != 4"
+													}
+												]
+											},
+											"direction_5": {
+												"transitions": [
+													{
+														"default": "query.mark_variant != 5"
+													}
+												]
+											}
+										},
+										"key": "direction_1",
+										"children": [
+											{
+												"open": {
+													"transitions": [
+														{
+															"default": "query.mark_variant != 1"
+														}
+													]
+												},
+												"key": "transitions",
+												"array": [
+													{
+														"open": [
+															{
+																"default": "query.mark_variant != 1"
+															}
+														],
+														"is_minified": true,
+														"children": {
+															"default": "query.mark_variant != 1"
+														}
+													}
+												]
+											}
+										]
+									},
+									{
+										"open": {
+											"default": {
+												"transitions": [
+													{
+														"direction_0": "query.mark_variant == 0"
+													},
+													{
+														"direction_1": "query.mark_variant == 1"
+													},
+													{
+														"direction_2": "query.mark_variant == 2"
+													},
+													{
+														"direction_3": "query.mark_variant == 3"
+													},
+													{
+														"direction_4": "query.mark_variant == 4"
+													},
+													{
+														"direction_5": "query.mark_variant == 5"
+													}
+												]
+											},
+											"direction_0": {
+												"transitions": [
+													{
+														"default": "query.mark_variant != 0"
+													}
+												]
+											},
+											"direction_1": {
+												"transitions": [
+													{
+														"default": "query.mark_variant != 1"
+													}
+												]
+											},
+											"direction_2": {
+												"transitions": [
+													{
+														"default": "query.mark_variant != 2"
+													}
+												]
+											},
+											"direction_3": {
+												"transitions": [
+													{
+														"default": "query.mark_variant != 3"
+													}
+												]
+											},
+											"direction_4": {
+												"transitions": [
+													{
+														"default": "query.mark_variant != 4"
+													}
+												]
+											},
+											"direction_5": {
+												"transitions": [
+													{
+														"default": "query.mark_variant != 5"
+													}
+												]
+											}
+										},
+										"key": "direction_2",
+										"children": [
+											{
+												"open": {
+													"transitions": [
+														{
+															"default": "query.mark_variant != 2"
+														}
+													]
+												},
+												"key": "transitions",
+												"array": [
+													{
+														"open": [
+															{
+																"default": "query.mark_variant != 2"
+															}
+														],
+														"is_minified": true,
+														"children": {
+															"default": "query.mark_variant != 2"
+														}
+													}
+												]
+											}
+										]
+									},
+									{
+										"open": {
+											"default": {
+												"transitions": [
+													{
+														"direction_0": "query.mark_variant == 0"
+													},
+													{
+														"direction_1": "query.mark_variant == 1"
+													},
+													{
+														"direction_2": "query.mark_variant == 2"
+													},
+													{
+														"direction_3": "query.mark_variant == 3"
+													},
+													{
+														"direction_4": "query.mark_variant == 4"
+													},
+													{
+														"direction_5": "query.mark_variant == 5"
+													}
+												]
+											},
+											"direction_0": {
+												"transitions": [
+													{
+														"default": "query.mark_variant != 0"
+													}
+												]
+											},
+											"direction_1": {
+												"transitions": [
+													{
+														"default": "query.mark_variant != 1"
+													}
+												]
+											},
+											"direction_2": {
+												"transitions": [
+													{
+														"default": "query.mark_variant != 2"
+													}
+												]
+											},
+											"direction_3": {
+												"transitions": [
+													{
+														"default": "query.mark_variant != 3"
+													}
+												]
+											},
+											"direction_4": {
+												"transitions": [
+													{
+														"default": "query.mark_variant != 4"
+													}
+												]
+											},
+											"direction_5": {
+												"transitions": [
+													{
+														"default": "query.mark_variant != 5"
+													}
+												]
+											}
+										},
+										"key": "direction_3",
+										"children": [
+											{
+												"open": {
+													"transitions": [
+														{
+															"default": "query.mark_variant != 3"
+														}
+													]
+												},
+												"key": "transitions",
+												"array": [
+													{
+														"open": [
+															{
+																"default": "query.mark_variant != 3"
+															}
+														],
+														"is_minified": true,
+														"children": {
+															"default": "query.mark_variant != 3"
+														}
+													}
+												]
+											}
+										]
+									},
+									{
+										"open": {
+											"default": {
+												"transitions": [
+													{
+														"direction_0": "query.mark_variant == 0"
+													},
+													{
+														"direction_1": "query.mark_variant == 1"
+													},
+													{
+														"direction_2": "query.mark_variant == 2"
+													},
+													{
+														"direction_3": "query.mark_variant == 3"
+													},
+													{
+														"direction_4": "query.mark_variant == 4"
+													},
+													{
+														"direction_5": "query.mark_variant == 5"
+													}
+												]
+											},
+											"direction_0": {
+												"transitions": [
+													{
+														"default": "query.mark_variant != 0"
+													}
+												]
+											},
+											"direction_1": {
+												"transitions": [
+													{
+														"default": "query.mark_variant != 1"
+													}
+												]
+											},
+											"direction_2": {
+												"transitions": [
+													{
+														"default": "query.mark_variant != 2"
+													}
+												]
+											},
+											"direction_3": {
+												"transitions": [
+													{
+														"default": "query.mark_variant != 3"
+													}
+												]
+											},
+											"direction_4": {
+												"transitions": [
+													{
+														"default": "query.mark_variant != 4"
+													}
+												]
+											},
+											"direction_5": {
+												"transitions": [
+													{
+														"default": "query.mark_variant != 5"
+													}
+												]
+											}
+										},
+										"key": "direction_4",
+										"children": [
+											{
+												"open": {
+													"transitions": [
+														{
+															"default": "query.mark_variant != 4"
+														}
+													]
+												},
+												"key": "transitions",
+												"array": [
+													{
+														"open": [
+															{
+																"default": "query.mark_variant != 4"
+															}
+														],
+														"is_minified": true,
+														"children": {
+															"default": "query.mark_variant != 4"
+														}
+													}
+												]
+											}
+										]
+									},
+									{
+										"open": {
+											"default": {
+												"transitions": [
+													{
+														"direction_0": "query.mark_variant == 0"
+													},
+													{
+														"direction_1": "query.mark_variant == 1"
+													},
+													{
+														"direction_2": "query.mark_variant == 2"
+													},
+													{
+														"direction_3": "query.mark_variant == 3"
+													},
+													{
+														"direction_4": "query.mark_variant == 4"
+													},
+													{
+														"direction_5": "query.mark_variant == 5"
+													}
+												]
+											},
+											"direction_0": {
+												"transitions": [
+													{
+														"default": "query.mark_variant != 0"
+													}
+												]
+											},
+											"direction_1": {
+												"transitions": [
+													{
+														"default": "query.mark_variant != 1"
+													}
+												]
+											},
+											"direction_2": {
+												"transitions": [
+													{
+														"default": "query.mark_variant != 2"
+													}
+												]
+											},
+											"direction_3": {
+												"transitions": [
+													{
+														"default": "query.mark_variant != 3"
+													}
+												]
+											},
+											"direction_4": {
+												"transitions": [
+													{
+														"default": "query.mark_variant != 4"
+													}
+												]
+											},
+											"direction_5": {
+												"transitions": [
+													{
+														"default": "query.mark_variant != 5"
+													}
+												]
+											}
+										},
+										"key": "direction_5",
+										"children": [
+											{
+												"open": {
+													"transitions": [
+														{
+															"default": "query.mark_variant != 5"
+														}
+													]
+												},
+												"key": "transitions",
+												"array": [
+													{
+														"open": [
+															{
+																"default": "query.mark_variant != 5"
+															}
+														],
+														"is_minified": true,
+														"children": {
+															"default": "query.mark_variant != 5"
+														}
+													}
+												]
+											}
+										]
+									}
+								]
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+}

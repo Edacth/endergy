@@ -1,4 +1,4 @@
-//bridge-file-version: #8
+//bridge-file-version: #9
 {
 	"format_version": "1.8.0",
 	"minecraft:client_entity": {
@@ -17,8 +17,7 @@
 				"controller.render.default"
 			],
 			"spawn_egg": {
-				"texture": "spawn_egg",
-				"texture_index": 25
+				"texture": "spawn_egg_collector"
 			}
 		}
 	}

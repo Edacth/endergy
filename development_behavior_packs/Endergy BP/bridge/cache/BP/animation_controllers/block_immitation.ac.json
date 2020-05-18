@@ -1,0 +1,105 @@
+{
+	"file_path": "C:\\Users\\cadea\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_behavior_packs\\Endergy BP/animation_controllers/block_immitation.ac.json",
+	"file_type": "animation_controller",
+	"format_version": 1,
+	"file_uuid": "983ad14e_70aa_42d3_bbcc_b3f2f780e336",
+	"file_version": 1,
+	"cache_content": {
+		"children": [
+			{
+				"data": "1.10.0",
+				"key": "format_version"
+			},
+			{
+				"open": {
+					"format_version": "1.10.0",
+					"animation_controllers": {
+						"controller.animation.block_immitation.init": {
+							"initial_state": "default",
+							"states": {
+								"default": {
+									"on_entry": [
+										"/function block_immitation/init"
+									]
+								}
+							}
+						}
+					}
+				},
+				"key": "animation_controllers",
+				"children": [
+					{
+						"open": {
+							"controller.animation.block_immitation.init": {
+								"initial_state": "default",
+								"states": {
+									"default": {
+										"on_entry": [
+											"/function block_immitation/init"
+										]
+									}
+								}
+							}
+						},
+						"key": "controller.animation.block_immitation.init",
+						"children": [
+							{
+								"open": {
+									"initial_state": "default",
+									"states": {
+										"default": {
+											"on_entry": [
+												"/function block_immitation/init"
+											]
+										}
+									}
+								},
+								"data": "default",
+								"key": "initial_state"
+							},
+							{
+								"open": {
+									"initial_state": "default",
+									"states": {
+										"default": {
+											"on_entry": [
+												"/function block_immitation/init"
+											]
+										}
+									}
+								},
+								"key": "states",
+								"children": [
+									{
+										"open": {
+											"default": {
+												"on_entry": [
+													"/function block_immitation/init"
+												]
+											}
+										},
+										"key": "default",
+										"children": [
+											{
+												"open": {
+													"on_entry": [
+														"/function block_immitation/init"
+													]
+												},
+												"key": "on_entry",
+												"is_minified": true,
+												"array": [
+													"/function block_immitation/init"
+												]
+											}
+										]
+									}
+								]
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+}

@@ -9,17 +9,36 @@
 			"ids": [
 				"controller.animation.entermite.skin_id_triggers"
 			]
+		},
+		"BP/animation_controllers/block_immitation.ac.json": {
+			"ids": [
+				"controller.animation.block_immitation.init"
+			]
+		},
+		"BP/animation_controllers/relay.ac.json": {
+			"ids": [
+				"controller.animation.relay.direction"
+			]
+		},
+		"BP/animation_controllers/player.ac.json": {
+			"ids": [
+				"controller.animation.player.scoreboard_init"
+			]
 		}
 	},
 	"entity": {
 		"BP/entities/collector.e.json": {
 			"events": [],
-			"custom_components": [],
+			"custom_components": [
+				"endergy:block_immitation"
+			],
 			"bridge_core_tags": [],
 			"identifiers": [
 				"endergy:collector"
 			],
-			"animation_references": [],
+			"animation_references": [
+				"block_immitation.init"
+			],
 			"families": []
 		},
 		"BP/entities/endermite.e.json": {
@@ -55,19 +74,29 @@
 			"identifiers": [
 				"minecraft:player"
 			],
-			"animation_references": [],
+			"animation_references": [
+				"scoreboard_init"
+			],
 			"families": [
 				"player"
 			]
 		},
 		"BP/entities/relay.e.json": {
-			"events": [],
-			"custom_components": [],
+			"events": [
+				"minecraft:entity_spawned",
+				"endergy:rotate"
+			],
+			"custom_components": [
+				"endergy:block_immitation"
+			],
 			"bridge_core_tags": [],
 			"identifiers": [
 				"endergy:relay"
 			],
-			"animation_references": [],
+			"animation_references": [
+				"block_immitation.init",
+				"relay_direction"
+			],
 			"families": []
 		},
 		"BP/tags/block_immitation.json": {
@@ -223,6 +252,16 @@
 		},
 		"BP/ner BP/entities/misc/spawning_demo.json": {
 			"custom_components": []
+		},
+		"BP/entities/endergy_pulse.json": {
+			"events": [],
+			"custom_components": [],
+			"bridge_core_tags": [],
+			"identifiers": [
+				"endergy:endergy_pulse"
+			],
+			"animation_references": [],
+			"families": []
 		}
 	},
 	"item": {
@@ -258,7 +297,14 @@
 				"endergy:relay"
 			],
 			"particle_references": [],
-			"animation_references": [],
+			"animation_references": [
+				"direction_0",
+				"direction_1",
+				"direction_2",
+				"direction_3",
+				"direction_4",
+				"direction_5"
+			],
 			"sound_references": [],
 			"texture_references": [
 				"default"
@@ -290,6 +336,13 @@
 		"RP/render_controllers/default.rc.json": {
 			"ids": [
 				"controller.render.default"
+			]
+		}
+	},
+	"rp_animation_controller": {
+		"RP/animation_controllers/relay.cac.json": {
+			"ids": [
+				"controller.animation.relay.direction"
 			]
 		}
 	}

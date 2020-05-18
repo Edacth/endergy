@@ -3,7 +3,7 @@
 	"file_type": "client_entity",
 	"format_version": 1,
 	"file_uuid": "055b550a_46e3_4c67_ba4c_80606b36b3f6",
-	"file_version": 2,
+	"file_version": 8,
 	"cache_content": {
 		"children": [
 			{
@@ -29,8 +29,37 @@
 								"controller.render.default"
 							],
 							"spawn_egg": {
-								"texture": "spawn_egg",
-								"texture_index": 25
+								"texture": "spawn_egg_relay"
+							},
+							"animations": {
+								"direction_0": "animation.relay.direction_0",
+								"direction_1": "animation.relay.direction_1",
+								"direction_2": "animation.relay.direction_2",
+								"direction_3": "animation.relay.direction_3",
+								"direction_4": "animation.relay.direction_4",
+								"direction_5": "animation.relay.direction_5"
+							},
+							"scripts": {
+								"animate": [
+									{
+										"direction_0": "query.mark_variant == 0"
+									},
+									{
+										"direction_1": "query.mark_variant == 1"
+									},
+									{
+										"direction_2": "query.mark_variant == 2"
+									},
+									{
+										"direction_3": "query.mark_variant == 3"
+									},
+									{
+										"direction_4": "query.mark_variant == 4"
+									},
+									{
+										"direction_5": "query.mark_variant == 5"
+									}
+								]
 							}
 						}
 					}
@@ -54,8 +83,37 @@
 									"controller.render.default"
 								],
 								"spawn_egg": {
-									"texture": "spawn_egg",
-									"texture_index": 25
+									"texture": "spawn_egg_relay"
+								},
+								"animations": {
+									"direction_0": "animation.relay.direction_0",
+									"direction_1": "animation.relay.direction_1",
+									"direction_2": "animation.relay.direction_2",
+									"direction_3": "animation.relay.direction_3",
+									"direction_4": "animation.relay.direction_4",
+									"direction_5": "animation.relay.direction_5"
+								},
+								"scripts": {
+									"animate": [
+										{
+											"direction_0": "query.mark_variant == 0"
+										},
+										{
+											"direction_1": "query.mark_variant == 1"
+										},
+										{
+											"direction_2": "query.mark_variant == 2"
+										},
+										{
+											"direction_3": "query.mark_variant == 3"
+										},
+										{
+											"direction_4": "query.mark_variant == 4"
+										},
+										{
+											"direction_5": "query.mark_variant == 5"
+										}
+									]
 								}
 							}
 						},
@@ -81,8 +139,37 @@
 										"controller.render.default"
 									],
 									"spawn_egg": {
-										"texture": "spawn_egg",
-										"texture_index": 25
+										"texture": "spawn_egg_relay"
+									},
+									"animations": {
+										"direction_0": "animation.relay.direction_0",
+										"direction_1": "animation.relay.direction_1",
+										"direction_2": "animation.relay.direction_2",
+										"direction_3": "animation.relay.direction_3",
+										"direction_4": "animation.relay.direction_4",
+										"direction_5": "animation.relay.direction_5"
+									},
+									"scripts": {
+										"animate": [
+											{
+												"direction_0": "query.mark_variant == 0"
+											},
+											{
+												"direction_1": "query.mark_variant == 1"
+											},
+											{
+												"direction_2": "query.mark_variant == 2"
+											},
+											{
+												"direction_3": "query.mark_variant == 3"
+											},
+											{
+												"direction_4": "query.mark_variant == 4"
+											},
+											{
+												"direction_5": "query.mark_variant == 5"
+											}
+										]
 									}
 								},
 								"key": "materials",
@@ -107,8 +194,37 @@
 										"controller.render.default"
 									],
 									"spawn_egg": {
-										"texture": "spawn_egg",
-										"texture_index": 25
+										"texture": "spawn_egg_relay"
+									},
+									"animations": {
+										"direction_0": "animation.relay.direction_0",
+										"direction_1": "animation.relay.direction_1",
+										"direction_2": "animation.relay.direction_2",
+										"direction_3": "animation.relay.direction_3",
+										"direction_4": "animation.relay.direction_4",
+										"direction_5": "animation.relay.direction_5"
+									},
+									"scripts": {
+										"animate": [
+											{
+												"direction_0": "query.mark_variant == 0"
+											},
+											{
+												"direction_1": "query.mark_variant == 1"
+											},
+											{
+												"direction_2": "query.mark_variant == 2"
+											},
+											{
+												"direction_3": "query.mark_variant == 3"
+											},
+											{
+												"direction_4": "query.mark_variant == 4"
+											},
+											{
+												"direction_5": "query.mark_variant == 5"
+											}
+										]
 									}
 								},
 								"key": "textures",
@@ -133,8 +249,37 @@
 										"controller.render.default"
 									],
 									"spawn_egg": {
-										"texture": "spawn_egg",
-										"texture_index": 25
+										"texture": "spawn_egg_relay"
+									},
+									"animations": {
+										"direction_0": "animation.relay.direction_0",
+										"direction_1": "animation.relay.direction_1",
+										"direction_2": "animation.relay.direction_2",
+										"direction_3": "animation.relay.direction_3",
+										"direction_4": "animation.relay.direction_4",
+										"direction_5": "animation.relay.direction_5"
+									},
+									"scripts": {
+										"animate": [
+											{
+												"direction_0": "query.mark_variant == 0"
+											},
+											{
+												"direction_1": "query.mark_variant == 1"
+											},
+											{
+												"direction_2": "query.mark_variant == 2"
+											},
+											{
+												"direction_3": "query.mark_variant == 3"
+											},
+											{
+												"direction_4": "query.mark_variant == 4"
+											},
+											{
+												"direction_5": "query.mark_variant == 5"
+											}
+										]
 									}
 								},
 								"key": "geometry",
@@ -159,8 +304,37 @@
 										"controller.render.default"
 									],
 									"spawn_egg": {
-										"texture": "spawn_egg",
-										"texture_index": 25
+										"texture": "spawn_egg_relay"
+									},
+									"animations": {
+										"direction_0": "animation.relay.direction_0",
+										"direction_1": "animation.relay.direction_1",
+										"direction_2": "animation.relay.direction_2",
+										"direction_3": "animation.relay.direction_3",
+										"direction_4": "animation.relay.direction_4",
+										"direction_5": "animation.relay.direction_5"
+									},
+									"scripts": {
+										"animate": [
+											{
+												"direction_0": "query.mark_variant == 0"
+											},
+											{
+												"direction_1": "query.mark_variant == 1"
+											},
+											{
+												"direction_2": "query.mark_variant == 2"
+											},
+											{
+												"direction_3": "query.mark_variant == 3"
+											},
+											{
+												"direction_4": "query.mark_variant == 4"
+											},
+											{
+												"direction_5": "query.mark_variant == 5"
+											}
+										]
 									}
 								},
 								"key": "render_controllers",
@@ -185,16 +359,340 @@
 										"controller.render.default"
 									],
 									"spawn_egg": {
-										"texture": "spawn_egg",
-										"texture_index": 25
+										"texture": "spawn_egg_relay"
+									},
+									"animations": {
+										"direction_0": "animation.relay.direction_0",
+										"direction_1": "animation.relay.direction_1",
+										"direction_2": "animation.relay.direction_2",
+										"direction_3": "animation.relay.direction_3",
+										"direction_4": "animation.relay.direction_4",
+										"direction_5": "animation.relay.direction_5"
+									},
+									"scripts": {
+										"animate": [
+											{
+												"direction_0": "query.mark_variant == 0"
+											},
+											{
+												"direction_1": "query.mark_variant == 1"
+											},
+											{
+												"direction_2": "query.mark_variant == 2"
+											},
+											{
+												"direction_3": "query.mark_variant == 3"
+											},
+											{
+												"direction_4": "query.mark_variant == 4"
+											},
+											{
+												"direction_5": "query.mark_variant == 5"
+											}
+										]
 									}
 								},
 								"key": "spawn_egg",
 								"is_minified": true,
 								"children": {
-									"texture": "spawn_egg",
-									"texture_index": 25
+									"texture": "spawn_egg_relay"
 								}
+							},
+							{
+								"open": {
+									"identifier": "endergy:relay",
+									"materials": {
+										"default": "villager"
+									},
+									"textures": {
+										"default": "textures/entity/relay_entity"
+									},
+									"geometry": {
+										"default": "geometry.relay"
+									},
+									"render_controllers": [
+										"controller.render.default"
+									],
+									"spawn_egg": {
+										"texture": "spawn_egg_relay"
+									},
+									"animations": {
+										"direction_0": "animation.relay.direction_0",
+										"direction_1": "animation.relay.direction_1",
+										"direction_2": "animation.relay.direction_2",
+										"direction_3": "animation.relay.direction_3",
+										"direction_4": "animation.relay.direction_4",
+										"direction_5": "animation.relay.direction_5"
+									},
+									"scripts": {
+										"animate": [
+											{
+												"direction_0": "query.mark_variant == 0"
+											},
+											{
+												"direction_1": "query.mark_variant == 1"
+											},
+											{
+												"direction_2": "query.mark_variant == 2"
+											},
+											{
+												"direction_3": "query.mark_variant == 3"
+											},
+											{
+												"direction_4": "query.mark_variant == 4"
+											},
+											{
+												"direction_5": "query.mark_variant == 5"
+											}
+										]
+									}
+								},
+								"key": "animations",
+								"is_minified": true,
+								"children": {
+									"direction_0": "animation.relay.direction_0",
+									"direction_1": "animation.relay.direction_1",
+									"direction_2": "animation.relay.direction_2",
+									"direction_3": "animation.relay.direction_3",
+									"direction_4": "animation.relay.direction_4",
+									"direction_5": "animation.relay.direction_5"
+								}
+							},
+							{
+								"open": {
+									"identifier": "endergy:relay",
+									"materials": {
+										"default": "villager"
+									},
+									"textures": {
+										"default": "textures/entity/relay_entity"
+									},
+									"geometry": {
+										"default": "geometry.relay"
+									},
+									"render_controllers": [
+										"controller.render.default"
+									],
+									"spawn_egg": {
+										"texture": "spawn_egg_relay"
+									},
+									"animations": {
+										"direction_0": "animation.relay.direction_0",
+										"direction_1": "animation.relay.direction_1",
+										"direction_2": "animation.relay.direction_2",
+										"direction_3": "animation.relay.direction_3",
+										"direction_4": "animation.relay.direction_4",
+										"direction_5": "animation.relay.direction_5"
+									},
+									"scripts": {
+										"animate": [
+											{
+												"direction_0": "query.mark_variant == 0"
+											},
+											{
+												"direction_1": "query.mark_variant == 1"
+											},
+											{
+												"direction_2": "query.mark_variant == 2"
+											},
+											{
+												"direction_3": "query.mark_variant == 3"
+											},
+											{
+												"direction_4": "query.mark_variant == 4"
+											},
+											{
+												"direction_5": "query.mark_variant == 5"
+											}
+										]
+									}
+								},
+								"key": "scripts",
+								"children": [
+									{
+										"open": {
+											"animate": [
+												{
+													"direction_0": "query.mark_variant == 0"
+												},
+												{
+													"direction_1": "query.mark_variant == 1"
+												},
+												{
+													"direction_2": "query.mark_variant == 2"
+												},
+												{
+													"direction_3": "query.mark_variant == 3"
+												},
+												{
+													"direction_4": "query.mark_variant == 4"
+												},
+												{
+													"direction_5": "query.mark_variant == 5"
+												}
+											]
+										},
+										"key": "animate",
+										"array": [
+											{
+												"open": [
+													{
+														"direction_0": "query.mark_variant == 0"
+													},
+													{
+														"direction_1": "query.mark_variant == 1"
+													},
+													{
+														"direction_2": "query.mark_variant == 2"
+													},
+													{
+														"direction_3": "query.mark_variant == 3"
+													},
+													{
+														"direction_4": "query.mark_variant == 4"
+													},
+													{
+														"direction_5": "query.mark_variant == 5"
+													}
+												],
+												"is_minified": true,
+												"children": {
+													"direction_0": "query.mark_variant == 0"
+												}
+											},
+											{
+												"open": [
+													{
+														"direction_0": "query.mark_variant == 0"
+													},
+													{
+														"direction_1": "query.mark_variant == 1"
+													},
+													{
+														"direction_2": "query.mark_variant == 2"
+													},
+													{
+														"direction_3": "query.mark_variant == 3"
+													},
+													{
+														"direction_4": "query.mark_variant == 4"
+													},
+													{
+														"direction_5": "query.mark_variant == 5"
+													}
+												],
+												"is_minified": true,
+												"children": {
+													"direction_1": "query.mark_variant == 1"
+												}
+											},
+											{
+												"open": [
+													{
+														"direction_0": "query.mark_variant == 0"
+													},
+													{
+														"direction_1": "query.mark_variant == 1"
+													},
+													{
+														"direction_2": "query.mark_variant == 2"
+													},
+													{
+														"direction_3": "query.mark_variant == 3"
+													},
+													{
+														"direction_4": "query.mark_variant == 4"
+													},
+													{
+														"direction_5": "query.mark_variant == 5"
+													}
+												],
+												"is_minified": true,
+												"children": {
+													"direction_2": "query.mark_variant == 2"
+												}
+											},
+											{
+												"open": [
+													{
+														"direction_0": "query.mark_variant == 0"
+													},
+													{
+														"direction_1": "query.mark_variant == 1"
+													},
+													{
+														"direction_2": "query.mark_variant == 2"
+													},
+													{
+														"direction_3": "query.mark_variant == 3"
+													},
+													{
+														"direction_4": "query.mark_variant == 4"
+													},
+													{
+														"direction_5": "query.mark_variant == 5"
+													}
+												],
+												"is_minified": true,
+												"children": {
+													"direction_3": "query.mark_variant == 3"
+												}
+											},
+											{
+												"open": [
+													{
+														"direction_0": "query.mark_variant == 0"
+													},
+													{
+														"direction_1": "query.mark_variant == 1"
+													},
+													{
+														"direction_2": "query.mark_variant == 2"
+													},
+													{
+														"direction_3": "query.mark_variant == 3"
+													},
+													{
+														"direction_4": "query.mark_variant == 4"
+													},
+													{
+														"direction_5": "query.mark_variant == 5"
+													}
+												],
+												"is_minified": true,
+												"children": {
+													"direction_4": "query.mark_variant == 4"
+												}
+											},
+											{
+												"open": [
+													{
+														"direction_0": "query.mark_variant == 0"
+													},
+													{
+														"direction_1": "query.mark_variant == 1"
+													},
+													{
+														"direction_2": "query.mark_variant == 2"
+													},
+													{
+														"direction_3": "query.mark_variant == 3"
+													},
+													{
+														"direction_4": "query.mark_variant == 4"
+													},
+													{
+														"direction_5": "query.mark_variant == 5"
+													}
+												],
+												"is_minified": true,
+												"children": {
+													"direction_5": "query.mark_variant == 5"
+												}
+											}
+										]
+									}
+								]
 							}
 						]
 					}

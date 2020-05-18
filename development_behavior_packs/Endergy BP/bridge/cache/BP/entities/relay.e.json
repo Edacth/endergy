@@ -3,7 +3,7 @@
 	"file_type": "entity",
 	"format_version": 1,
 	"file_uuid": "ed9a0660_9357_4833_a12e_0df3d7e39069",
-	"file_version": 6,
+	"file_version": 28,
 	"cache_content": {
 		"children": [
 			{
@@ -17,16 +17,206 @@
 						"description": {
 							"identifier": "endergy:relay",
 							"is_summonable": true,
-							"is_spawnable": true
+							"is_spawnable": true,
+							"animations": {
+								"block_immitation.init": "controller.animation.block_immitation.init",
+								"relay_direction": "controller.animation.relay.direction"
+							},
+							"scripts": {
+								"animate": [
+									{
+										"block_immitation.init": "(1.0)"
+									},
+									{
+										"relay_direction": "(1.0)"
+									}
+								]
+							}
 						},
-						"component_groups": {},
+						"component_groups": {
+							"endergy:direction_0": {
+								"minecraft:mark_variant": {
+									"value": 0
+								}
+							},
+							"endergy:direction_1": {
+								"minecraft:mark_variant": {
+									"value": 1
+								}
+							},
+							"endergy:direction_2": {
+								"minecraft:mark_variant": {
+									"value": 2
+								}
+							},
+							"endergy:direction_3": {
+								"minecraft:mark_variant": {
+									"value": 3
+								}
+							},
+							"endergy:direction_4": {
+								"minecraft:mark_variant": {
+									"value": 4
+								}
+							},
+							"endergy:direction_5": {
+								"minecraft:mark_variant": {
+									"value": 5
+								}
+							}
+						},
 						"components": {
 							"minecraft:collision_box": {
 								"width": 0.6,
 								"height": 0.6
+							},
+							"endergy:block_immitation": {},
+							"minecraft:loot": {
+								"table": "loot_tables/relay_egg.loot.json"
+							},
+							"minecraft:interact": {
+								"interactions": [
+									{
+										"on_interact": {
+											"event": "endergy:rotate"
+										}
+									}
+								]
 							}
 						},
-						"events": {}
+						"events": {
+							"minecraft:entity_spawned": {
+								"add": {
+									"component_groups": [
+										"endergy:direction_0"
+									]
+								}
+							},
+							"endergy:rotate": {
+								"sequence": [
+									{
+										"filters": {
+											"all_of": [
+												{
+													"test": "is_mark_variant",
+													"value": 0
+												}
+											]
+										},
+										"add": {
+											"component_groups": [
+												"endergy:direction_1"
+											]
+										},
+										"remove": {
+											"component_groups": [
+												"endergy:direction_0"
+											]
+										}
+									},
+									{
+										"filters": {
+											"all_of": [
+												{
+													"test": "is_mark_variant",
+													"value": 1
+												}
+											]
+										},
+										"add": {
+											"component_groups": [
+												"endergy:direction_2"
+											]
+										},
+										"remove": {
+											"component_groups": [
+												"endergy:direction_1"
+											]
+										}
+									},
+									{
+										"filters": {
+											"all_of": [
+												{
+													"test": "is_mark_variant",
+													"value": 2
+												}
+											]
+										},
+										"add": {
+											"component_groups": [
+												"endergy:direction_3"
+											]
+										},
+										"remove": {
+											"component_groups": [
+												"endergy:direction_2"
+											]
+										}
+									},
+									{
+										"filters": {
+											"all_of": [
+												{
+													"test": "is_mark_variant",
+													"value": 3
+												}
+											]
+										},
+										"add": {
+											"component_groups": [
+												"endergy:direction_4"
+											]
+										},
+										"remove": {
+											"component_groups": [
+												"endergy:direction_3"
+											]
+										}
+									},
+									{
+										"filters": {
+											"all_of": [
+												{
+													"test": "is_mark_variant",
+													"value": 4
+												}
+											]
+										},
+										"add": {
+											"component_groups": [
+												"endergy:direction_5"
+											]
+										},
+										"remove": {
+											"component_groups": [
+												"endergy:direction_4"
+											]
+										}
+									},
+									{
+										"filters": {
+											"all_of": [
+												{
+													"test": "is_mark_variant",
+													"value": 5
+												}
+											]
+										},
+										"add": {
+											"component_groups": [
+												"endergy:direction_0"
+											]
+										},
+										"remove": {
+											"component_groups": [
+												"endergy:direction_5"
+											]
+										}
+									}
+								]
+							}
+						}
 					}
 				},
 				"key": "minecraft:entity",
@@ -36,89 +226,3064 @@
 							"description": {
 								"identifier": "endergy:relay",
 								"is_summonable": true,
-								"is_spawnable": true
+								"is_spawnable": true,
+								"animations": {
+									"block_immitation.init": "controller.animation.block_immitation.init",
+									"relay_direction": "controller.animation.relay.direction"
+								},
+								"scripts": {
+									"animate": [
+										{
+											"block_immitation.init": "(1.0)"
+										},
+										{
+											"relay_direction": "(1.0)"
+										}
+									]
+								}
 							},
-							"component_groups": {},
+							"component_groups": {
+								"endergy:direction_0": {
+									"minecraft:mark_variant": {
+										"value": 0
+									}
+								},
+								"endergy:direction_1": {
+									"minecraft:mark_variant": {
+										"value": 1
+									}
+								},
+								"endergy:direction_2": {
+									"minecraft:mark_variant": {
+										"value": 2
+									}
+								},
+								"endergy:direction_3": {
+									"minecraft:mark_variant": {
+										"value": 3
+									}
+								},
+								"endergy:direction_4": {
+									"minecraft:mark_variant": {
+										"value": 4
+									}
+								},
+								"endergy:direction_5": {
+									"minecraft:mark_variant": {
+										"value": 5
+									}
+								}
+							},
 							"components": {
 								"minecraft:collision_box": {
 									"width": 0.6,
 									"height": 0.6
+								},
+								"endergy:block_immitation": {},
+								"minecraft:loot": {
+									"table": "loot_tables/relay_egg.loot.json"
+								},
+								"minecraft:interact": {
+									"interactions": [
+										{
+											"on_interact": {
+												"event": "endergy:rotate"
+											}
+										}
+									]
 								}
 							},
-							"events": {}
+							"events": {
+								"minecraft:entity_spawned": {
+									"add": {
+										"component_groups": [
+											"endergy:direction_0"
+										]
+									}
+								},
+								"endergy:rotate": {
+									"sequence": [
+										{
+											"filters": {
+												"all_of": [
+													{
+														"test": "is_mark_variant",
+														"value": 0
+													}
+												]
+											},
+											"add": {
+												"component_groups": [
+													"endergy:direction_1"
+												]
+											},
+											"remove": {
+												"component_groups": [
+													"endergy:direction_0"
+												]
+											}
+										},
+										{
+											"filters": {
+												"all_of": [
+													{
+														"test": "is_mark_variant",
+														"value": 1
+													}
+												]
+											},
+											"add": {
+												"component_groups": [
+													"endergy:direction_2"
+												]
+											},
+											"remove": {
+												"component_groups": [
+													"endergy:direction_1"
+												]
+											}
+										},
+										{
+											"filters": {
+												"all_of": [
+													{
+														"test": "is_mark_variant",
+														"value": 2
+													}
+												]
+											},
+											"add": {
+												"component_groups": [
+													"endergy:direction_3"
+												]
+											},
+											"remove": {
+												"component_groups": [
+													"endergy:direction_2"
+												]
+											}
+										},
+										{
+											"filters": {
+												"all_of": [
+													{
+														"test": "is_mark_variant",
+														"value": 3
+													}
+												]
+											},
+											"add": {
+												"component_groups": [
+													"endergy:direction_4"
+												]
+											},
+											"remove": {
+												"component_groups": [
+													"endergy:direction_3"
+												]
+											}
+										},
+										{
+											"filters": {
+												"all_of": [
+													{
+														"test": "is_mark_variant",
+														"value": 4
+													}
+												]
+											},
+											"add": {
+												"component_groups": [
+													"endergy:direction_5"
+												]
+											},
+											"remove": {
+												"component_groups": [
+													"endergy:direction_4"
+												]
+											}
+										},
+										{
+											"filters": {
+												"all_of": [
+													{
+														"test": "is_mark_variant",
+														"value": 5
+													}
+												]
+											},
+											"add": {
+												"component_groups": [
+													"endergy:direction_0"
+												]
+											},
+											"remove": {
+												"component_groups": [
+													"endergy:direction_5"
+												]
+											}
+										}
+									]
+								}
+							}
 						},
 						"key": "description",
-						"is_minified": true,
-						"children": {
-							"identifier": "endergy:relay",
-							"is_summonable": true,
-							"is_spawnable": true
-						}
+						"children": [
+							{
+								"data": "endergy:relay",
+								"key": "identifier"
+							},
+							{
+								"data": "true",
+								"key": "is_summonable"
+							},
+							{
+								"data": "true",
+								"key": "is_spawnable"
+							},
+							{
+								"open": {
+									"identifier": "endergy:relay",
+									"is_summonable": true,
+									"is_spawnable": true,
+									"animations": {
+										"block_immitation.init": "controller.animation.block_immitation.init",
+										"relay_direction": "controller.animation.relay.direction"
+									},
+									"scripts": {
+										"animate": [
+											{
+												"block_immitation.init": "(1.0)"
+											},
+											{
+												"relay_direction": "(1.0)"
+											}
+										]
+									}
+								},
+								"key": "animations",
+								"is_minified": true,
+								"children": {
+									"block_immitation.init": "controller.animation.block_immitation.init",
+									"relay_direction": "controller.animation.relay.direction"
+								}
+							},
+							{
+								"open": {
+									"identifier": "endergy:relay",
+									"is_summonable": true,
+									"is_spawnable": true,
+									"animations": {
+										"block_immitation.init": "controller.animation.block_immitation.init",
+										"relay_direction": "controller.animation.relay.direction"
+									},
+									"scripts": {
+										"animate": [
+											{
+												"block_immitation.init": "(1.0)"
+											},
+											{
+												"relay_direction": "(1.0)"
+											}
+										]
+									}
+								},
+								"key": "scripts",
+								"children": [
+									{
+										"open": {
+											"animate": [
+												{
+													"block_immitation.init": "(1.0)"
+												},
+												{
+													"relay_direction": "(1.0)"
+												}
+											]
+										},
+										"key": "animate",
+										"array": [
+											{
+												"open": [
+													{
+														"block_immitation.init": "(1.0)"
+													},
+													{
+														"relay_direction": "(1.0)"
+													}
+												],
+												"is_minified": true,
+												"children": {
+													"block_immitation.init": "(1.0)"
+												}
+											},
+											{
+												"open": [
+													{
+														"block_immitation.init": "(1.0)"
+													},
+													{
+														"relay_direction": "(1.0)"
+													}
+												],
+												"is_minified": true,
+												"children": {
+													"relay_direction": "(1.0)"
+												}
+											}
+										]
+									}
+								]
+							}
+						]
 					},
 					{
 						"open": {
 							"description": {
 								"identifier": "endergy:relay",
 								"is_summonable": true,
-								"is_spawnable": true
+								"is_spawnable": true,
+								"animations": {
+									"block_immitation.init": "controller.animation.block_immitation.init",
+									"relay_direction": "controller.animation.relay.direction"
+								},
+								"scripts": {
+									"animate": [
+										{
+											"block_immitation.init": "(1.0)"
+										},
+										{
+											"relay_direction": "(1.0)"
+										}
+									]
+								}
 							},
-							"component_groups": {},
+							"component_groups": {
+								"endergy:direction_0": {
+									"minecraft:mark_variant": {
+										"value": 0
+									}
+								},
+								"endergy:direction_1": {
+									"minecraft:mark_variant": {
+										"value": 1
+									}
+								},
+								"endergy:direction_2": {
+									"minecraft:mark_variant": {
+										"value": 2
+									}
+								},
+								"endergy:direction_3": {
+									"minecraft:mark_variant": {
+										"value": 3
+									}
+								},
+								"endergy:direction_4": {
+									"minecraft:mark_variant": {
+										"value": 4
+									}
+								},
+								"endergy:direction_5": {
+									"minecraft:mark_variant": {
+										"value": 5
+									}
+								}
+							},
 							"components": {
 								"minecraft:collision_box": {
 									"width": 0.6,
 									"height": 0.6
+								},
+								"endergy:block_immitation": {},
+								"minecraft:loot": {
+									"table": "loot_tables/relay_egg.loot.json"
+								},
+								"minecraft:interact": {
+									"interactions": [
+										{
+											"on_interact": {
+												"event": "endergy:rotate"
+											}
+										}
+									]
 								}
 							},
-							"events": {}
+							"events": {
+								"minecraft:entity_spawned": {
+									"add": {
+										"component_groups": [
+											"endergy:direction_0"
+										]
+									}
+								},
+								"endergy:rotate": {
+									"sequence": [
+										{
+											"filters": {
+												"all_of": [
+													{
+														"test": "is_mark_variant",
+														"value": 0
+													}
+												]
+											},
+											"add": {
+												"component_groups": [
+													"endergy:direction_1"
+												]
+											},
+											"remove": {
+												"component_groups": [
+													"endergy:direction_0"
+												]
+											}
+										},
+										{
+											"filters": {
+												"all_of": [
+													{
+														"test": "is_mark_variant",
+														"value": 1
+													}
+												]
+											},
+											"add": {
+												"component_groups": [
+													"endergy:direction_2"
+												]
+											},
+											"remove": {
+												"component_groups": [
+													"endergy:direction_1"
+												]
+											}
+										},
+										{
+											"filters": {
+												"all_of": [
+													{
+														"test": "is_mark_variant",
+														"value": 2
+													}
+												]
+											},
+											"add": {
+												"component_groups": [
+													"endergy:direction_3"
+												]
+											},
+											"remove": {
+												"component_groups": [
+													"endergy:direction_2"
+												]
+											}
+										},
+										{
+											"filters": {
+												"all_of": [
+													{
+														"test": "is_mark_variant",
+														"value": 3
+													}
+												]
+											},
+											"add": {
+												"component_groups": [
+													"endergy:direction_4"
+												]
+											},
+											"remove": {
+												"component_groups": [
+													"endergy:direction_3"
+												]
+											}
+										},
+										{
+											"filters": {
+												"all_of": [
+													{
+														"test": "is_mark_variant",
+														"value": 4
+													}
+												]
+											},
+											"add": {
+												"component_groups": [
+													"endergy:direction_5"
+												]
+											},
+											"remove": {
+												"component_groups": [
+													"endergy:direction_4"
+												]
+											}
+										},
+										{
+											"filters": {
+												"all_of": [
+													{
+														"test": "is_mark_variant",
+														"value": 5
+													}
+												]
+											},
+											"add": {
+												"component_groups": [
+													"endergy:direction_0"
+												]
+											},
+											"remove": {
+												"component_groups": [
+													"endergy:direction_5"
+												]
+											}
+										}
+									]
+								}
+							}
 						},
 						"key": "component_groups",
-						"is_minified": true,
-						"children": {}
+						"children": [
+							{
+								"key": "endergy:direction_0",
+								"children": [
+									{
+										"open": {
+											"minecraft:mark_variant": {
+												"value": 0
+											}
+										},
+										"key": "minecraft:mark_variant",
+										"is_minified": true,
+										"children": {
+											"value": 0
+										}
+									}
+								]
+							},
+							{
+								"key": "endergy:direction_1",
+								"children": [
+									{
+										"open": {
+											"minecraft:mark_variant": {
+												"value": 1
+											}
+										},
+										"key": "minecraft:mark_variant",
+										"is_minified": true,
+										"children": {
+											"value": 1
+										}
+									}
+								]
+							},
+							{
+								"key": "endergy:direction_2",
+								"children": [
+									{
+										"open": {
+											"minecraft:mark_variant": {
+												"value": 2
+											}
+										},
+										"key": "minecraft:mark_variant",
+										"is_minified": true,
+										"children": {
+											"value": 2
+										}
+									}
+								]
+							},
+							{
+								"key": "endergy:direction_3",
+								"children": [
+									{
+										"open": {
+											"minecraft:mark_variant": {
+												"value": 3
+											}
+										},
+										"key": "minecraft:mark_variant",
+										"is_minified": true,
+										"children": {
+											"value": 3
+										}
+									}
+								]
+							},
+							{
+								"key": "endergy:direction_4",
+								"children": [
+									{
+										"open": {
+											"minecraft:mark_variant": {
+												"value": 4
+											}
+										},
+										"key": "minecraft:mark_variant",
+										"is_minified": true,
+										"children": {
+											"value": 4
+										}
+									}
+								]
+							},
+							{
+								"key": "endergy:direction_5",
+								"children": [
+									{
+										"open": {
+											"minecraft:mark_variant": {
+												"value": 5
+											}
+										},
+										"key": "minecraft:mark_variant",
+										"is_minified": true,
+										"children": {
+											"value": 5
+										}
+									}
+								]
+							}
+						]
 					},
 					{
 						"open": {
 							"description": {
 								"identifier": "endergy:relay",
 								"is_summonable": true,
-								"is_spawnable": true
+								"is_spawnable": true,
+								"animations": {
+									"block_immitation.init": "controller.animation.block_immitation.init",
+									"relay_direction": "controller.animation.relay.direction"
+								},
+								"scripts": {
+									"animate": [
+										{
+											"block_immitation.init": "(1.0)"
+										},
+										{
+											"relay_direction": "(1.0)"
+										}
+									]
+								}
 							},
-							"component_groups": {},
+							"component_groups": {
+								"endergy:direction_0": {
+									"minecraft:mark_variant": {
+										"value": 0
+									}
+								},
+								"endergy:direction_1": {
+									"minecraft:mark_variant": {
+										"value": 1
+									}
+								},
+								"endergy:direction_2": {
+									"minecraft:mark_variant": {
+										"value": 2
+									}
+								},
+								"endergy:direction_3": {
+									"minecraft:mark_variant": {
+										"value": 3
+									}
+								},
+								"endergy:direction_4": {
+									"minecraft:mark_variant": {
+										"value": 4
+									}
+								},
+								"endergy:direction_5": {
+									"minecraft:mark_variant": {
+										"value": 5
+									}
+								}
+							},
 							"components": {
 								"minecraft:collision_box": {
 									"width": 0.6,
 									"height": 0.6
+								},
+								"endergy:block_immitation": {},
+								"minecraft:loot": {
+									"table": "loot_tables/relay_egg.loot.json"
+								},
+								"minecraft:interact": {
+									"interactions": [
+										{
+											"on_interact": {
+												"event": "endergy:rotate"
+											}
+										}
+									]
 								}
 							},
-							"events": {}
+							"events": {
+								"minecraft:entity_spawned": {
+									"add": {
+										"component_groups": [
+											"endergy:direction_0"
+										]
+									}
+								},
+								"endergy:rotate": {
+									"sequence": [
+										{
+											"filters": {
+												"all_of": [
+													{
+														"test": "is_mark_variant",
+														"value": 0
+													}
+												]
+											},
+											"add": {
+												"component_groups": [
+													"endergy:direction_1"
+												]
+											},
+											"remove": {
+												"component_groups": [
+													"endergy:direction_0"
+												]
+											}
+										},
+										{
+											"filters": {
+												"all_of": [
+													{
+														"test": "is_mark_variant",
+														"value": 1
+													}
+												]
+											},
+											"add": {
+												"component_groups": [
+													"endergy:direction_2"
+												]
+											},
+											"remove": {
+												"component_groups": [
+													"endergy:direction_1"
+												]
+											}
+										},
+										{
+											"filters": {
+												"all_of": [
+													{
+														"test": "is_mark_variant",
+														"value": 2
+													}
+												]
+											},
+											"add": {
+												"component_groups": [
+													"endergy:direction_3"
+												]
+											},
+											"remove": {
+												"component_groups": [
+													"endergy:direction_2"
+												]
+											}
+										},
+										{
+											"filters": {
+												"all_of": [
+													{
+														"test": "is_mark_variant",
+														"value": 3
+													}
+												]
+											},
+											"add": {
+												"component_groups": [
+													"endergy:direction_4"
+												]
+											},
+											"remove": {
+												"component_groups": [
+													"endergy:direction_3"
+												]
+											}
+										},
+										{
+											"filters": {
+												"all_of": [
+													{
+														"test": "is_mark_variant",
+														"value": 4
+													}
+												]
+											},
+											"add": {
+												"component_groups": [
+													"endergy:direction_5"
+												]
+											},
+											"remove": {
+												"component_groups": [
+													"endergy:direction_4"
+												]
+											}
+										},
+										{
+											"filters": {
+												"all_of": [
+													{
+														"test": "is_mark_variant",
+														"value": 5
+													}
+												]
+											},
+											"add": {
+												"component_groups": [
+													"endergy:direction_0"
+												]
+											},
+											"remove": {
+												"component_groups": [
+													"endergy:direction_5"
+												]
+											}
+										}
+									]
+								}
+							}
 						},
 						"key": "components",
-						"is_minified": true,
-						"children": {
-							"minecraft:collision_box": {
-								"width": 0.6,
-								"height": 0.6
+						"children": [
+							{
+								"key": "minecraft:collision_box",
+								"is_minified": true,
+								"children": {
+									"width": 0.6,
+									"height": 0.6
+								}
+							},
+							{
+								"key": "endergy:block_immitation",
+								"is_minified": true,
+								"children": {}
+							},
+							{
+								"key": "minecraft:loot",
+								"is_minified": true,
+								"children": {
+									"table": "loot_tables/relay_egg.loot.json"
+								}
+							},
+							{
+								"open": {
+									"minecraft:collision_box": {
+										"width": 0.6,
+										"height": 0.6
+									},
+									"endergy:block_immitation": {},
+									"minecraft:loot": {
+										"table": "loot_tables/relay_egg.loot.json"
+									},
+									"minecraft:interact": {
+										"interactions": [
+											{
+												"on_interact": {
+													"event": "endergy:rotate"
+												}
+											}
+										]
+									}
+								},
+								"key": "minecraft:interact",
+								"children": [
+									{
+										"open": {
+											"interactions": [
+												{
+													"on_interact": {
+														"event": "endergy:rotate"
+													}
+												}
+											]
+										},
+										"key": "interactions",
+										"array": [
+											{
+												"open": [
+													{
+														"on_interact": {
+															"event": "endergy:rotate"
+														}
+													}
+												],
+												"children": [
+													{
+														"open": {
+															"on_interact": {
+																"event": "endergy:rotate"
+															}
+														},
+														"key": "on_interact",
+														"is_minified": true,
+														"children": {
+															"event": "endergy:rotate"
+														}
+													}
+												]
+											}
+										]
+									}
+								]
 							}
-						}
+						]
 					},
 					{
 						"open": {
 							"description": {
 								"identifier": "endergy:relay",
 								"is_summonable": true,
-								"is_spawnable": true
+								"is_spawnable": true,
+								"animations": {
+									"block_immitation.init": "controller.animation.block_immitation.init",
+									"relay_direction": "controller.animation.relay.direction"
+								},
+								"scripts": {
+									"animate": [
+										{
+											"block_immitation.init": "(1.0)"
+										},
+										{
+											"relay_direction": "(1.0)"
+										}
+									]
+								}
 							},
-							"component_groups": {},
+							"component_groups": {
+								"endergy:direction_0": {
+									"minecraft:mark_variant": {
+										"value": 0
+									}
+								},
+								"endergy:direction_1": {
+									"minecraft:mark_variant": {
+										"value": 1
+									}
+								},
+								"endergy:direction_2": {
+									"minecraft:mark_variant": {
+										"value": 2
+									}
+								},
+								"endergy:direction_3": {
+									"minecraft:mark_variant": {
+										"value": 3
+									}
+								},
+								"endergy:direction_4": {
+									"minecraft:mark_variant": {
+										"value": 4
+									}
+								},
+								"endergy:direction_5": {
+									"minecraft:mark_variant": {
+										"value": 5
+									}
+								}
+							},
 							"components": {
 								"minecraft:collision_box": {
 									"width": 0.6,
 									"height": 0.6
+								},
+								"endergy:block_immitation": {},
+								"minecraft:loot": {
+									"table": "loot_tables/relay_egg.loot.json"
+								},
+								"minecraft:interact": {
+									"interactions": [
+										{
+											"on_interact": {
+												"event": "endergy:rotate"
+											}
+										}
+									]
 								}
 							},
-							"events": {}
+							"events": {
+								"minecraft:entity_spawned": {
+									"add": {
+										"component_groups": [
+											"endergy:direction_0"
+										]
+									}
+								},
+								"endergy:rotate": {
+									"sequence": [
+										{
+											"filters": {
+												"all_of": [
+													{
+														"test": "is_mark_variant",
+														"value": 0
+													}
+												]
+											},
+											"add": {
+												"component_groups": [
+													"endergy:direction_1"
+												]
+											},
+											"remove": {
+												"component_groups": [
+													"endergy:direction_0"
+												]
+											}
+										},
+										{
+											"filters": {
+												"all_of": [
+													{
+														"test": "is_mark_variant",
+														"value": 1
+													}
+												]
+											},
+											"add": {
+												"component_groups": [
+													"endergy:direction_2"
+												]
+											},
+											"remove": {
+												"component_groups": [
+													"endergy:direction_1"
+												]
+											}
+										},
+										{
+											"filters": {
+												"all_of": [
+													{
+														"test": "is_mark_variant",
+														"value": 2
+													}
+												]
+											},
+											"add": {
+												"component_groups": [
+													"endergy:direction_3"
+												]
+											},
+											"remove": {
+												"component_groups": [
+													"endergy:direction_2"
+												]
+											}
+										},
+										{
+											"filters": {
+												"all_of": [
+													{
+														"test": "is_mark_variant",
+														"value": 3
+													}
+												]
+											},
+											"add": {
+												"component_groups": [
+													"endergy:direction_4"
+												]
+											},
+											"remove": {
+												"component_groups": [
+													"endergy:direction_3"
+												]
+											}
+										},
+										{
+											"filters": {
+												"all_of": [
+													{
+														"test": "is_mark_variant",
+														"value": 4
+													}
+												]
+											},
+											"add": {
+												"component_groups": [
+													"endergy:direction_5"
+												]
+											},
+											"remove": {
+												"component_groups": [
+													"endergy:direction_4"
+												]
+											}
+										},
+										{
+											"filters": {
+												"all_of": [
+													{
+														"test": "is_mark_variant",
+														"value": 5
+													}
+												]
+											},
+											"add": {
+												"component_groups": [
+													"endergy:direction_0"
+												]
+											},
+											"remove": {
+												"component_groups": [
+													"endergy:direction_5"
+												]
+											}
+										}
+									]
+								}
+							}
 						},
 						"key": "events",
-						"is_minified": true,
-						"children": {}
+						"children": [
+							{
+								"open": {
+									"minecraft:entity_spawned": {
+										"add": {
+											"component_groups": [
+												"endergy:direction_0"
+											]
+										}
+									},
+									"endergy:rotate": {
+										"sequence": [
+											{
+												"filters": {
+													"all_of": [
+														{
+															"test": "is_mark_variant",
+															"value": 0
+														}
+													]
+												},
+												"add": {
+													"component_groups": [
+														"endergy:direction_1"
+													]
+												},
+												"remove": {
+													"component_groups": [
+														"endergy:direction_0"
+													]
+												}
+											},
+											{
+												"filters": {
+													"all_of": [
+														{
+															"test": "is_mark_variant",
+															"value": 1
+														}
+													]
+												},
+												"add": {
+													"component_groups": [
+														"endergy:direction_2"
+													]
+												},
+												"remove": {
+													"component_groups": [
+														"endergy:direction_1"
+													]
+												}
+											},
+											{
+												"filters": {
+													"all_of": [
+														{
+															"test": "is_mark_variant",
+															"value": 2
+														}
+													]
+												},
+												"add": {
+													"component_groups": [
+														"endergy:direction_3"
+													]
+												},
+												"remove": {
+													"component_groups": [
+														"endergy:direction_2"
+													]
+												}
+											},
+											{
+												"filters": {
+													"all_of": [
+														{
+															"test": "is_mark_variant",
+															"value": 3
+														}
+													]
+												},
+												"add": {
+													"component_groups": [
+														"endergy:direction_4"
+													]
+												},
+												"remove": {
+													"component_groups": [
+														"endergy:direction_3"
+													]
+												}
+											},
+											{
+												"filters": {
+													"all_of": [
+														{
+															"test": "is_mark_variant",
+															"value": 4
+														}
+													]
+												},
+												"add": {
+													"component_groups": [
+														"endergy:direction_5"
+													]
+												},
+												"remove": {
+													"component_groups": [
+														"endergy:direction_4"
+													]
+												}
+											},
+											{
+												"filters": {
+													"all_of": [
+														{
+															"test": "is_mark_variant",
+															"value": 5
+														}
+													]
+												},
+												"add": {
+													"component_groups": [
+														"endergy:direction_0"
+													]
+												},
+												"remove": {
+													"component_groups": [
+														"endergy:direction_5"
+													]
+												}
+											}
+										]
+									}
+								},
+								"key": "minecraft:entity_spawned",
+								"children": [
+									{
+										"open": {
+											"add": {
+												"component_groups": [
+													"endergy:direction_0"
+												]
+											}
+										},
+										"key": "add",
+										"children": [
+											{
+												"open": {
+													"component_groups": [
+														"endergy:direction_0"
+													]
+												},
+												"key": "component_groups",
+												"is_minified": true,
+												"array": [
+													"endergy:direction_0"
+												]
+											}
+										]
+									}
+								]
+							},
+							{
+								"open": {
+									"minecraft:entity_spawned": {
+										"add": {
+											"component_groups": [
+												"endergy:direction_0"
+											]
+										}
+									},
+									"endergy:rotate": {
+										"sequence": [
+											{
+												"filters": {
+													"all_of": [
+														{
+															"test": "is_mark_variant",
+															"value": 0
+														}
+													]
+												},
+												"add": {
+													"component_groups": [
+														"endergy:direction_1"
+													]
+												},
+												"remove": {
+													"component_groups": [
+														"endergy:direction_0"
+													]
+												}
+											},
+											{
+												"filters": {
+													"all_of": [
+														{
+															"test": "is_mark_variant",
+															"value": 1
+														}
+													]
+												},
+												"add": {
+													"component_groups": [
+														"endergy:direction_2"
+													]
+												},
+												"remove": {
+													"component_groups": [
+														"endergy:direction_1"
+													]
+												}
+											},
+											{
+												"filters": {
+													"all_of": [
+														{
+															"test": "is_mark_variant",
+															"value": 2
+														}
+													]
+												},
+												"add": {
+													"component_groups": [
+														"endergy:direction_3"
+													]
+												},
+												"remove": {
+													"component_groups": [
+														"endergy:direction_2"
+													]
+												}
+											},
+											{
+												"filters": {
+													"all_of": [
+														{
+															"test": "is_mark_variant",
+															"value": 3
+														}
+													]
+												},
+												"add": {
+													"component_groups": [
+														"endergy:direction_4"
+													]
+												},
+												"remove": {
+													"component_groups": [
+														"endergy:direction_3"
+													]
+												}
+											},
+											{
+												"filters": {
+													"all_of": [
+														{
+															"test": "is_mark_variant",
+															"value": 4
+														}
+													]
+												},
+												"add": {
+													"component_groups": [
+														"endergy:direction_5"
+													]
+												},
+												"remove": {
+													"component_groups": [
+														"endergy:direction_4"
+													]
+												}
+											},
+											{
+												"filters": {
+													"all_of": [
+														{
+															"test": "is_mark_variant",
+															"value": 5
+														}
+													]
+												},
+												"add": {
+													"component_groups": [
+														"endergy:direction_0"
+													]
+												},
+												"remove": {
+													"component_groups": [
+														"endergy:direction_5"
+													]
+												}
+											}
+										]
+									}
+								},
+								"key": "endergy:rotate",
+								"children": [
+									{
+										"open": {
+											"sequence": [
+												{
+													"filters": {
+														"all_of": [
+															{
+																"test": "is_mark_variant",
+																"value": 0
+															}
+														]
+													},
+													"add": {
+														"component_groups": [
+															"endergy:direction_1"
+														]
+													},
+													"remove": {
+														"component_groups": [
+															"endergy:direction_0"
+														]
+													}
+												},
+												{
+													"filters": {
+														"all_of": [
+															{
+																"test": "is_mark_variant",
+																"value": 1
+															}
+														]
+													},
+													"add": {
+														"component_groups": [
+															"endergy:direction_2"
+														]
+													},
+													"remove": {
+														"component_groups": [
+															"endergy:direction_1"
+														]
+													}
+												},
+												{
+													"filters": {
+														"all_of": [
+															{
+																"test": "is_mark_variant",
+																"value": 2
+															}
+														]
+													},
+													"add": {
+														"component_groups": [
+															"endergy:direction_3"
+														]
+													},
+													"remove": {
+														"component_groups": [
+															"endergy:direction_2"
+														]
+													}
+												},
+												{
+													"filters": {
+														"all_of": [
+															{
+																"test": "is_mark_variant",
+																"value": 3
+															}
+														]
+													},
+													"add": {
+														"component_groups": [
+															"endergy:direction_4"
+														]
+													},
+													"remove": {
+														"component_groups": [
+															"endergy:direction_3"
+														]
+													}
+												},
+												{
+													"filters": {
+														"all_of": [
+															{
+																"test": "is_mark_variant",
+																"value": 4
+															}
+														]
+													},
+													"add": {
+														"component_groups": [
+															"endergy:direction_5"
+														]
+													},
+													"remove": {
+														"component_groups": [
+															"endergy:direction_4"
+														]
+													}
+												},
+												{
+													"filters": {
+														"all_of": [
+															{
+																"test": "is_mark_variant",
+																"value": 5
+															}
+														]
+													},
+													"add": {
+														"component_groups": [
+															"endergy:direction_0"
+														]
+													},
+													"remove": {
+														"component_groups": [
+															"endergy:direction_5"
+														]
+													}
+												}
+											]
+										},
+										"key": "sequence",
+										"array": [
+											{
+												"open": [
+													{
+														"filters": {
+															"all_of": [
+																{
+																	"test": "is_mark_variant",
+																	"value": 0
+																}
+															]
+														},
+														"add": {
+															"component_groups": [
+																"endergy:direction_1"
+															]
+														},
+														"remove": {
+															"component_groups": [
+																"endergy:direction_0"
+															]
+														}
+													},
+													{
+														"filters": {
+															"all_of": [
+																{
+																	"test": "is_mark_variant",
+																	"value": 1
+																}
+															]
+														},
+														"add": {
+															"component_groups": [
+																"endergy:direction_2"
+															]
+														},
+														"remove": {
+															"component_groups": [
+																"endergy:direction_1"
+															]
+														}
+													},
+													{
+														"filters": {
+															"all_of": [
+																{
+																	"test": "is_mark_variant",
+																	"value": 2
+																}
+															]
+														},
+														"add": {
+															"component_groups": [
+																"endergy:direction_3"
+															]
+														},
+														"remove": {
+															"component_groups": [
+																"endergy:direction_2"
+															]
+														}
+													},
+													{
+														"filters": {
+															"all_of": [
+																{
+																	"test": "is_mark_variant",
+																	"value": 3
+																}
+															]
+														},
+														"add": {
+															"component_groups": [
+																"endergy:direction_4"
+															]
+														},
+														"remove": {
+															"component_groups": [
+																"endergy:direction_3"
+															]
+														}
+													},
+													{
+														"filters": {
+															"all_of": [
+																{
+																	"test": "is_mark_variant",
+																	"value": 4
+																}
+															]
+														},
+														"add": {
+															"component_groups": [
+																"endergy:direction_5"
+															]
+														},
+														"remove": {
+															"component_groups": [
+																"endergy:direction_4"
+															]
+														}
+													},
+													{
+														"filters": {
+															"all_of": [
+																{
+																	"test": "is_mark_variant",
+																	"value": 5
+																}
+															]
+														},
+														"add": {
+															"component_groups": [
+																"endergy:direction_0"
+															]
+														},
+														"remove": {
+															"component_groups": [
+																"endergy:direction_5"
+															]
+														}
+													}
+												],
+												"children": [
+													{
+														"open": {
+															"filters": {
+																"all_of": [
+																	{
+																		"test": "is_mark_variant",
+																		"value": 0
+																	}
+																]
+															},
+															"add": {
+																"component_groups": [
+																	"endergy:direction_1"
+																]
+															},
+															"remove": {
+																"component_groups": [
+																	"endergy:direction_0"
+																]
+															}
+														},
+														"key": "filters",
+														"children": [
+															{
+																"open": {
+																	"all_of": [
+																		{
+																			"test": "is_mark_variant",
+																			"value": 0
+																		}
+																	]
+																},
+																"key": "all_of",
+																"array": [
+																	{
+																		"open": [
+																			{
+																				"test": "is_mark_variant",
+																				"value": 0
+																			}
+																		],
+																		"is_minified": true,
+																		"children": {
+																			"test": "is_mark_variant",
+																			"value": 0
+																		}
+																	}
+																]
+															}
+														]
+													},
+													{
+														"open": {
+															"filters": {
+																"all_of": [
+																	{
+																		"test": "is_mark_variant",
+																		"value": 0
+																	}
+																]
+															},
+															"add": {
+																"component_groups": [
+																	"endergy:direction_1"
+																]
+															},
+															"remove": {
+																"component_groups": [
+																	"endergy:direction_0"
+																]
+															}
+														},
+														"key": "add",
+														"children": [
+															{
+																"open": {
+																	"component_groups": [
+																		"endergy:direction_1"
+																	]
+																},
+																"key": "component_groups",
+																"is_minified": true,
+																"array": [
+																	"endergy:direction_1"
+																]
+															}
+														]
+													},
+													{
+														"open": {
+															"filters": {
+																"all_of": [
+																	{
+																		"test": "is_mark_variant",
+																		"value": 0
+																	}
+																]
+															},
+															"add": {
+																"component_groups": [
+																	"endergy:direction_1"
+																]
+															},
+															"remove": {
+																"component_groups": [
+																	"endergy:direction_0"
+																]
+															}
+														},
+														"key": "remove",
+														"children": [
+															{
+																"open": {
+																	"component_groups": [
+																		"endergy:direction_0"
+																	]
+																},
+																"key": "component_groups",
+																"is_minified": true,
+																"array": [
+																	"endergy:direction_0"
+																]
+															}
+														]
+													}
+												]
+											},
+											{
+												"open": [
+													{
+														"filters": {
+															"all_of": [
+																{
+																	"test": "is_mark_variant",
+																	"value": 0
+																}
+															]
+														},
+														"add": {
+															"component_groups": [
+																"endergy:direction_1"
+															]
+														},
+														"remove": {
+															"component_groups": [
+																"endergy:direction_0"
+															]
+														}
+													},
+													{
+														"filters": {
+															"all_of": [
+																{
+																	"test": "is_mark_variant",
+																	"value": 1
+																}
+															]
+														},
+														"add": {
+															"component_groups": [
+																"endergy:direction_2"
+															]
+														},
+														"remove": {
+															"component_groups": [
+																"endergy:direction_1"
+															]
+														}
+													},
+													{
+														"filters": {
+															"all_of": [
+																{
+																	"test": "is_mark_variant",
+																	"value": 2
+																}
+															]
+														},
+														"add": {
+															"component_groups": [
+																"endergy:direction_3"
+															]
+														},
+														"remove": {
+															"component_groups": [
+																"endergy:direction_2"
+															]
+														}
+													},
+													{
+														"filters": {
+															"all_of": [
+																{
+																	"test": "is_mark_variant",
+																	"value": 3
+																}
+															]
+														},
+														"add": {
+															"component_groups": [
+																"endergy:direction_4"
+															]
+														},
+														"remove": {
+															"component_groups": [
+																"endergy:direction_3"
+															]
+														}
+													},
+													{
+														"filters": {
+															"all_of": [
+																{
+																	"test": "is_mark_variant",
+																	"value": 4
+																}
+															]
+														},
+														"add": {
+															"component_groups": [
+																"endergy:direction_5"
+															]
+														},
+														"remove": {
+															"component_groups": [
+																"endergy:direction_4"
+															]
+														}
+													},
+													{
+														"filters": {
+															"all_of": [
+																{
+																	"test": "is_mark_variant",
+																	"value": 5
+																}
+															]
+														},
+														"add": {
+															"component_groups": [
+																"endergy:direction_0"
+															]
+														},
+														"remove": {
+															"component_groups": [
+																"endergy:direction_5"
+															]
+														}
+													}
+												],
+												"children": [
+													{
+														"open": {
+															"filters": {
+																"all_of": [
+																	{
+																		"test": "is_mark_variant",
+																		"value": 1
+																	}
+																]
+															},
+															"add": {
+																"component_groups": [
+																	"endergy:direction_2"
+																]
+															},
+															"remove": {
+																"component_groups": [
+																	"endergy:direction_1"
+																]
+															}
+														},
+														"key": "filters",
+														"children": [
+															{
+																"open": {
+																	"all_of": [
+																		{
+																			"test": "is_mark_variant",
+																			"value": 1
+																		}
+																	]
+																},
+																"key": "all_of",
+																"array": [
+																	{
+																		"open": [
+																			{
+																				"test": "is_mark_variant",
+																				"value": 1
+																			}
+																		],
+																		"is_minified": true,
+																		"children": {
+																			"test": "is_mark_variant",
+																			"value": 1
+																		}
+																	}
+																]
+															}
+														]
+													},
+													{
+														"open": {
+															"filters": {
+																"all_of": [
+																	{
+																		"test": "is_mark_variant",
+																		"value": 1
+																	}
+																]
+															},
+															"add": {
+																"component_groups": [
+																	"endergy:direction_2"
+																]
+															},
+															"remove": {
+																"component_groups": [
+																	"endergy:direction_1"
+																]
+															}
+														},
+														"key": "add",
+														"children": [
+															{
+																"open": {
+																	"component_groups": [
+																		"endergy:direction_2"
+																	]
+																},
+																"key": "component_groups",
+																"is_minified": true,
+																"array": [
+																	"endergy:direction_2"
+																]
+															}
+														]
+													},
+													{
+														"open": {
+															"filters": {
+																"all_of": [
+																	{
+																		"test": "is_mark_variant",
+																		"value": 1
+																	}
+																]
+															},
+															"add": {
+																"component_groups": [
+																	"endergy:direction_2"
+																]
+															},
+															"remove": {
+																"component_groups": [
+																	"endergy:direction_1"
+																]
+															}
+														},
+														"key": "remove",
+														"children": [
+															{
+																"open": {
+																	"component_groups": [
+																		"endergy:direction_1"
+																	]
+																},
+																"key": "component_groups",
+																"is_minified": true,
+																"array": [
+																	"endergy:direction_1"
+																]
+															}
+														]
+													}
+												]
+											},
+											{
+												"open": [
+													{
+														"filters": {
+															"all_of": [
+																{
+																	"test": "is_mark_variant",
+																	"value": 0
+																}
+															]
+														},
+														"add": {
+															"component_groups": [
+																"endergy:direction_1"
+															]
+														},
+														"remove": {
+															"component_groups": [
+																"endergy:direction_0"
+															]
+														}
+													},
+													{
+														"filters": {
+															"all_of": [
+																{
+																	"test": "is_mark_variant",
+																	"value": 1
+																}
+															]
+														},
+														"add": {
+															"component_groups": [
+																"endergy:direction_2"
+															]
+														},
+														"remove": {
+															"component_groups": [
+																"endergy:direction_1"
+															]
+														}
+													},
+													{
+														"filters": {
+															"all_of": [
+																{
+																	"test": "is_mark_variant",
+																	"value": 2
+																}
+															]
+														},
+														"add": {
+															"component_groups": [
+																"endergy:direction_3"
+															]
+														},
+														"remove": {
+															"component_groups": [
+																"endergy:direction_2"
+															]
+														}
+													},
+													{
+														"filters": {
+															"all_of": [
+																{
+																	"test": "is_mark_variant",
+																	"value": 3
+																}
+															]
+														},
+														"add": {
+															"component_groups": [
+																"endergy:direction_4"
+															]
+														},
+														"remove": {
+															"component_groups": [
+																"endergy:direction_3"
+															]
+														}
+													},
+													{
+														"filters": {
+															"all_of": [
+																{
+																	"test": "is_mark_variant",
+																	"value": 4
+																}
+															]
+														},
+														"add": {
+															"component_groups": [
+																"endergy:direction_5"
+															]
+														},
+														"remove": {
+															"component_groups": [
+																"endergy:direction_4"
+															]
+														}
+													},
+													{
+														"filters": {
+															"all_of": [
+																{
+																	"test": "is_mark_variant",
+																	"value": 5
+																}
+															]
+														},
+														"add": {
+															"component_groups": [
+																"endergy:direction_0"
+															]
+														},
+														"remove": {
+															"component_groups": [
+																"endergy:direction_5"
+															]
+														}
+													}
+												],
+												"children": [
+													{
+														"open": {
+															"filters": {
+																"all_of": [
+																	{
+																		"test": "is_mark_variant",
+																		"value": 2
+																	}
+																]
+															},
+															"add": {
+																"component_groups": [
+																	"endergy:direction_3"
+																]
+															},
+															"remove": {
+																"component_groups": [
+																	"endergy:direction_2"
+																]
+															}
+														},
+														"key": "filters",
+														"children": [
+															{
+																"open": {
+																	"all_of": [
+																		{
+																			"test": "is_mark_variant",
+																			"value": 2
+																		}
+																	]
+																},
+																"key": "all_of",
+																"array": [
+																	{
+																		"open": [
+																			{
+																				"test": "is_mark_variant",
+																				"value": 2
+																			}
+																		],
+																		"is_minified": true,
+																		"children": {
+																			"test": "is_mark_variant",
+																			"value": 2
+																		}
+																	}
+																]
+															}
+														]
+													},
+													{
+														"open": {
+															"filters": {
+																"all_of": [
+																	{
+																		"test": "is_mark_variant",
+																		"value": 2
+																	}
+																]
+															},
+															"add": {
+																"component_groups": [
+																	"endergy:direction_3"
+																]
+															},
+															"remove": {
+																"component_groups": [
+																	"endergy:direction_2"
+																]
+															}
+														},
+														"key": "add",
+														"children": [
+															{
+																"open": {
+																	"component_groups": [
+																		"endergy:direction_3"
+																	]
+																},
+																"key": "component_groups",
+																"is_minified": true,
+																"array": [
+																	"endergy:direction_3"
+																]
+															}
+														]
+													},
+													{
+														"open": {
+															"filters": {
+																"all_of": [
+																	{
+																		"test": "is_mark_variant",
+																		"value": 2
+																	}
+																]
+															},
+															"add": {
+																"component_groups": [
+																	"endergy:direction_3"
+																]
+															},
+															"remove": {
+																"component_groups": [
+																	"endergy:direction_2"
+																]
+															}
+														},
+														"key": "remove",
+														"children": [
+															{
+																"open": {
+																	"component_groups": [
+																		"endergy:direction_2"
+																	]
+																},
+																"key": "component_groups",
+																"is_minified": true,
+																"array": [
+																	"endergy:direction_2"
+																]
+															}
+														]
+													}
+												]
+											},
+											{
+												"open": [
+													{
+														"filters": {
+															"all_of": [
+																{
+																	"test": "is_mark_variant",
+																	"value": 0
+																}
+															]
+														},
+														"add": {
+															"component_groups": [
+																"endergy:direction_1"
+															]
+														},
+														"remove": {
+															"component_groups": [
+																"endergy:direction_0"
+															]
+														}
+													},
+													{
+														"filters": {
+															"all_of": [
+																{
+																	"test": "is_mark_variant",
+																	"value": 1
+																}
+															]
+														},
+														"add": {
+															"component_groups": [
+																"endergy:direction_2"
+															]
+														},
+														"remove": {
+															"component_groups": [
+																"endergy:direction_1"
+															]
+														}
+													},
+													{
+														"filters": {
+															"all_of": [
+																{
+																	"test": "is_mark_variant",
+																	"value": 2
+																}
+															]
+														},
+														"add": {
+															"component_groups": [
+																"endergy:direction_3"
+															]
+														},
+														"remove": {
+															"component_groups": [
+																"endergy:direction_2"
+															]
+														}
+													},
+													{
+														"filters": {
+															"all_of": [
+																{
+																	"test": "is_mark_variant",
+																	"value": 3
+																}
+															]
+														},
+														"add": {
+															"component_groups": [
+																"endergy:direction_4"
+															]
+														},
+														"remove": {
+															"component_groups": [
+																"endergy:direction_3"
+															]
+														}
+													},
+													{
+														"filters": {
+															"all_of": [
+																{
+																	"test": "is_mark_variant",
+																	"value": 4
+																}
+															]
+														},
+														"add": {
+															"component_groups": [
+																"endergy:direction_5"
+															]
+														},
+														"remove": {
+															"component_groups": [
+																"endergy:direction_4"
+															]
+														}
+													},
+													{
+														"filters": {
+															"all_of": [
+																{
+																	"test": "is_mark_variant",
+																	"value": 5
+																}
+															]
+														},
+														"add": {
+															"component_groups": [
+																"endergy:direction_0"
+															]
+														},
+														"remove": {
+															"component_groups": [
+																"endergy:direction_5"
+															]
+														}
+													}
+												],
+												"children": [
+													{
+														"open": {
+															"filters": {
+																"all_of": [
+																	{
+																		"test": "is_mark_variant",
+																		"value": 3
+																	}
+																]
+															},
+															"add": {
+																"component_groups": [
+																	"endergy:direction_4"
+																]
+															},
+															"remove": {
+																"component_groups": [
+																	"endergy:direction_3"
+																]
+															}
+														},
+														"key": "filters",
+														"children": [
+															{
+																"open": {
+																	"all_of": [
+																		{
+																			"test": "is_mark_variant",
+																			"value": 3
+																		}
+																	]
+																},
+																"key": "all_of",
+																"array": [
+																	{
+																		"open": [
+																			{
+																				"test": "is_mark_variant",
+																				"value": 3
+																			}
+																		],
+																		"is_minified": true,
+																		"children": {
+																			"test": "is_mark_variant",
+																			"value": 3
+																		}
+																	}
+																]
+															}
+														]
+													},
+													{
+														"open": {
+															"filters": {
+																"all_of": [
+																	{
+																		"test": "is_mark_variant",
+																		"value": 3
+																	}
+																]
+															},
+															"add": {
+																"component_groups": [
+																	"endergy:direction_4"
+																]
+															},
+															"remove": {
+																"component_groups": [
+																	"endergy:direction_3"
+																]
+															}
+														},
+														"key": "add",
+														"children": [
+															{
+																"open": {
+																	"component_groups": [
+																		"endergy:direction_4"
+																	]
+																},
+																"key": "component_groups",
+																"is_minified": true,
+																"array": [
+																	"endergy:direction_4"
+																]
+															}
+														]
+													},
+													{
+														"open": {
+															"filters": {
+																"all_of": [
+																	{
+																		"test": "is_mark_variant",
+																		"value": 3
+																	}
+																]
+															},
+															"add": {
+																"component_groups": [
+																	"endergy:direction_4"
+																]
+															},
+															"remove": {
+																"component_groups": [
+																	"endergy:direction_3"
+																]
+															}
+														},
+														"key": "remove",
+														"children": [
+															{
+																"open": {
+																	"component_groups": [
+																		"endergy:direction_3"
+																	]
+																},
+																"key": "component_groups",
+																"is_minified": true,
+																"array": [
+																	"endergy:direction_3"
+																]
+															}
+														]
+													}
+												]
+											},
+											{
+												"open": [
+													{
+														"filters": {
+															"all_of": [
+																{
+																	"test": "is_mark_variant",
+																	"value": 0
+																}
+															]
+														},
+														"add": {
+															"component_groups": [
+																"endergy:direction_1"
+															]
+														},
+														"remove": {
+															"component_groups": [
+																"endergy:direction_0"
+															]
+														}
+													},
+													{
+														"filters": {
+															"all_of": [
+																{
+																	"test": "is_mark_variant",
+																	"value": 1
+																}
+															]
+														},
+														"add": {
+															"component_groups": [
+																"endergy:direction_2"
+															]
+														},
+														"remove": {
+															"component_groups": [
+																"endergy:direction_1"
+															]
+														}
+													},
+													{
+														"filters": {
+															"all_of": [
+																{
+																	"test": "is_mark_variant",
+																	"value": 2
+																}
+															]
+														},
+														"add": {
+															"component_groups": [
+																"endergy:direction_3"
+															]
+														},
+														"remove": {
+															"component_groups": [
+																"endergy:direction_2"
+															]
+														}
+													},
+													{
+														"filters": {
+															"all_of": [
+																{
+																	"test": "is_mark_variant",
+																	"value": 3
+																}
+															]
+														},
+														"add": {
+															"component_groups": [
+																"endergy:direction_4"
+															]
+														},
+														"remove": {
+															"component_groups": [
+																"endergy:direction_3"
+															]
+														}
+													},
+													{
+														"filters": {
+															"all_of": [
+																{
+																	"test": "is_mark_variant",
+																	"value": 4
+																}
+															]
+														},
+														"add": {
+															"component_groups": [
+																"endergy:direction_5"
+															]
+														},
+														"remove": {
+															"component_groups": [
+																"endergy:direction_4"
+															]
+														}
+													},
+													{
+														"filters": {
+															"all_of": [
+																{
+																	"test": "is_mark_variant",
+																	"value": 5
+																}
+															]
+														},
+														"add": {
+															"component_groups": [
+																"endergy:direction_0"
+															]
+														},
+														"remove": {
+															"component_groups": [
+																"endergy:direction_5"
+															]
+														}
+													}
+												],
+												"children": [
+													{
+														"open": {
+															"filters": {
+																"all_of": [
+																	{
+																		"test": "is_mark_variant",
+																		"value": 4
+																	}
+																]
+															},
+															"add": {
+																"component_groups": [
+																	"endergy:direction_5"
+																]
+															},
+															"remove": {
+																"component_groups": [
+																	"endergy:direction_4"
+																]
+															}
+														},
+														"key": "filters",
+														"children": [
+															{
+																"open": {
+																	"all_of": [
+																		{
+																			"test": "is_mark_variant",
+																			"value": 4
+																		}
+																	]
+																},
+																"key": "all_of",
+																"array": [
+																	{
+																		"open": [
+																			{
+																				"test": "is_mark_variant",
+																				"value": 4
+																			}
+																		],
+																		"is_minified": true,
+																		"children": {
+																			"test": "is_mark_variant",
+																			"value": 4
+																		}
+																	}
+																]
+															}
+														]
+													},
+													{
+														"open": {
+															"filters": {
+																"all_of": [
+																	{
+																		"test": "is_mark_variant",
+																		"value": 4
+																	}
+																]
+															},
+															"add": {
+																"component_groups": [
+																	"endergy:direction_5"
+																]
+															},
+															"remove": {
+																"component_groups": [
+																	"endergy:direction_4"
+																]
+															}
+														},
+														"key": "add",
+														"children": [
+															{
+																"open": {
+																	"component_groups": [
+																		"endergy:direction_5"
+																	]
+																},
+																"key": "component_groups",
+																"is_minified": true,
+																"array": [
+																	"endergy:direction_5"
+																]
+															}
+														]
+													},
+													{
+														"open": {
+															"filters": {
+																"all_of": [
+																	{
+																		"test": "is_mark_variant",
+																		"value": 4
+																	}
+																]
+															},
+															"add": {
+																"component_groups": [
+																	"endergy:direction_5"
+																]
+															},
+															"remove": {
+																"component_groups": [
+																	"endergy:direction_4"
+																]
+															}
+														},
+														"key": "remove",
+														"children": [
+															{
+																"open": {
+																	"component_groups": [
+																		"endergy:direction_4"
+																	]
+																},
+																"key": "component_groups",
+																"is_minified": true,
+																"array": [
+																	"endergy:direction_4"
+																]
+															}
+														]
+													}
+												]
+											},
+											{
+												"open": [
+													{
+														"filters": {
+															"all_of": [
+																{
+																	"test": "is_mark_variant",
+																	"value": 0
+																}
+															]
+														},
+														"add": {
+															"component_groups": [
+																"endergy:direction_1"
+															]
+														},
+														"remove": {
+															"component_groups": [
+																"endergy:direction_0"
+															]
+														}
+													},
+													{
+														"filters": {
+															"all_of": [
+																{
+																	"test": "is_mark_variant",
+																	"value": 1
+																}
+															]
+														},
+														"add": {
+															"component_groups": [
+																"endergy:direction_2"
+															]
+														},
+														"remove": {
+															"component_groups": [
+																"endergy:direction_1"
+															]
+														}
+													},
+													{
+														"filters": {
+															"all_of": [
+																{
+																	"test": "is_mark_variant",
+																	"value": 2
+																}
+															]
+														},
+														"add": {
+															"component_groups": [
+																"endergy:direction_3"
+															]
+														},
+														"remove": {
+															"component_groups": [
+																"endergy:direction_2"
+															]
+														}
+													},
+													{
+														"filters": {
+															"all_of": [
+																{
+																	"test": "is_mark_variant",
+																	"value": 3
+																}
+															]
+														},
+														"add": {
+															"component_groups": [
+																"endergy:direction_4"
+															]
+														},
+														"remove": {
+															"component_groups": [
+																"endergy:direction_3"
+															]
+														}
+													},
+													{
+														"filters": {
+															"all_of": [
+																{
+																	"test": "is_mark_variant",
+																	"value": 4
+																}
+															]
+														},
+														"add": {
+															"component_groups": [
+																"endergy:direction_5"
+															]
+														},
+														"remove": {
+															"component_groups": [
+																"endergy:direction_4"
+															]
+														}
+													},
+													{
+														"filters": {
+															"all_of": [
+																{
+																	"test": "is_mark_variant",
+																	"value": 5
+																}
+															]
+														},
+														"add": {
+															"component_groups": [
+																"endergy:direction_0"
+															]
+														},
+														"remove": {
+															"component_groups": [
+																"endergy:direction_5"
+															]
+														}
+													}
+												],
+												"children": [
+													{
+														"open": {
+															"filters": {
+																"all_of": [
+																	{
+																		"test": "is_mark_variant",
+																		"value": 5
+																	}
+																]
+															},
+															"add": {
+																"component_groups": [
+																	"endergy:direction_0"
+																]
+															},
+															"remove": {
+																"component_groups": [
+																	"endergy:direction_5"
+																]
+															}
+														},
+														"key": "filters",
+														"children": [
+															{
+																"open": {
+																	"all_of": [
+																		{
+																			"test": "is_mark_variant",
+																			"value": 5
+																		}
+																	]
+																},
+																"key": "all_of",
+																"array": [
+																	{
+																		"open": [
+																			{
+																				"test": "is_mark_variant",
+																				"value": 5
+																			}
+																		],
+																		"is_minified": true,
+																		"children": {
+																			"test": "is_mark_variant",
+																			"value": 5
+																		}
+																	}
+																]
+															}
+														]
+													},
+													{
+														"open": {
+															"filters": {
+																"all_of": [
+																	{
+																		"test": "is_mark_variant",
+																		"value": 5
+																	}
+																]
+															},
+															"add": {
+																"component_groups": [
+																	"endergy:direction_0"
+																]
+															},
+															"remove": {
+																"component_groups": [
+																	"endergy:direction_5"
+																]
+															}
+														},
+														"key": "add",
+														"children": [
+															{
+																"open": {
+																	"component_groups": [
+																		"endergy:direction_0"
+																	]
+																},
+																"key": "component_groups",
+																"is_minified": true,
+																"array": [
+																	"endergy:direction_0"
+																]
+															}
+														]
+													},
+													{
+														"open": {
+															"filters": {
+																"all_of": [
+																	{
+																		"test": "is_mark_variant",
+																		"value": 5
+																	}
+																]
+															},
+															"add": {
+																"component_groups": [
+																	"endergy:direction_0"
+																]
+															},
+															"remove": {
+																"component_groups": [
+																	"endergy:direction_5"
+																]
+															}
+														},
+														"key": "remove",
+														"children": [
+															{
+																"open": {
+																	"component_groups": [
+																		"endergy:direction_5"
+																	]
+																},
+																"key": "component_groups",
+																"is_minified": true,
+																"array": [
+																	"endergy:direction_5"
+																]
+															}
+														]
+													}
+												]
+											}
+										]
+									}
+								]
+							}
+						]
 					}
 				]
 			}

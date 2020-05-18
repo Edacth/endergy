@@ -29,7 +29,49 @@
 		"data": {}
 	},
 	"BP/entities/collector.e.json": {
-		"data": {}
+		"data": {
+			"component@endergy:block_immitation": {
+				"minecraft:entity": {
+					"description": {},
+					"component_groups": {},
+					"components": {
+						"minecraft:health": {
+							"value": 1,
+							"max": 1
+						},
+						"minecraft:physics": {
+							"has_collision": true,
+							"has_gravity": false
+						},
+						"minecraft:damage_sensor": {
+							"triggers": [
+								{
+									"on_damage": {
+										"filters": {
+											"all_of": [
+												{
+													"subject": "other",
+													"test": "is_family",
+													"value": "player"
+												}
+											]
+										}
+									}
+								},
+								{
+									"deals_damage": false
+								}
+							]
+						},
+						"minecraft:pushable": {
+							"is_pushable": false,
+							"is_pushable_by_piston": true
+						}
+					},
+					"events": {}
+				}
+			}
+		}
 	},
 	"RP/entity/collector.ce.json": {
 		"data": {}
@@ -161,7 +203,49 @@
 		"data": {}
 	},
 	"BP/entities/relay.e.json": {
-		"data": {}
+		"data": {
+			"component@endergy:block_immitation": {
+				"minecraft:entity": {
+					"description": {},
+					"component_groups": {},
+					"components": {
+						"minecraft:health": {
+							"value": 1,
+							"max": 1
+						},
+						"minecraft:physics": {
+							"has_collision": true,
+							"has_gravity": false
+						},
+						"minecraft:damage_sensor": {
+							"triggers": [
+								{
+									"on_damage": {
+										"filters": {
+											"all_of": [
+												{
+													"subject": "other",
+													"test": "is_family",
+													"value": "player"
+												}
+											]
+										}
+									}
+								},
+								{
+									"deals_damage": false
+								}
+							]
+						},
+						"minecraft:pushable": {
+							"is_pushable": false,
+							"is_pushable_by_piston": true
+						}
+					},
+					"events": {}
+				}
+			}
+		}
 	},
 	"RP/entity/relay.ce.json": {
 		"data": {}
@@ -172,10 +256,25 @@
 	"BP/tags/block_immitation.json/block_rotation.json": {
 		"data": {}
 	},
-	"BP/tags/block_immitation.json": {
+	"BP/loot_tables/relay_egg.loot.json/relay_drop.loot.json": {
 		"data": {}
 	},
-	"BP/tags/test.json": {
+	"BP/loot_tables/collector_egg.loot.json/collector_death.loot.json": {
+		"data": {}
+	},
+	"BP/animation_controllers/block_immitation.ac.json": {
+		"data": {}
+	},
+	"BP/animation_controllers/relay.ac.json": {
+		"data": {}
+	},
+	"RP/animation_controllers/relay.cac.json": {
+		"data": {}
+	},
+	"BP/animation_controllers/player.ac.json": {
+		"data": {}
+	},
+	"BP/entities/endergy_pulse.json": {
 		"data": {}
 	}
 }

@@ -1,0 +1,254 @@
+{
+	"file_path": "C:\\Users\\cadea\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_behavior_packs\\Endergy BP/entities/endergy_pulse.json",
+	"file_type": "entity",
+	"format_version": 1,
+	"file_uuid": "d51ed5da_6c0b_4a4a_8052_d6f2527bdf75",
+	"file_version": 4,
+	"cache_content": {
+		"children": [
+			{
+				"open": {
+					"format_version": "1.14.0",
+					"minecraft:entity": {
+						"description": {
+							"identifier": "endergy:endergy_pulse",
+							"is_summonable": true,
+							"is_spawnable": true
+						},
+						"component_groups": {},
+						"components": {
+							"minecraft:physics": {
+								"has_collision": false,
+								"has_gravity": false
+							},
+							"minecraft:collision_box": {
+								"width": 0.4,
+								"height": 0.4
+							},
+							"minecraft:pushable": {
+								"is_pushable": false,
+								"is_pushable_by_piston": false
+							}
+						},
+						"events": {}
+					}
+				},
+				"data": "1.14.0",
+				"key": "format_version"
+			},
+			{
+				"open": {
+					"format_version": "1.14.0",
+					"minecraft:entity": {
+						"description": {
+							"identifier": "endergy:endergy_pulse",
+							"is_summonable": true,
+							"is_spawnable": true
+						},
+						"component_groups": {},
+						"components": {
+							"minecraft:physics": {
+								"has_collision": false,
+								"has_gravity": false
+							},
+							"minecraft:collision_box": {
+								"width": 0.4,
+								"height": 0.4
+							},
+							"minecraft:pushable": {
+								"is_pushable": false,
+								"is_pushable_by_piston": false
+							}
+						},
+						"events": {}
+					}
+				},
+				"key": "minecraft:entity",
+				"children": [
+					{
+						"open": {
+							"description": {
+								"identifier": "endergy:endergy_pulse",
+								"is_summonable": true,
+								"is_spawnable": true
+							},
+							"component_groups": {},
+							"components": {
+								"minecraft:physics": {
+									"has_collision": false,
+									"has_gravity": false
+								},
+								"minecraft:collision_box": {
+									"width": 0.4,
+									"height": 0.4
+								},
+								"minecraft:pushable": {
+									"is_pushable": false,
+									"is_pushable_by_piston": false
+								}
+							},
+							"events": {}
+						},
+						"key": "description",
+						"is_minified": true,
+						"children": {
+							"identifier": "endergy:endergy_pulse",
+							"is_summonable": true,
+							"is_spawnable": true
+						}
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "endergy:endergy_pulse",
+								"is_summonable": true,
+								"is_spawnable": true
+							},
+							"component_groups": {},
+							"components": {
+								"minecraft:physics": {
+									"has_collision": false,
+									"has_gravity": false
+								},
+								"minecraft:collision_box": {
+									"width": 0.4,
+									"height": 0.4
+								},
+								"minecraft:pushable": {
+									"is_pushable": false,
+									"is_pushable_by_piston": false
+								}
+							},
+							"events": {}
+						},
+						"key": "component_groups",
+						"is_minified": true,
+						"children": {}
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "endergy:endergy_pulse",
+								"is_summonable": true,
+								"is_spawnable": true
+							},
+							"component_groups": {},
+							"components": {
+								"minecraft:physics": {
+									"has_collision": false,
+									"has_gravity": false
+								},
+								"minecraft:collision_box": {
+									"width": 0.4,
+									"height": 0.4
+								},
+								"minecraft:pushable": {
+									"is_pushable": false,
+									"is_pushable_by_piston": false
+								}
+							},
+							"events": {}
+						},
+						"key": "components",
+						"children": [
+							{
+								"open": {
+									"minecraft:physics": {
+										"has_collision": false,
+										"has_gravity": false
+									},
+									"minecraft:collision_box": {
+										"width": 0.4,
+										"height": 0.4
+									},
+									"minecraft:pushable": {
+										"is_pushable": false,
+										"is_pushable_by_piston": false
+									}
+								},
+								"key": "minecraft:physics",
+								"is_minified": true,
+								"children": {
+									"has_collision": false,
+									"has_gravity": false
+								}
+							},
+							{
+								"open": {
+									"minecraft:physics": {
+										"has_collision": false,
+										"has_gravity": false
+									},
+									"minecraft:collision_box": {
+										"width": 0.4,
+										"height": 0.4
+									},
+									"minecraft:pushable": {
+										"is_pushable": false,
+										"is_pushable_by_piston": false
+									}
+								},
+								"key": "minecraft:collision_box",
+								"is_minified": true,
+								"children": {
+									"width": 0.4,
+									"height": 0.4
+								}
+							},
+							{
+								"open": {
+									"minecraft:physics": {
+										"has_collision": false,
+										"has_gravity": false
+									},
+									"minecraft:collision_box": {
+										"width": 0.4,
+										"height": 0.4
+									},
+									"minecraft:pushable": {
+										"is_pushable": false,
+										"is_pushable_by_piston": false
+									}
+								},
+								"key": "minecraft:pushable",
+								"is_minified": true,
+								"children": {
+									"is_pushable": false,
+									"is_pushable_by_piston": false
+								}
+							}
+						]
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "endergy:endergy_pulse",
+								"is_summonable": true,
+								"is_spawnable": true
+							},
+							"component_groups": {},
+							"components": {
+								"minecraft:physics": {
+									"has_collision": false,
+									"has_gravity": false
+								},
+								"minecraft:collision_box": {
+									"width": 0.4,
+									"height": 0.4
+								},
+								"minecraft:pushable": {
+									"is_pushable": false,
+									"is_pushable_by_piston": false
+								}
+							},
+							"events": {}
+						},
+						"key": "events",
+						"is_minified": true,
+						"children": {}
+					}
+				]
+			}
+		]
+	}
+}

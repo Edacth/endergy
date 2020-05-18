@@ -3,7 +3,7 @@
 	"file_type": "entity",
 	"format_version": 1,
 	"file_uuid": "4c0749b7_cfe2_4fa1_9278_4bbfd3cebd93",
-	"file_version": 20,
+	"file_version": 24,
 	"cache_content": {
 		"children": [
 			{
@@ -17,16 +17,30 @@
 						"description": {
 							"identifier": "endergy:collector",
 							"is_summonable": true,
-							"is_spawnable": true
+							"is_spawnable": true,
+							"animations": {
+								"block_immitation.init": "controller.animation.block_immitation.init"
+							},
+							"scripts": {
+								"animate": [
+									{
+										"block_immitation.init": "(1.0)"
+									}
+								]
+							}
 						},
 						"component_groups": {},
-						"events": {},
 						"components": {
 							"minecraft:collision_box": {
 								"width": 1,
 								"height": 1
+							},
+							"endergy:block_immitation": {},
+							"minecraft:loot": {
+								"table": "loot_tables/collector_egg.loot.json"
 							}
-						}
+						},
+						"events": {}
 					}
 				},
 				"key": "minecraft:entity",
@@ -36,40 +50,141 @@
 							"description": {
 								"identifier": "endergy:collector",
 								"is_summonable": true,
-								"is_spawnable": true
+								"is_spawnable": true,
+								"animations": {
+									"block_immitation.init": "controller.animation.block_immitation.init"
+								},
+								"scripts": {
+									"animate": [
+										{
+											"block_immitation.init": "(1.0)"
+										}
+									]
+								}
 							},
 							"component_groups": {},
-							"events": {},
 							"components": {
 								"minecraft:collision_box": {
 									"width": 1,
 									"height": 1
+								},
+								"endergy:block_immitation": {},
+								"minecraft:loot": {
+									"table": "loot_tables/collector_egg.loot.json"
 								}
-							}
+							},
+							"events": {}
 						},
 						"key": "description",
-						"is_minified": true,
-						"children": {
-							"identifier": "endergy:collector",
-							"is_summonable": true,
-							"is_spawnable": true
-						}
+						"children": [
+							{
+								"data": "endergy:collector",
+								"key": "identifier"
+							},
+							{
+								"data": "true",
+								"key": "is_summonable"
+							},
+							{
+								"data": "true",
+								"key": "is_spawnable"
+							},
+							{
+								"open": {
+									"identifier": "endergy:collector",
+									"is_summonable": true,
+									"is_spawnable": true,
+									"animations": {
+										"block_immitation.init": "controller.animation.block_immitation.init"
+									},
+									"scripts": {
+										"animate": [
+											{
+												"block_immitation.init": "(1.0)"
+											}
+										]
+									}
+								},
+								"key": "animations",
+								"is_minified": true,
+								"children": {
+									"block_immitation.init": "controller.animation.block_immitation.init"
+								}
+							},
+							{
+								"open": {
+									"identifier": "endergy:collector",
+									"is_summonable": true,
+									"is_spawnable": true,
+									"animations": {
+										"block_immitation.init": "controller.animation.block_immitation.init"
+									},
+									"scripts": {
+										"animate": [
+											{
+												"block_immitation.init": "(1.0)"
+											}
+										]
+									}
+								},
+								"key": "scripts",
+								"children": [
+									{
+										"open": {
+											"animate": [
+												{
+													"block_immitation.init": "(1.0)"
+												}
+											]
+										},
+										"key": "animate",
+										"array": [
+											{
+												"open": [
+													{
+														"block_immitation.init": "(1.0)"
+													}
+												],
+												"is_minified": true,
+												"children": {
+													"block_immitation.init": "(1.0)"
+												}
+											}
+										]
+									}
+								]
+							}
+						]
 					},
 					{
 						"open": {
 							"description": {
 								"identifier": "endergy:collector",
 								"is_summonable": true,
-								"is_spawnable": true
+								"is_spawnable": true,
+								"animations": {
+									"block_immitation.init": "controller.animation.block_immitation.init"
+								},
+								"scripts": {
+									"animate": [
+										{
+											"block_immitation.init": "(1.0)"
+										}
+									]
+								}
 							},
 							"component_groups": {},
-							"events": {},
 							"components": {
 								"minecraft:collision_box": {
 									"width": 1,
 									"height": 1
+								},
+								"endergy:block_immitation": {},
+								"minecraft:loot": {
+									"table": "loot_tables/collector_egg.loot.json"
 								}
-							}
+							},
+							"events": {}
 						},
 						"key": "component_groups",
 						"is_minified": true,
@@ -80,54 +195,77 @@
 							"description": {
 								"identifier": "endergy:collector",
 								"is_summonable": true,
-								"is_spawnable": true
+								"is_spawnable": true,
+								"animations": {
+									"block_immitation.init": "controller.animation.block_immitation.init"
+								},
+								"scripts": {
+									"animate": [
+										{
+											"block_immitation.init": "(1.0)"
+										}
+									]
+								}
 							},
 							"component_groups": {},
-							"events": {},
 							"components": {
 								"minecraft:collision_box": {
 									"width": 1,
 									"height": 1
+								},
+								"endergy:block_immitation": {},
+								"minecraft:loot": {
+									"table": "loot_tables/collector_egg.loot.json"
 								}
-							}
+							},
+							"events": {}
 						},
-						"key": "events",
+						"key": "components",
 						"is_minified": true,
-						"children": {}
+						"children": {
+							"minecraft:collision_box": {
+								"width": 1,
+								"height": 1
+							},
+							"endergy:block_immitation": {},
+							"minecraft:loot": {
+								"table": "loot_tables/collector_egg.loot.json"
+							}
+						}
 					},
 					{
 						"open": {
 							"description": {
 								"identifier": "endergy:collector",
 								"is_summonable": true,
-								"is_spawnable": true
+								"is_spawnable": true,
+								"animations": {
+									"block_immitation.init": "controller.animation.block_immitation.init"
+								},
+								"scripts": {
+									"animate": [
+										{
+											"block_immitation.init": "(1.0)"
+										}
+									]
+								}
 							},
 							"component_groups": {},
-							"events": {},
 							"components": {
 								"minecraft:collision_box": {
 									"width": 1,
 									"height": 1
-								}
-							}
-						},
-						"key": "components",
-						"children": [
-							{
-								"open": {
-									"minecraft:collision_box": {
-										"width": 1,
-										"height": 1
-									}
 								},
-								"key": "minecraft:collision_box",
-								"is_minified": true,
-								"children": {
-									"width": 1,
-									"height": 1
+								"endergy:block_immitation": {},
+								"minecraft:loot": {
+									"table": "loot_tables/collector_egg.loot.json"
 								}
-							}
-						]
+							},
+							"events": {}
+						},
+						"key": "events",
+						"is_minified": true,
+						"children": {}
 					}
 				]
 			}
