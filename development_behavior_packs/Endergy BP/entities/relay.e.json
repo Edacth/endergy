@@ -1,4 +1,4 @@
-//bridge-file-version: #0
+//bridge-file-version: #30
 {
 	"minecraft:entity": {
 		"description": {
@@ -7,7 +7,8 @@
 			"is_spawnable": true,
 			"animations": {
 				"block_immitation.init": "controller.animation.block_immitation.init",
-				"relay_direction": "controller.animation.relay.direction"
+				"relay_direction": "controller.animation.relay.direction",
+				"redirect_tick": "animation.relay.tick"
 			},
 			"scripts": {
 				"animate": [
@@ -16,6 +17,9 @@
 					},
 					{
 						"relay_direction": "(1.0)"
+					},
+					{
+						"redirect_tick": "(1.0)"
 					}
 				]
 			}

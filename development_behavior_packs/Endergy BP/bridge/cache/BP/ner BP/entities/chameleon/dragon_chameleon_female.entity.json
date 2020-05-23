@@ -1,0 +1,1222 @@
+{
+	"file_path": "C:\\Users\\cadea\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_behavior_packs\\Dragontrainer BP\\entities\\chameleon\\dragon_chameleon_female.entity.json",
+	"file_type": "entity",
+	"cache_content": {
+		"minecraft:entity": {
+			"component_groups": {
+				"dragon:special_attack": {
+					"minecraft:behavior.send_event": {
+						"priority": 0,
+						"event_choices": [
+							{
+								"min_activation_range": 0,
+								"max_activation_range": 16,
+								"cooldown_time": 0.1,
+								"weight": 1,
+								"sequence": [
+									{
+										"base_delay": 0.1,
+										"event": "dragon:start_hypnosis"
+									}
+								],
+								"filters": {
+									"all_of": [
+										{
+											"any_of": [
+												{
+													"test": "is_target",
+													"subject": "other"
+												},
+												{
+													"test": "has_tag",
+													"value": "dragon_target",
+													"subject": "other"
+												}
+											]
+										},
+										{
+											"test": "has_component",
+											"value": "minecraft:behavior.panic",
+											"operator": "not",
+											"subject": "other"
+										}
+									]
+								}
+							}
+						]
+					},
+					"minecraft:mark_variant": {
+						"value": 1
+					}
+				},
+				"dragon:owner_hurt": {
+					"minecraft:behavior.owner_hurt_by_target": {
+						"priority": 4
+					},
+					"minecraft:behavior.owner_hurt_target": {
+						"priority": 3
+					}
+				},
+				"dragon:state_befriended": {
+					"minecraft:behavior.nearest_attackable_target": {
+						"priority": 1,
+						"reselect_targets": true,
+						"must_reach": false,
+						"must_see": false,
+						"entity_types": [
+							{
+								"filters": {
+									"all_of": [
+										{
+											"test": "has_tag",
+											"value": "dragon_target",
+											"subject": "other"
+										},
+										{
+											"test": "has_component",
+											"value": "minecraft:is_tamed",
+											"operator": "not",
+											"subject": "other"
+										}
+									]
+								},
+								"max_dist": 60
+							}
+						]
+					},
+					"minecraft:behavior.follow_owner": {
+						"priority": 5,
+						"start_distance": 8,
+						"stop_distance": 4
+					},
+					"minecraft:behavior.owner_hurt_by_target": {
+						"priority": 4
+					},
+					"minecraft:behavior.owner_hurt_target": {
+						"priority": 3
+					},
+					"minecraft:behavior.hurt_by_target": {
+						"priority": 1,
+						"entity_types": [
+							{
+								"filters": {
+									"test": "has_component",
+									"value": "minecraft:is_tamed",
+									"operator": "not",
+									"subject": "other"
+								}
+							}
+						]
+					},
+					"minecraft:is_tamed": {}
+				},
+				"dragon:special_end": {
+					"minecraft:mark_variant": {
+						"value": 0
+					}
+				},
+				"dragon:state_wild": {
+					"minecraft:behavior.hurt_by_target": {
+						"priority": 1
+					},
+					"minecraft:behavior.nearest_attackable_target": {
+						"priority": 1,
+						"reselect_targets": true,
+						"must_reach": false,
+						"must_see": false,
+						"entity_types": [
+							{
+								"filters": {
+									"any_of": [
+										{
+											"all_of": [
+												{
+													"test": "has_tag",
+													"value": "bat_theif",
+													"subject": "other"
+												},
+												{
+													"test": "is_family",
+													"value": "bat"
+												}
+											]
+										},
+										{
+											"all_of": [
+												{
+													"test": "has_tag",
+													"value": "chameleon_theif",
+													"subject": "other"
+												},
+												{
+													"test": "is_family",
+													"value": "chameleon"
+												}
+											]
+										},
+										{
+											"all_of": [
+												{
+													"test": "has_tag",
+													"value": "frog_theif",
+													"subject": "other"
+												},
+												{
+													"test": "is_family",
+													"value": "frog"
+												}
+											]
+										},
+										{
+											"all_of": [
+												{
+													"test": "has_tag",
+													"value": "frill_lizard_theif",
+													"subject": "other"
+												},
+												{
+													"test": "is_family",
+													"value": "frill_lizard"
+												}
+											]
+										},
+										{
+											"all_of": [
+												{
+													"test": "has_tag",
+													"value": "lizard_theif",
+													"subject": "other"
+												},
+												{
+													"test": "is_family",
+													"value": "lizard"
+												}
+											]
+										},
+										{
+											"all_of": [
+												{
+													"test": "has_tag",
+													"value": "draco_lizard_theif",
+													"subject": "other"
+												},
+												{
+													"test": "is_family",
+													"value": "draco_lizard"
+												}
+											]
+										},
+										{
+											"all_of": [
+												{
+													"test": "has_tag",
+													"value": "tortoise_theif",
+													"subject": "other"
+												},
+												{
+													"test": "is_family",
+													"value": "tortoise"
+												}
+											]
+										},
+										{
+											"all_of": [
+												{
+													"test": "has_tag",
+													"value": "serpent_theif",
+													"subject": "other"
+												},
+												{
+													"test": "is_family",
+													"value": "serpent"
+												}
+											]
+										},
+										{
+											"all_of": [
+												{
+													"test": "has_tag",
+													"value": "slug_theif",
+													"subject": "other"
+												},
+												{
+													"test": "is_family",
+													"value": "slug"
+												}
+											]
+										}
+									]
+								},
+								"max_dist": 20
+							}
+						]
+					}
+				},
+				"dragon:func_lose_target": {
+					"minecraft:scale": {
+						"value": 0.1
+					},
+					"minecraft:angry": {
+						"duration": 0.1,
+						"calm_event": {
+							"event": "dragon:on_target_escape",
+							"target": "self"
+						}
+					}
+				},
+				"dragon:standard_ai": {
+					"minecraft:behavior.nap": {
+						"priority": 7,
+						"cooldown_min": 2,
+						"cooldown_max": 2,
+						"mob_detect_dist": 3,
+						"mob_detect_height": 4,
+						"can_nap_filters": {
+							"all_of": [
+								{
+									"test": "is_daytime",
+									"value": false
+								}
+							]
+						},
+						"wake_mob_exceptions": {
+							"any_of": [
+								{
+									"test": "is_family",
+									"subject": "other",
+									"operator": "==",
+									"value": "player"
+								},
+								{
+									"test": "is_family",
+									"subject": "other",
+									"operator": "==",
+									"value": "dragon"
+								}
+							]
+						}
+					},
+					"minecraft:behavior.random_stroll": {
+						"priority": 9,
+						"speed_multiplier": 0.6,
+						"xz_dist": 10
+					},
+					"minecraft:behavior.look_at_player": {
+						"priority": 16
+					},
+					"minecraft:behavior.random_look_around": {
+						"priority": 20
+					}
+				},
+				"dragon:state_domesticated": {
+					"minecraft:behavior.drink_potion": {
+						"priority": 100
+					},
+					"minecraft:inventory": {
+						"container_type": "horse",
+						"inventory_size": 2
+					},
+					"minecraft:equippable": {
+						"slots": [
+							{
+								"slot": 0,
+								"item": "minecraft:saddle",
+								"interact_text": "action.interact.saddle",
+								"accepted_items": [
+									"minecraft:saddle"
+								],
+								"on_equip": {
+									"event": "dragon:add_rideable"
+								},
+								"on_unequip": {
+									"event": "dragon:remove_rideable"
+								}
+							},
+							{
+								"slot": 1,
+								"item": "horsearmoriron",
+								"accepted_items": [
+									"horsearmoriron"
+								],
+								"on_equip": {
+									"event": "dragon:on_equip_armor"
+								},
+								"on_unequip": {
+									"event": "dragon:on_unequip_armor"
+								}
+							}
+						]
+					}
+				},
+				"dragon:breedable": {
+					"minecraft:breedable": {
+						"breed_items": [
+							"minecraft:pumpkin_pie"
+						],
+						"breeds_with": {
+							"mate_type": "dragon:chameleon_male",
+							"baby_type": "dragon:chameleon_egg"
+						},
+						"require_tame": true
+					},
+					"minecraft:behavior.breed": {
+						"priority": 4
+					}
+				},
+				"dragon:func_flap": {
+					"minecraft:is_baby": {}
+				},
+				"dragon:func_plummet_toggle": {
+					"minecraft:is_chested": {}
+				},
+				"dragon:state_rideable": {
+					"minecraft:rideable": {
+						"seat_count": 1,
+						"crouching_skip_interact": true,
+						"rider_can_interact": true,
+						"controlling_seat": 0,
+						"family_types": [
+							"player"
+						],
+						"interact_text": "action.interact.ride.boat",
+						"seats": [
+							{
+								"position": [
+									0,
+									1.625,
+									0.125
+								]
+							}
+						]
+					},
+					"minecraft:behavior.player_ride_tamed": {
+						"priority": 1
+					},
+					"minecraft:input_ground_controlled": {},
+					"minecraft:is_saddled": {}
+				},
+				"dragon:state_default_speed": {
+					"minecraft:movement": {
+						"value": 0.2
+					}
+				},
+				"dragon:state_flight_speed": {
+					"minecraft:movement": {
+						"value": 0.35
+					},
+					"minecraft:behavior.mingle": {
+						"priority": 100
+					}
+				},
+				"dragon:func_insert_saddle": {
+					"minecraft:item_hopper": {},
+					"minecraft:timer": {
+						"time": 0,
+						"time_down_event": {
+							"event": "dragon:remove_func_insert_saddle"
+						}
+					}
+				},
+				"dragon:func_transform_vacuum": {
+					"minecraft:item_hopper": {},
+					"minecraft:timer": {
+						"time": 1,
+						"time_down_event": {
+							"event": "dragon:remove_func_transform_vacuum"
+						}
+					}
+				},
+				"dragon:state_is_flying": {
+					"minecraft:is_ignited": {},
+					"minecraft:friction_modifier": {
+						"value": 1
+					}
+				},
+				"dragon:func_die": {
+					"minecraft:health": {
+						"value": 0,
+						"max": 0
+					}
+				},
+				"dragon:rare_variant": {
+					"minecraft:variant": {
+						"value": 1
+					}
+				}
+			},
+			"components": {
+				"minecraft:on_target_escape": {
+					"event": "dragon:on_target_escape"
+				},
+				"minecraft:on_target_acquired": {
+					"event": "dragon:on_target_acquired"
+				},
+				"minecraft:follow_range": {
+					"value": 128
+				},
+				"minecraft:health": {
+					"value": 80
+				},
+				"minecraft:navigation.generic": {
+					"avoid_water": true
+				},
+				"minecraft:behavior.float": {
+					"priority": 1
+				},
+				"minecraft:movement.generic": {
+					"max_turn": 10
+				},
+				"minecraft:physics": {},
+				"minecraft:jump.static": {},
+				"minecraft:type_family": {
+					"family": [
+						"dragon",
+						"chameleon"
+					]
+				},
+				"minecraft:pushable": {
+					"is_pushable": true
+				},
+				"minecraft:damage_sensor": {
+					"triggers": [
+						{
+							"on_damage": {
+								"filters": {
+									"all_of": [
+										{
+											"test": "has_damage",
+											"value": "fall"
+										}
+									]
+								}
+							},
+							"deals_damage": false
+						},
+						{
+							"on_damage": {
+								"filters": {
+									"all_of": [
+										{
+											"test": "is_family",
+											"subject": "other",
+											"value": "player"
+										},
+										{
+											"test": "has_component",
+											"operator": "!=",
+											"value": "minecraft:behavior.drink_potion"
+										},
+										{
+											"test": "has_component",
+											"value": "minecraft:is_tamed"
+										}
+									]
+								},
+								"event": "dragon:on_player_damage"
+							}
+						},
+						{
+							"on_damage": {
+								"filters": {
+									"all_of": [
+										{
+											"test": "is_family",
+											"subject": "other",
+											"value": "player"
+										},
+										{
+											"test": "has_component",
+											"value": "minecraft:behavior.drink_potion"
+										}
+									]
+								}
+							},
+							"deals_damage": false
+						}
+					]
+				},
+				"minecraft:fire_immune": false,
+				"minecraft:interact": {
+					"interactions": [
+						{
+							"on_interact": {
+								"filters": {
+									"all_of": [
+										{
+											"test": "has_component",
+											"value": "minecraft:is_tamed",
+											"operator": "!=",
+											"subject": "self"
+										},
+										{
+											"test": "has_equipment",
+											"value": "minecraft:golden_apple",
+											"subject": "other",
+											"domain": "hand"
+										}
+									]
+								},
+								"event": "dragon:on_fav_food",
+								"target": "self"
+							},
+							"swing": true,
+							"use_item": true,
+							"particle_on_start": {
+								"particle_type": "smoke",
+								"particle_y_offset": 1.25,
+								"particle_offset_towards_interactor": true
+							},
+							"play_sounds": "eat"
+						},
+						{
+							"on_interact": {
+								"filters": {
+									"all_of": [
+										{
+											"test": "has_component",
+											"value": "minecraft:is_tamed",
+											"operator": "!=",
+											"subject": "self"
+										},
+										{
+											"any_of": [
+												{
+													"test": "has_equipment",
+													"subject": "other",
+													"value": "minecraft:potato",
+													"domain": "hand"
+												},
+												{
+													"test": "has_equipment",
+													"subject": "other",
+													"value": "minecraft:carrot",
+													"domain": "hand"
+												}
+											]
+										}
+									]
+								},
+								"event": "dragon:on_norm_food",
+								"target": "self"
+							},
+							"swing": true,
+							"use_item": true,
+							"particle_on_start": {
+								"particle_type": "smoke",
+								"particle_y_offset": 1.25,
+								"particle_offset_towards_interactor": true
+							},
+							"play_sounds": "eat"
+						},
+						{
+							"on_interact": {
+								"filters": {
+									"all_of": [
+										{
+											"test": "is_riding",
+											"subject": "other",
+											"value": true
+										},
+										{
+											"test": "has_component",
+											"value": "minecraft:rideable",
+											"subject": "self"
+										},
+										{
+											"test": "has_equipment",
+											"value": "minecraft:potato",
+											"domain": "hand",
+											"operator": "!=",
+											"subject": "other"
+										}
+									]
+								},
+								"event": "dragon:on_plummet_toggle_start",
+								"target": "self"
+							}
+						},
+						{
+							"on_interact": {
+								"filters": {
+									"all_of": [
+										{
+											"test": "has_component",
+											"value": "minecraft:is_saddled",
+											"operator": "!=",
+											"subject": "self"
+										},
+										{
+											"test": "has_equipment",
+											"value": "saddle",
+											"subject": "other",
+											"domain": "hand"
+										},
+										{
+											"test": "has_component",
+											"value": "minecraft:behavior.drink_potion",
+											"subject": "self"
+										}
+									]
+								},
+								"event": "dragon:add_rideable",
+								"target": "self"
+							},
+							"swing": true,
+							"use_item": true,
+							"spawn_items": {
+								"table": "loot_tables/misc/saddle.json"
+							}
+						},
+						{
+							"on_interact": {
+								"filters": {
+									"all_of": [
+										{
+											"any_of": [
+												{
+													"test": "has_equipment",
+													"domain": "hand",
+													"subject": "other",
+													"value": "minecraft:blaze_rod",
+													"operator": "!="
+												}
+											]
+										},
+										{
+											"test": "is_riding",
+											"subject": "other",
+											"value": true
+										},
+										{
+											"test": "has_component",
+											"value": "minecraft:rideable",
+											"subject": "self"
+										}
+									]
+								}
+							}
+						},
+						{
+							"on_interact": {
+								"filters": {
+									"all_of": [
+										{
+											"test": "has_equipment",
+											"value": "minecraft:blaze_rod",
+											"domain": "hand",
+											"subject": "other"
+										},
+										{
+											"test": "has_ability",
+											"value": "instabuild",
+											"subject": "other"
+										}
+									]
+								},
+								"event": "dragon:on_kill_stick"
+							}
+						}
+					]
+				},
+				"minecraft:behavior.tempt": {
+					"priority": 5,
+					"speed_multiplier": 1,
+					"items": [
+						"minecraft:golden_apple"
+					]
+				},
+				"minecraft:behavior.beg": {
+					"priority": 6,
+					"look_distance": 8,
+					"look_time": [
+						2,
+						4
+					],
+					"items": [
+						"minecraft:golden_apple"
+					]
+				},
+				"minecraft:environment_sensor": {
+					"triggers": [
+						{
+							"filters": {
+								"all_of": [
+									{
+										"test": "has_component",
+										"value": "minecraft:breedable",
+										"operator": "!="
+									},
+									{
+										"test": "has_tag",
+										"value": "breedable"
+									}
+								]
+							},
+							"event": "dragon:add_breedable"
+						},
+						{
+							"filters": {
+								"all_of": [
+									{
+										"test": "has_component",
+										"value": "minecraft:breedable"
+									},
+									{
+										"test": "has_tag",
+										"value": "breedable",
+										"operator": "!="
+									}
+								]
+							},
+							"event": "dragon:remove_breedable"
+						},
+						{
+							"filters": {
+								"all_of": [
+									{
+										"test": "has_component",
+										"operator": "!=",
+										"value": "minecraft:is_ignited"
+									},
+									{
+										"all_of": [
+											{
+												"test": "on_ground",
+												"operator": "!="
+											},
+											{
+												"test": "in_water",
+												"operator": "!="
+											}
+										]
+									}
+								]
+							},
+							"event": "dragon:on_flying_start"
+						},
+						{
+							"filters": {
+								"all_of": [
+									{
+										"test": "has_component",
+										"operator": "==",
+										"value": "minecraft:is_ignited"
+									},
+									{
+										"any_of": [
+											{
+												"test": "on_ground"
+											},
+											{
+												"test": "in_water"
+											}
+										]
+									}
+								]
+							},
+							"event": "dragon:on_flying_end"
+						},
+						{
+							"filters": {
+								"all_of": [
+									{
+										"test": "has_component",
+										"operator": "!=",
+										"value": "minecraft:behavior.mingle"
+									},
+									{
+										"test": "has_tag",
+										"value": "flight_speed"
+									}
+								]
+							},
+							"event": "dragon:on_flight_speed"
+						},
+						{
+							"filters": {
+								"all_of": [
+									{
+										"test": "has_component",
+										"value": "minecraft:behavior.mingle"
+									},
+									{
+										"test": "has_tag",
+										"operator": "!=",
+										"value": "flight_speed"
+									}
+								]
+							},
+							"event": "dragon:on_default_speed"
+						},
+						{
+							"filters": {
+								"all_of": [
+									{
+										"test": "has_tag",
+										"value": "on_flap"
+									},
+									{
+										"test": "has_tag",
+										"value": "can_flap"
+									}
+								]
+							},
+							"event": "dragon:on_flap_start"
+						}
+					]
+				},
+				"minecraft:collision_box": {
+					"width": 3.6,
+					"height": 4
+				}
+			},
+			"events": {
+				"dragon:on_target_acquired": {
+					"sequence": [
+						{
+							"filters": {
+								"all_of": [
+									{
+										"test": "has_component",
+										"value": "minecraft:is_tamed",
+										"operator": "not",
+										"subject": "target"
+									},
+									{
+										"test": "has_target"
+									}
+								]
+							},
+							"add": {
+								"component_groups": [
+									"dragon:special_attack"
+								]
+							},
+							"remove": {
+								"component_groups": [
+									"dragon:func_lose_target"
+								]
+							}
+						}
+					]
+				},
+				"dragon:on_target_escape": {
+					"remove": {
+						"component_groups": [
+							"dragon:special_attack",
+							"dragon:func_lose_target"
+						]
+					},
+					"add": {
+						"component_groups": [
+							"dragon:special_end",
+							"dragon:owner_hurt"
+						]
+					}
+				},
+				"dragon:func_lose_target": {
+					"add": {
+						"component_groups": [
+							"dragon:func_lose_target"
+						]
+					},
+					"remove": {
+						"component_groups": [
+							"dragon:owner_hurt"
+						]
+					}
+				},
+				"minecraft:entity_spawned": {
+					"sequence": [
+						{
+							"add": {
+								"component_groups": [
+									"dragon:standard_ai"
+								]
+							}
+						},
+						{
+							"add": {
+								"component_groups": [
+									"dragon:state_wild"
+								]
+							}
+						},
+						{
+							"add": {
+								"component_groups": [
+									"dragon:state_default_speed"
+								]
+							}
+						},
+						{
+							"randomize": [
+								{
+									"weight": 20
+								},
+								{
+									"weight": 1,
+									"add": {
+										"component_groups": [
+											"dragon:rare_variant"
+										]
+									}
+								}
+							]
+						}
+					]
+				},
+				"minecraft:entity_transformed": {
+					"sequence": [
+						{
+							"add": {
+								"component_groups": [
+									"dragon:standard_ai"
+								]
+							}
+						},
+						{
+							"add": {
+								"component_groups": [
+									"dragon:state_domesticated",
+									"dragon:state_befriended"
+								]
+							}
+						},
+						{
+							"add": {
+								"component_groups": [
+									"dragon:state_default_speed",
+									"dragon:func_transform_vacuum"
+								]
+							}
+						}
+					]
+				},
+				"dragon:on_fav_food": {
+					"add": {
+						"component_groups": [
+							"dragon:state_befriended",
+							"dragon:func_lose_target"
+						]
+					},
+					"remove": {
+						"component_groups": [
+							"dragon:state_wild",
+							"dragon:special_attack"
+						]
+					}
+				},
+				"dragon:on_norm_food": {
+					"randomize": [
+						{
+							"weight": 20,
+							"add": {
+								"component_groups": [
+									"dragon:state_befriended",
+									"dragon:func_lose_target"
+								]
+							},
+							"remove": {
+								"component_groups": [
+									"dragon:state_wild",
+									"dragon:special_attack"
+								]
+							}
+						},
+						{
+							"weight": 80
+						}
+					]
+				},
+				"dragon:on_player_damage": {
+					"add": {
+						"component_groups": [
+							"dragon:state_wild"
+						]
+					},
+					"remove": {
+						"component_groups": [
+							"dragon:state_befriended"
+						]
+					}
+				},
+				"dragon:add_breedable": {
+					"sequence": [
+						{
+							"add": {
+								"component_groups": [
+									"dragon:breedable"
+								]
+							}
+						}
+					]
+				},
+				"dragon:remove_breedable": {
+					"sequence": [
+						{
+							"remove": {
+								"component_groups": [
+									"dragon:breedable"
+								]
+							}
+						}
+					]
+				},
+				"dragon:on_flap_start": {
+					"add": {
+						"component_groups": [
+							"dragon:func_flap"
+						]
+					}
+				},
+				"dragon:on_flap_end": {
+					"remove": {
+						"component_groups": [
+							"dragon:func_flap"
+						]
+					}
+				},
+				"dragon:on_plummet_toggle_start": {
+					"add": {
+						"component_groups": [
+							"dragon:func_plummet_toggle"
+						]
+					}
+				},
+				"dragon:on_plummet_toggle_end": {
+					"remove": {
+						"component_groups": [
+							"dragon:func_plummet_toggle"
+						]
+					}
+				},
+				"dragon:on_flying_start": {
+					"add": {
+						"component_groups": [
+							"dragon:state_is_flying"
+						]
+					},
+					"remove": {
+						"component_groups": [
+							"dragon:state_default_speed"
+						]
+					}
+				},
+				"dragon:on_flying_end": {
+					"add": {
+						"component_groups": [
+							"dragon:state_default_speed"
+						]
+					},
+					"remove": {
+						"component_groups": [
+							"dragon:state_is_flying"
+						]
+					}
+				},
+				"dragon:add_rideable": {
+					"add": {
+						"component_groups": [
+							"dragon:state_rideable",
+							"dragon:func_insert_saddle"
+						]
+					}
+				},
+				"dragon:remove_rideable": {
+					"remove": {
+						"component_groups": [
+							"dragon:state_rideable"
+						]
+					}
+				},
+				"dragon:on_flight_speed": {
+					"add": {
+						"component_groups": [
+							"dragon:state_flight_speed"
+						]
+					},
+					"remove": {
+						"component_groups": [
+							"dragon:state_default_speed"
+						]
+					}
+				},
+				"dragon:on_default_speed": {
+					"add": {
+						"component_groups": [
+							"dragon:state_default_speed"
+						]
+					},
+					"remove": {
+						"component_groups": [
+							"dragon:state_flight_speed"
+						]
+					}
+				},
+				"dragon:add_func_insert_saddle": {
+					"add": {
+						"component_groups": [
+							"dragon:func_insert_saddle"
+						]
+					}
+				},
+				"dragon:remove_func_insert_saddle": {
+					"remove": {
+						"component_groups": [
+							"dragon:func_insert_saddle"
+						]
+					}
+				},
+				"dragon:remove_func_transform_vacuum": {
+					"remove": {
+						"component_groups": [
+							"dragon:func_transform_vacuum"
+						]
+					}
+				},
+				"dragon:on_kill_stick": {
+					"add": {
+						"component_groups": [
+							"dragon:func_die"
+						]
+					}
+				}
+			},
+			"description": {
+				"animations": {
+					"spawn_init": "controller.animation.dragon_functions.spawn_init",
+					"flap": "controller.animation.dragon_functions.flap",
+					"plummet_toggle": "controller.animation.dragon_functions.plummet_toggle",
+					"in_air_tag_setter": "controller.animation.dragon_functions.in_air_tag_setter",
+					"in_air": "animation.dragon_functions.in_air",
+					"mature": "controller.animation.mature.particle",
+					"mature_jingle": "animation.mature.jingle",
+					"hypno_sound_controller": "controller.animation.breath_sound",
+					"breath_start": "animation.hypno.start",
+					"breath_loop": "animation.hypno.loop",
+					"breath_end": "animation.hypno.end"
+				},
+				"scripts": {
+					"animate": [
+						"spawn_init",
+						"flap",
+						"plummet_toggle",
+						"in_air_tag_setter",
+						"in_air",
+						"mature",
+						"hypno_sound_controller"
+					]
+				},
+				"identifier": "dragon:chameleon_female",
+				"is_spawnable": true,
+				"is_summonable": true,
+				"is_experimental": false
+			}
+		},
+		"format_version": "1.14.0"
+	},
+	"format_version": 0,
+	"file_version": 0,
+	"file_uuid": "351ae6fc_55fa_404b_85f8_b1106f1cdc93"
+}

@@ -1,0 +1,91 @@
+{
+	"file_path": "C:\\Users\\cadea\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_behavior_packs\\Endergy BP/animation_controllers/endergy_pulse.json",
+	"file_type": "animation_controller",
+	"format_version": 1,
+	"file_uuid": "792f92d5_443f_431c_be44_fc9f98fa657c",
+	"file_version": 0,
+	"cache_content": {
+		"children": [
+			{
+				"data": "1.10.0",
+				"key": "format_version"
+			},
+			{
+				"open": {
+					"format_version": "1.10.0",
+					"animation_controllers": {
+						"controller.animation.endergy_pulse.init": {
+							"initial_state": "default",
+							"states": {
+								"default": {
+									"on_entry": {},
+									"on_exit": {}
+								}
+							}
+						}
+					}
+				},
+				"key": "animation_controllers",
+				"children": [
+					{
+						"open": {
+							"controller.animation.endergy_pulse.init": {
+								"initial_state": "default",
+								"states": {
+									"default": {
+										"on_entry": {},
+										"on_exit": {}
+									}
+								}
+							}
+						},
+						"key": "controller.animation.endergy_pulse.init",
+						"children": [
+							{
+								"open": {
+									"initial_state": "default",
+									"states": {
+										"default": {
+											"on_entry": {},
+											"on_exit": {}
+										}
+									}
+								},
+								"data": "default",
+								"key": "initial_state"
+							},
+							{
+								"open": {
+									"initial_state": "default",
+									"states": {
+										"default": {
+											"on_entry": {},
+											"on_exit": {}
+										}
+									}
+								},
+								"key": "states",
+								"children": [
+									{
+										"open": {
+											"default": {
+												"on_entry": {},
+												"on_exit": {}
+											}
+										},
+										"key": "default",
+										"is_minified": true,
+										"children": {
+											"on_entry": {},
+											"on_exit": {}
+										}
+									}
+								]
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+}

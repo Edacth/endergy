@@ -1,0 +1,205 @@
+{
+	"file_path": "C:\\Users\\cadea\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_resource_packs\\Endergy RP/entity/endergy_pulse.ce.json",
+	"file_type": "client_entity",
+	"format_version": 1,
+	"file_uuid": "88038512_d943_4d0c_8288_470318e11e91",
+	"file_version": 1,
+	"cache_content": {
+		"children": [
+			{
+				"data": "1.10.0",
+				"key": "format_version"
+			},
+			{
+				"open": {
+					"format_version": "1.10.0",
+					"minecraft:client_entity": {
+						"description": {
+							"identifier": "endergy:endergy_pulse",
+							"materials": {
+								"default": "villager"
+							},
+							"textures": {
+								"default": "textures/entity/endergy_pulse_entity"
+							},
+							"geometry": {
+								"default": "geometry.endergy_pulse"
+							},
+							"render_controllers": [
+								"controller.render.default"
+							],
+							"spawn_egg": {
+								"base_color": "#1778D2",
+								"overlay_color": "#1778D2"
+							}
+						}
+					}
+				},
+				"key": "minecraft:client_entity",
+				"children": [
+					{
+						"open": {
+							"description": {
+								"identifier": "endergy:endergy_pulse",
+								"materials": {
+									"default": "villager"
+								},
+								"textures": {
+									"default": "textures/entity/endergy_pulse_entity"
+								},
+								"geometry": {
+									"default": "geometry.endergy_pulse"
+								},
+								"render_controllers": [
+									"controller.render.default"
+								],
+								"spawn_egg": {
+									"base_color": "#1778D2",
+									"overlay_color": "#1778D2"
+								}
+							}
+						},
+						"key": "description",
+						"children": [
+							{
+								"data": "endergy:endergy_pulse",
+								"key": "identifier"
+							},
+							{
+								"open": {
+									"identifier": "endergy:endergy_pulse",
+									"materials": {
+										"default": "villager"
+									},
+									"textures": {
+										"default": "textures/entity/endergy_pulse_entity"
+									},
+									"geometry": {
+										"default": "geometry.endergy_pulse"
+									},
+									"render_controllers": [
+										"controller.render.default"
+									],
+									"spawn_egg": {
+										"base_color": "#1778D2",
+										"overlay_color": "#1778D2"
+									}
+								},
+								"key": "materials",
+								"is_minified": true,
+								"children": {
+									"default": "villager"
+								}
+							},
+							{
+								"open": {
+									"identifier": "endergy:endergy_pulse",
+									"materials": {
+										"default": "villager"
+									},
+									"textures": {
+										"default": "textures/entity/endergy_pulse_entity"
+									},
+									"geometry": {
+										"default": "geometry.endergy_pulse"
+									},
+									"render_controllers": [
+										"controller.render.default"
+									],
+									"spawn_egg": {
+										"base_color": "#1778D2",
+										"overlay_color": "#1778D2"
+									}
+								},
+								"key": "textures",
+								"is_minified": true,
+								"children": {
+									"default": "textures/entity/endergy_pulse_entity"
+								}
+							},
+							{
+								"open": {
+									"identifier": "endergy:endergy_pulse",
+									"materials": {
+										"default": "villager"
+									},
+									"textures": {
+										"default": "textures/entity/endergy_pulse_entity"
+									},
+									"geometry": {
+										"default": "geometry.endergy_pulse"
+									},
+									"render_controllers": [
+										"controller.render.default"
+									],
+									"spawn_egg": {
+										"base_color": "#1778D2",
+										"overlay_color": "#1778D2"
+									}
+								},
+								"key": "geometry",
+								"is_minified": true,
+								"children": {
+									"default": "geometry.endergy_pulse"
+								}
+							},
+							{
+								"open": {
+									"identifier": "endergy:endergy_pulse",
+									"materials": {
+										"default": "villager"
+									},
+									"textures": {
+										"default": "textures/entity/endergy_pulse_entity"
+									},
+									"geometry": {
+										"default": "geometry.endergy_pulse"
+									},
+									"render_controllers": [
+										"controller.render.default"
+									],
+									"spawn_egg": {
+										"base_color": "#1778D2",
+										"overlay_color": "#1778D2"
+									}
+								},
+								"key": "render_controllers",
+								"is_minified": true,
+								"array": [
+									"controller.render.default"
+								]
+							},
+							{
+								"open": {
+									"identifier": "endergy:endergy_pulse",
+									"materials": {
+										"default": "villager"
+									},
+									"textures": {
+										"default": "textures/entity/endergy_pulse_entity"
+									},
+									"geometry": {
+										"default": "geometry.endergy_pulse"
+									},
+									"render_controllers": [
+										"controller.render.default"
+									],
+									"spawn_egg": {
+										"base_color": "#1778D2",
+										"overlay_color": "#1778D2"
+									}
+								},
+								"key": "spawn_egg",
+								"is_minified": true,
+								"children": {
+									"base_color": "#1778D2",
+									"overlay_color": "#1778D2"
+								}
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+}

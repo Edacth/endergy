@@ -274,7 +274,46 @@
 	"BP/animation_controllers/player.ac.json": {
 		"data": {}
 	},
-	"BP/entities/endergy_pulse.json": {
+	"BP/ner BP/entities/bat/dragon_bat_female.entity.json": {
+		"data": {}
+	},
+	"BP/ner BP/entities/bat/dragon_bat_male.entity.json": {
+		"data": {}
+	},
+	"BP/ner BP/entities/chameleon/dragon_chameleon_female.entity.json": {
+		"data": {}
+	},
+	"BP/ner BP/entities/chameleon/dragon_chameleon_male.entity.json": {
+		"data": {}
+	},
+	"BP/ner BP/entities/ancient/dragon_ancient_blue.json": {
+		"data": {}
+	},
+	"BP/ner BP/entities/ancient/dragon_ancient_green.json": {
+		"data": {}
+	},
+	"RP/entity/endergy_pulse.ce.json": {
+		"data": {}
+	},
+	"BP/animations/endergy_pulse.a.json": {
+		"data": {}
+	},
+	"BP/entities/endergy_pulse.e.json/endergy_pulse.json": {
+		"data": {}
+	},
+	"BP/animation_controllers/endergy_pulse.ac.json/endergy_pulse.json": {
+		"data": {}
+	},
+	"BP/animation_controllers/endergy_pulse.ac.json": {
+		"data": {}
+	},
+	"BP/entities/endergy_pulse.e.json": {
+		"data": {}
+	},
+	"BP/animations/collector.a.json": {
+		"data": {}
+	},
+	"BP/animations/relay.a.json": {
 		"data": {}
 	}
 }

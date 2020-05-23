@@ -1,0 +1,16 @@
+//bridge-file-version: #7
+{
+	"format_version": "1.10.0",
+	"animations": {
+		"animation.collector.emit_loop": {
+			"timeline": {
+				"0.0": [
+					"/execute @s[tag=recieve_power] ~ ~ ~ /summon endergy:endergy_pulse ~ ~ ~ endergy:on_direction_5",
+					"/execute @s[tag=recieve_power] ~ ~ ~ tag @s remove recieve_power"
+				]
+			},
+			"animation_length": 1,
+			"loop": true
+		}
+	}
+}

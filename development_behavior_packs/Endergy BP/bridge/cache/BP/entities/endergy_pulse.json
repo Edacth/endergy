@@ -1,9 +1,9 @@
 {
-	"file_path": "C:\\Users\\cadea\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_behavior_packs\\Endergy BP/entities/endergy_pulse.json",
+	"file_path": "C:\\Users\\cadea\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_behavior_packs\\Endergy BP\\entities\\endergy_pulse.json",
 	"file_type": "entity",
 	"format_version": 1,
 	"file_uuid": "d51ed5da_6c0b_4a4a_8052_d6f2527bdf75",
-	"file_version": 4,
+	"file_version": 8,
 	"cache_content": {
 		"children": [
 			{
@@ -13,9 +13,50 @@
 						"description": {
 							"identifier": "endergy:endergy_pulse",
 							"is_summonable": true,
-							"is_spawnable": true
+							"is_spawnable": true,
+							"animations": {
+								"move": "animation.endergy_pulse.move"
+							},
+							"scripts": {
+								"animate": [
+									{
+										"move": "(1.0)"
+									}
+								]
+							}
 						},
-						"component_groups": {},
+						"component_groups": {
+							"endergy:direction_0": {
+								"minecraft:mark_variant": {
+									"value": 0
+								}
+							},
+							"endergy:direction_1": {
+								"minecraft:mark_variant": {
+									"value": 1
+								}
+							},
+							"endergy:direction_2": {
+								"minecraft:mark_variant": {
+									"value": 2
+								}
+							},
+							"endergy:direction_3": {
+								"minecraft:mark_variant": {
+									"value": 3
+								}
+							},
+							"endergy:direction_4": {
+								"minecraft:mark_variant": {
+									"value": 4
+								}
+							},
+							"endergy:direction_5": {
+								"minecraft:mark_variant": {
+									"value": 5
+								}
+							}
+						},
 						"components": {
 							"minecraft:physics": {
 								"has_collision": false,
@@ -28,9 +69,24 @@
 							"minecraft:pushable": {
 								"is_pushable": false,
 								"is_pushable_by_piston": false
+							},
+							"minecraft:damage_sensor": {
+								"triggers": [
+									{
+										"deals_damage": false
+									}
+								]
 							}
 						},
-						"events": {}
+						"events": {
+							"minecraft:entity_spawned": {
+								"add": {
+									"component_groups": [
+										"endergy:direction_0"
+									]
+								}
+							}
+						}
 					}
 				},
 				"data": "1.14.0",
@@ -43,9 +99,50 @@
 						"description": {
 							"identifier": "endergy:endergy_pulse",
 							"is_summonable": true,
-							"is_spawnable": true
+							"is_spawnable": true,
+							"animations": {
+								"move": "animation.endergy_pulse.move"
+							},
+							"scripts": {
+								"animate": [
+									{
+										"move": "(1.0)"
+									}
+								]
+							}
 						},
-						"component_groups": {},
+						"component_groups": {
+							"endergy:direction_0": {
+								"minecraft:mark_variant": {
+									"value": 0
+								}
+							},
+							"endergy:direction_1": {
+								"minecraft:mark_variant": {
+									"value": 1
+								}
+							},
+							"endergy:direction_2": {
+								"minecraft:mark_variant": {
+									"value": 2
+								}
+							},
+							"endergy:direction_3": {
+								"minecraft:mark_variant": {
+									"value": 3
+								}
+							},
+							"endergy:direction_4": {
+								"minecraft:mark_variant": {
+									"value": 4
+								}
+							},
+							"endergy:direction_5": {
+								"minecraft:mark_variant": {
+									"value": 5
+								}
+							}
+						},
 						"components": {
 							"minecraft:physics": {
 								"has_collision": false,
@@ -58,9 +155,24 @@
 							"minecraft:pushable": {
 								"is_pushable": false,
 								"is_pushable_by_piston": false
+							},
+							"minecraft:damage_sensor": {
+								"triggers": [
+									{
+										"deals_damage": false
+									}
+								]
 							}
 						},
-						"events": {}
+						"events": {
+							"minecraft:entity_spawned": {
+								"add": {
+									"component_groups": [
+										"endergy:direction_0"
+									]
+								}
+							}
+						}
 					}
 				},
 				"key": "minecraft:entity",
@@ -70,9 +182,50 @@
 							"description": {
 								"identifier": "endergy:endergy_pulse",
 								"is_summonable": true,
-								"is_spawnable": true
+								"is_spawnable": true,
+								"animations": {
+									"move": "animation.endergy_pulse.move"
+								},
+								"scripts": {
+									"animate": [
+										{
+											"move": "(1.0)"
+										}
+									]
+								}
 							},
-							"component_groups": {},
+							"component_groups": {
+								"endergy:direction_0": {
+									"minecraft:mark_variant": {
+										"value": 0
+									}
+								},
+								"endergy:direction_1": {
+									"minecraft:mark_variant": {
+										"value": 1
+									}
+								},
+								"endergy:direction_2": {
+									"minecraft:mark_variant": {
+										"value": 2
+									}
+								},
+								"endergy:direction_3": {
+									"minecraft:mark_variant": {
+										"value": 3
+									}
+								},
+								"endergy:direction_4": {
+									"minecraft:mark_variant": {
+										"value": 4
+									}
+								},
+								"endergy:direction_5": {
+									"minecraft:mark_variant": {
+										"value": 5
+									}
+								}
+							},
 							"components": {
 								"minecraft:physics": {
 									"has_collision": false,
@@ -85,16 +238,219 @@
 								"minecraft:pushable": {
 									"is_pushable": false,
 									"is_pushable_by_piston": false
+								},
+								"minecraft:damage_sensor": {
+									"triggers": [
+										{
+											"deals_damage": false
+										}
+									]
 								}
 							},
-							"events": {}
+							"events": {
+								"minecraft:entity_spawned": {
+									"add": {
+										"component_groups": [
+											"endergy:direction_0"
+										]
+									}
+								}
+							}
 						},
 						"key": "description",
+						"children": [
+							{
+								"data": "endergy:endergy_pulse",
+								"key": "identifier"
+							},
+							{
+								"data": "true",
+								"key": "is_summonable"
+							},
+							{
+								"data": "true",
+								"key": "is_spawnable"
+							},
+							{
+								"open": {
+									"identifier": "endergy:endergy_pulse",
+									"is_summonable": true,
+									"is_spawnable": true,
+									"animations": {
+										"move": "animation.endergy_pulse.move"
+									},
+									"scripts": {
+										"animate": [
+											{
+												"move": "(1.0)"
+											}
+										]
+									}
+								},
+								"key": "animations",
+								"is_minified": true,
+								"children": {
+									"move": "animation.endergy_pulse.move"
+								}
+							},
+							{
+								"open": {
+									"identifier": "endergy:endergy_pulse",
+									"is_summonable": true,
+									"is_spawnable": true,
+									"animations": {
+										"move": "animation.endergy_pulse.move"
+									},
+									"scripts": {
+										"animate": [
+											{
+												"move": "(1.0)"
+											}
+										]
+									}
+								},
+								"key": "scripts",
+								"children": [
+									{
+										"open": {
+											"animate": [
+												{
+													"move": "(1.0)"
+												}
+											]
+										},
+										"key": "animate",
+										"array": [
+											{
+												"open": [
+													{
+														"move": "(1.0)"
+													}
+												],
+												"is_minified": true,
+												"children": {
+													"move": "(1.0)"
+												}
+											}
+										]
+									}
+								]
+							}
+						]
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "endergy:endergy_pulse",
+								"is_summonable": true,
+								"is_spawnable": true,
+								"animations": {
+									"move": "animation.endergy_pulse.move"
+								},
+								"scripts": {
+									"animate": [
+										{
+											"move": "(1.0)"
+										}
+									]
+								}
+							},
+							"component_groups": {
+								"endergy:direction_0": {
+									"minecraft:mark_variant": {
+										"value": 0
+									}
+								},
+								"endergy:direction_1": {
+									"minecraft:mark_variant": {
+										"value": 1
+									}
+								},
+								"endergy:direction_2": {
+									"minecraft:mark_variant": {
+										"value": 2
+									}
+								},
+								"endergy:direction_3": {
+									"minecraft:mark_variant": {
+										"value": 3
+									}
+								},
+								"endergy:direction_4": {
+									"minecraft:mark_variant": {
+										"value": 4
+									}
+								},
+								"endergy:direction_5": {
+									"minecraft:mark_variant": {
+										"value": 5
+									}
+								}
+							},
+							"components": {
+								"minecraft:physics": {
+									"has_collision": false,
+									"has_gravity": false
+								},
+								"minecraft:collision_box": {
+									"width": 0.4,
+									"height": 0.4
+								},
+								"minecraft:pushable": {
+									"is_pushable": false,
+									"is_pushable_by_piston": false
+								},
+								"minecraft:damage_sensor": {
+									"triggers": [
+										{
+											"deals_damage": false
+										}
+									]
+								}
+							},
+							"events": {
+								"minecraft:entity_spawned": {
+									"add": {
+										"component_groups": [
+											"endergy:direction_0"
+										]
+									}
+								}
+							}
+						},
+						"key": "component_groups",
 						"is_minified": true,
 						"children": {
-							"identifier": "endergy:endergy_pulse",
-							"is_summonable": true,
-							"is_spawnable": true
+							"endergy:direction_0": {
+								"minecraft:mark_variant": {
+									"value": 0
+								}
+							},
+							"endergy:direction_1": {
+								"minecraft:mark_variant": {
+									"value": 1
+								}
+							},
+							"endergy:direction_2": {
+								"minecraft:mark_variant": {
+									"value": 2
+								}
+							},
+							"endergy:direction_3": {
+								"minecraft:mark_variant": {
+									"value": 3
+								}
+							},
+							"endergy:direction_4": {
+								"minecraft:mark_variant": {
+									"value": 4
+								}
+							},
+							"endergy:direction_5": {
+								"minecraft:mark_variant": {
+									"value": 5
+								}
+							}
 						}
 					},
 					{
@@ -102,9 +458,50 @@
 							"description": {
 								"identifier": "endergy:endergy_pulse",
 								"is_summonable": true,
-								"is_spawnable": true
+								"is_spawnable": true,
+								"animations": {
+									"move": "animation.endergy_pulse.move"
+								},
+								"scripts": {
+									"animate": [
+										{
+											"move": "(1.0)"
+										}
+									]
+								}
 							},
-							"component_groups": {},
+							"component_groups": {
+								"endergy:direction_0": {
+									"minecraft:mark_variant": {
+										"value": 0
+									}
+								},
+								"endergy:direction_1": {
+									"minecraft:mark_variant": {
+										"value": 1
+									}
+								},
+								"endergy:direction_2": {
+									"minecraft:mark_variant": {
+										"value": 2
+									}
+								},
+								"endergy:direction_3": {
+									"minecraft:mark_variant": {
+										"value": 3
+									}
+								},
+								"endergy:direction_4": {
+									"minecraft:mark_variant": {
+										"value": 4
+									}
+								},
+								"endergy:direction_5": {
+									"minecraft:mark_variant": {
+										"value": 5
+									}
+								}
+							},
 							"components": {
 								"minecraft:physics": {
 									"has_collision": false,
@@ -117,37 +514,24 @@
 								"minecraft:pushable": {
 									"is_pushable": false,
 									"is_pushable_by_piston": false
+								},
+								"minecraft:damage_sensor": {
+									"triggers": [
+										{
+											"deals_damage": false
+										}
+									]
 								}
 							},
-							"events": {}
-						},
-						"key": "component_groups",
-						"is_minified": true,
-						"children": {}
-					},
-					{
-						"open": {
-							"description": {
-								"identifier": "endergy:endergy_pulse",
-								"is_summonable": true,
-								"is_spawnable": true
-							},
-							"component_groups": {},
-							"components": {
-								"minecraft:physics": {
-									"has_collision": false,
-									"has_gravity": false
-								},
-								"minecraft:collision_box": {
-									"width": 0.4,
-									"height": 0.4
-								},
-								"minecraft:pushable": {
-									"is_pushable": false,
-									"is_pushable_by_piston": false
+							"events": {
+								"minecraft:entity_spawned": {
+									"add": {
+										"component_groups": [
+											"endergy:direction_0"
+										]
+									}
 								}
-							},
-							"events": {}
+							}
 						},
 						"key": "components",
 						"children": [
@@ -164,6 +548,13 @@
 									"minecraft:pushable": {
 										"is_pushable": false,
 										"is_pushable_by_piston": false
+									},
+									"minecraft:damage_sensor": {
+										"triggers": [
+											{
+												"deals_damage": false
+											}
+										]
 									}
 								},
 								"key": "minecraft:physics",
@@ -186,6 +577,13 @@
 									"minecraft:pushable": {
 										"is_pushable": false,
 										"is_pushable_by_piston": false
+									},
+									"minecraft:damage_sensor": {
+										"triggers": [
+											{
+												"deals_damage": false
+											}
+										]
 									}
 								},
 								"key": "minecraft:collision_box",
@@ -208,6 +606,13 @@
 									"minecraft:pushable": {
 										"is_pushable": false,
 										"is_pushable_by_piston": false
+									},
+									"minecraft:damage_sensor": {
+										"triggers": [
+											{
+												"deals_damage": false
+											}
+										]
 									}
 								},
 								"key": "minecraft:pushable",
@@ -216,6 +621,55 @@
 									"is_pushable": false,
 									"is_pushable_by_piston": false
 								}
+							},
+							{
+								"open": {
+									"minecraft:physics": {
+										"has_collision": false,
+										"has_gravity": false
+									},
+									"minecraft:collision_box": {
+										"width": 0.4,
+										"height": 0.4
+									},
+									"minecraft:pushable": {
+										"is_pushable": false,
+										"is_pushable_by_piston": false
+									},
+									"minecraft:damage_sensor": {
+										"triggers": [
+											{
+												"deals_damage": false
+											}
+										]
+									}
+								},
+								"key": "minecraft:damage_sensor",
+								"children": [
+									{
+										"open": {
+											"triggers": [
+												{
+													"deals_damage": false
+												}
+											]
+										},
+										"key": "triggers",
+										"array": [
+											{
+												"open": [
+													{
+														"deals_damage": false
+													}
+												],
+												"is_minified": true,
+												"children": {
+													"deals_damage": false
+												}
+											}
+										]
+									}
+								]
 							}
 						]
 					},
@@ -224,9 +678,50 @@
 							"description": {
 								"identifier": "endergy:endergy_pulse",
 								"is_summonable": true,
-								"is_spawnable": true
+								"is_spawnable": true,
+								"animations": {
+									"move": "animation.endergy_pulse.move"
+								},
+								"scripts": {
+									"animate": [
+										{
+											"move": "(1.0)"
+										}
+									]
+								}
 							},
-							"component_groups": {},
+							"component_groups": {
+								"endergy:direction_0": {
+									"minecraft:mark_variant": {
+										"value": 0
+									}
+								},
+								"endergy:direction_1": {
+									"minecraft:mark_variant": {
+										"value": 1
+									}
+								},
+								"endergy:direction_2": {
+									"minecraft:mark_variant": {
+										"value": 2
+									}
+								},
+								"endergy:direction_3": {
+									"minecraft:mark_variant": {
+										"value": 3
+									}
+								},
+								"endergy:direction_4": {
+									"minecraft:mark_variant": {
+										"value": 4
+									}
+								},
+								"endergy:direction_5": {
+									"minecraft:mark_variant": {
+										"value": 5
+									}
+								}
+							},
 							"components": {
 								"minecraft:physics": {
 									"has_collision": false,
@@ -239,13 +734,66 @@
 								"minecraft:pushable": {
 									"is_pushable": false,
 									"is_pushable_by_piston": false
+								},
+								"minecraft:damage_sensor": {
+									"triggers": [
+										{
+											"deals_damage": false
+										}
+									]
 								}
 							},
-							"events": {}
+							"events": {
+								"minecraft:entity_spawned": {
+									"add": {
+										"component_groups": [
+											"endergy:direction_0"
+										]
+									}
+								}
+							}
 						},
 						"key": "events",
-						"is_minified": true,
-						"children": {}
+						"children": [
+							{
+								"open": {
+									"minecraft:entity_spawned": {
+										"add": {
+											"component_groups": [
+												"endergy:direction_0"
+											]
+										}
+									}
+								},
+								"key": "minecraft:entity_spawned",
+								"children": [
+									{
+										"open": {
+											"add": {
+												"component_groups": [
+													"endergy:direction_0"
+												]
+											}
+										},
+										"key": "add",
+										"children": [
+											{
+												"open": {
+													"component_groups": [
+														"endergy:direction_0"
+													]
+												},
+												"key": "component_groups",
+												"is_minified": true,
+												"array": [
+													"endergy:direction_0"
+												]
+											}
+										]
+									}
+								]
+							}
+						]
 					}
 				]
 			}

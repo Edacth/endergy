@@ -1,9 +1,9 @@
 {
-	"file_path": "C:\\Users\\cadea\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_behavior_packs\\Endergy BP/animation_controllers/endermite.ac.json",
+	"file_path": "C:\\Users\\cadea\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_behavior_packs\\Endergy BP\\animation_controllers\\endermite.ac.json",
 	"file_type": "animation_controller",
 	"format_version": 1,
 	"file_uuid": "08e2f97a_f730_4cf4_97a6_9ddf8416d534",
-	"file_version": 5,
+	"file_version": 9,
 	"cache_content": {
 		"children": [
 			{
@@ -30,6 +30,7 @@
 								"expell_energy": {
 									"on_entry": [
 										"/say expell",
+										"/tag @e[type=endergy:collector,y=~-2,dy=1,c=1] add recieve_power",
 										"@s endergy:reset_skin_id"
 									],
 									"transitions": [
@@ -62,6 +63,7 @@
 									"expell_energy": {
 										"on_entry": [
 											"/say expell",
+											"/tag @e[type=endergy:collector,y=~-2,dy=1,c=1] add recieve_power",
 											"@s endergy:reset_skin_id"
 										],
 										"transitions": [
@@ -92,6 +94,7 @@
 										"expell_energy": {
 											"on_entry": [
 												"/say expell",
+												"/tag @e[type=endergy:collector,y=~-2,dy=1,c=1] add recieve_power",
 												"@s endergy:reset_skin_id"
 											],
 											"transitions": [
@@ -122,6 +125,7 @@
 										"expell_energy": {
 											"on_entry": [
 												"/say expell",
+												"/tag @e[type=endergy:collector,y=~-2,dy=1,c=1] add recieve_power",
 												"@s endergy:reset_skin_id"
 											],
 											"transitions": [
@@ -149,6 +153,7 @@
 											"expell_energy": {
 												"on_entry": [
 													"/say expell",
+													"/tag @e[type=endergy:collector,y=~-2,dy=1,c=1] add recieve_power",
 													"@s endergy:reset_skin_id"
 												],
 												"transitions": [
@@ -220,6 +225,7 @@
 											"expell_energy": {
 												"on_entry": [
 													"/say expell",
+													"/tag @e[type=endergy:collector,y=~-2,dy=1,c=1] add recieve_power",
 													"@s endergy:reset_skin_id"
 												],
 												"transitions": [
@@ -235,6 +241,7 @@
 												"open": {
 													"on_entry": [
 														"/say expell",
+														"/tag @e[type=endergy:collector,y=~-2,dy=1,c=1] add recieve_power",
 														"@s endergy:reset_skin_id"
 													],
 													"transitions": [
@@ -247,6 +254,7 @@
 												"is_minified": true,
 												"array": [
 													"/say expell",
+													"/tag @e[type=endergy:collector,y=~-2,dy=1,c=1] add recieve_power",
 													"@s endergy:reset_skin_id"
 												]
 											},
@@ -254,6 +262,7 @@
 												"open": {
 													"on_entry": [
 														"/say expell",
+														"/tag @e[type=endergy:collector,y=~-2,dy=1,c=1] add recieve_power",
 														"@s endergy:reset_skin_id"
 													],
 													"transitions": [

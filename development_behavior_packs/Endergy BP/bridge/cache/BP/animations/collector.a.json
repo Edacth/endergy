@@ -1,0 +1,89 @@
+{
+	"file_path": "C:\\Users\\cadea\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_behavior_packs\\Endergy BP/animations/collector.a.json",
+	"file_type": "animation",
+	"format_version": 1,
+	"file_uuid": "2c953a57_5233_4e07_8d8c_df65c093abd4",
+	"file_version": 7,
+	"cache_content": {
+		"children": [
+			{
+				"data": "1.10.0",
+				"key": "format_version"
+			},
+			{
+				"open": {
+					"format_version": "1.10.0",
+					"animations": {
+						"animation.collector.emit_loop": {
+							"timeline": {
+								"0.0": [
+									"/execute @s[tag=recieve_power] ~ ~ ~ /summon endergy:endergy_pulse ~ ~ ~ endergy:on_direction_5",
+									"/execute @s[tag=recieve_power] ~ ~ ~ tag @s remove recieve_power"
+								]
+							},
+							"animation_length": 1,
+							"loop": true
+						}
+					}
+				},
+				"key": "animations",
+				"children": [
+					{
+						"open": {
+							"animation.collector.emit_loop": {
+								"timeline": {
+									"0.0": [
+										"/execute @s[tag=recieve_power] ~ ~ ~ /summon endergy:endergy_pulse ~ ~ ~ endergy:on_direction_5",
+										"/execute @s[tag=recieve_power] ~ ~ ~ tag @s remove recieve_power"
+									]
+								},
+								"animation_length": 1,
+								"loop": true
+							}
+						},
+						"key": "animation.collector.emit_loop",
+						"children": [
+							{
+								"open": {
+									"timeline": {
+										"0.0": [
+											"/execute @s[tag=recieve_power] ~ ~ ~ /summon endergy:endergy_pulse ~ ~ ~ endergy:on_direction_5",
+											"/execute @s[tag=recieve_power] ~ ~ ~ tag @s remove recieve_power"
+										]
+									},
+									"animation_length": 1,
+									"loop": true
+								},
+								"key": "timeline",
+								"children": [
+									{
+										"open": {
+											"0.0": [
+												"/execute @s[tag=recieve_power] ~ ~ ~ /summon endergy:endergy_pulse ~ ~ ~ endergy:on_direction_5",
+												"/execute @s[tag=recieve_power] ~ ~ ~ tag @s remove recieve_power"
+											]
+										},
+										"key": "0.0",
+										"is_minified": true,
+										"array": [
+											"/execute @s[tag=recieve_power] ~ ~ ~ /summon endergy:endergy_pulse ~ ~ ~ endergy:on_direction_5",
+											"/execute @s[tag=recieve_power] ~ ~ ~ tag @s remove recieve_power"
+										]
+									}
+								]
+							},
+							{
+								"data": "1",
+								"key": "animation_length"
+							},
+							{
+								"data": "true",
+								"key": "loop"
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+}

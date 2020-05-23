@@ -1,0 +1,99 @@
+//bridge-file-version: #3
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.endergy_pulse.init": {
+			"initial_state": "default",
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"direction_0": "query.mark_variant == 0"
+						},
+						{
+							"direction_1": "query.mark_variant == 1"
+						},
+						{
+							"direction_2": "query.mark_variant == 2"
+						},
+						{
+							"direction_3": "query.mark_variant == 3"
+						},
+						{
+							"direction_4": "query.mark_variant == 4"
+						},
+						{
+							"direction_5": "query.mark_variant == 5"
+						}
+					]
+				},
+				"direction_0": {
+					"on_entry": [
+						"/say 0",
+						"/scoreboard players set @s move_dir 0"
+					],
+					"transitions": [
+						{
+							"default": "query.mark_variant != 0"
+						}
+					]
+				},
+				"direction_1": {
+					"on_entry": [
+						"/say 1",
+						"/scoreboard players set @s move_dir 1"
+					],
+					"transitions": [
+						{
+							"default": "query.mark_variant != 1"
+						}
+					]
+				},
+				"direction_2": {
+					"on_entry": [
+						"/say 2",
+						"/scoreboard players set @s move_dir 2"
+					],
+					"transitions": [
+						{
+							"default": "query.mark_variant != 2"
+						}
+					]
+				},
+				"direction_3": {
+					"on_entry": [
+						"/say 3",
+						"/scoreboard players set @s move_dir 3"
+					],
+					"transitions": [
+						{
+							"default": "query.mark_variant != 3"
+						}
+					]
+				},
+				"direction_4": {
+					"on_entry": [
+						"/say 4",
+						"/scoreboard players set @s move_dir 4"
+					],
+					"transitions": [
+						{
+							"default": "query.mark_variant != 4"
+						}
+					]
+				},
+				"direction_5": {
+					"on_entry": [
+						"/say 5",
+						"/scoreboard players set @s move_dir 5"
+					],
+					"transitions": [
+						{
+							"default": "query.mark_variant != 5"
+						}
+					]
+				}
+			}
+		}
+	}
+}

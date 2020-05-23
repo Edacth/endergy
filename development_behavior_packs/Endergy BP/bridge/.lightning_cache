@@ -24,6 +24,16 @@
 			"ids": [
 				"controller.animation.player.scoreboard_init"
 			]
+		},
+		"BP/animation_controllers/endergy_pulse.ac.json/endergy_pulse.json": {
+			"ids": [
+				"controller.animation.endergy_pulse.init"
+			]
+		},
+		"BP/animation_controllers/endergy_pulse.ac.json": {
+			"ids": [
+				"controller.animation.endergy_pulse.init"
+			]
 		}
 	},
 	"entity": {
@@ -37,7 +47,8 @@
 				"endergy:collector"
 			],
 			"animation_references": [
-				"block_immitation.init"
+				"block_immitation.init",
+				"emit_loop"
 			],
 			"families": []
 		},
@@ -95,7 +106,8 @@
 			],
 			"animation_references": [
 				"block_immitation.init",
-				"relay_direction"
+				"relay_direction",
+				"redirect_tick"
 			],
 			"families": []
 		},
@@ -253,14 +265,57 @@
 		"BP/ner BP/entities/misc/spawning_demo.json": {
 			"custom_components": []
 		},
-		"BP/entities/endergy_pulse.json": {
-			"events": [],
+		"BP/ner BP/entities/bat/dragon_bat_female.entity.json": {
+			"custom_components": []
+		},
+		"BP/ner BP/entities/bat/dragon_bat_male.entity.json": {
+			"custom_components": []
+		},
+		"BP/ner BP/entities/chameleon/dragon_chameleon_female.entity.json": {
+			"custom_components": []
+		},
+		"BP/ner BP/entities/chameleon/dragon_chameleon_male.entity.json": {
+			"custom_components": []
+		},
+		"BP/ner BP/entities/ancient/dragon_ancient_blue.json": {
+			"custom_components": []
+		},
+		"BP/ner BP/entities/ancient/dragon_ancient_green.json": {
+			"custom_components": []
+		},
+		"BP/entities/endergy_pulse.e.json/endergy_pulse.json": {
+			"events": [
+				"minecraft:entity_spawned"
+			],
 			"custom_components": [],
 			"bridge_core_tags": [],
 			"identifiers": [
 				"endergy:endergy_pulse"
 			],
-			"animation_references": [],
+			"animation_references": [
+				"move"
+			],
+			"families": []
+		},
+		"BP/entities/endergy_pulse.e.json": {
+			"events": [
+				"minecraft:entity_spawned",
+				" endergy:on_direction_0",
+				"endergy:on_direction_1",
+				"endergy:on_direction_2",
+				"endergy:on_direction_3",
+				"endergy:on_direction_4",
+				"endergy:on_direction_5"
+			],
+			"custom_components": [],
+			"bridge_core_tags": [],
+			"identifiers": [
+				"endergy:endergy_pulse"
+			],
+			"animation_references": [
+				"move",
+				"init"
+			],
 			"families": []
 		}
 	},
@@ -318,6 +373,26 @@
 			"geometry_identifiers": [
 				"geometry.relay"
 			]
+		},
+		"RP/entity/endergy_pulse.ce.json": {
+			"identifiers": [
+				"endergy:endergy_pulse"
+			],
+			"particle_references": [],
+			"animation_references": [],
+			"sound_references": [],
+			"texture_references": [
+				"default"
+			],
+			"material_references": [
+				"default"
+			],
+			"geometry_references": [
+				"default"
+			],
+			"geometry_identifiers": [
+				"geometry.endergy_pulse"
+			]
 		}
 	},
 	"entity_model": {
@@ -344,6 +419,34 @@
 			"ids": [
 				"controller.animation.relay.direction"
 			]
+		}
+	},
+	"animation": {
+		"BP/animations/endergy_pulse.a.json": {
+			"ids": [
+				"animation.endergy_pulse.move"
+			]
+		},
+		"BP/animations/collector.a.json": {
+			"ids": [
+				"animation.collector.emit_loop"
+			]
+		},
+		"BP/animations/relay.a.json": {
+			"ids": [
+				"animation.relay.tick"
+			]
+		}
+	},
+	"function": {
+		"BP/functions/endergy_pulse/move.mcfunction": {
+			"custom_commands": []
+		},
+		"BP/functions/scoreboard_init.mcfunction": {
+			"custom_commands": []
+		},
+		"BP/functions/relay/redirect.mcfunction": {
+			"custom_commands": []
 		}
 	}
 }

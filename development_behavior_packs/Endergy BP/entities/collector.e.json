@@ -1,4 +1,4 @@
-//bridge-file-version: #0
+//bridge-file-version: #25
 {
 	"minecraft:entity": {
 		"description": {
@@ -6,12 +6,16 @@
 			"is_summonable": true,
 			"is_spawnable": true,
 			"animations": {
-				"block_immitation.init": "controller.animation.block_immitation.init"
+				"block_immitation.init": "controller.animation.block_immitation.init",
+				"emit_loop": "animation.collector.emit_loop"
 			},
 			"scripts": {
 				"animate": [
 					{
 						"block_immitation.init": "(1.0)"
+					},
+					{
+						"emit_loop": "(1.0)"
 					}
 				]
 			}

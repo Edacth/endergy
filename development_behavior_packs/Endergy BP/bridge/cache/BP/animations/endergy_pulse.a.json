@@ -1,0 +1,93 @@
+{
+	"file_path": "C:\\Users\\cadea\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_behavior_packs\\Endergy BP/animations/endergy_pulse.a.json",
+	"file_type": "animation",
+	"format_version": 1,
+	"file_uuid": "a061aea0_c689_40ae_bcf0_f095ba5449c7",
+	"file_version": 1,
+	"cache_content": {
+		"children": [
+			{
+				"data": "1.10.0",
+				"key": "format_version"
+			},
+			{
+				"open": {
+					"format_version": "1.10.0",
+					"animations": {
+						"animation.endergy_pulse.move": {
+							"timeline": {
+								"0.0": [
+									"/function endergy_pulse/move"
+								]
+							},
+							"animation_length": 0.25,
+							"loop": true
+						}
+					}
+				},
+				"key": "animations",
+				"children": [
+					{
+						"open": {
+							"animation.endergy_pulse.move": {
+								"timeline": {
+									"0.0": [
+										"/function endergy_pulse/move"
+									]
+								},
+								"animation_length": 0.25,
+								"loop": true
+							}
+						},
+						"key": "animation.endergy_pulse.move",
+						"children": [
+							{
+								"open": {
+									"timeline": {
+										"0.0": [
+											"/function endergy_pulse/move"
+										]
+									},
+									"animation_length": 0.25,
+									"loop": true
+								},
+								"key": "timeline",
+								"children": [
+									{
+										"open": {
+											"0.0": [
+												"/function endergy_pulse/move"
+											]
+										},
+										"key": "0.0",
+										"is_minified": true,
+										"array": [
+											"/function endergy_pulse/move"
+										]
+									}
+								]
+							},
+							{
+								"open": {
+									"timeline": {
+										"0.0": [
+											"/function endergy_pulse/move"
+										]
+									},
+									"animation_length": 0.25,
+									"loop": true
+								},
+								"data": "0.25",
+								"key": "animation_length"
+							},
+							{
+								"data": "true",
+								"key": "loop"
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+}
