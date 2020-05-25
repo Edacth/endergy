@@ -1,0 +1,95 @@
+{
+	"file_path": "C:\\Users\\cadea\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_behavior_packs\\Endergy BP/animation_controllers/reservoir.ac.json",
+	"file_type": "animation_controller",
+	"format_version": 1,
+	"file_uuid": "4cc02ad3_087c_4fc7_8170_7bf3125ae4a4",
+	"file_version": 0,
+	"cache_content": {
+		"children": [
+			{
+				"data": "1.10.0",
+				"key": "format_version"
+			},
+			{
+				"open": {
+					"format_version": "1.10.0",
+					"animation_controllers": {
+						"controller.animation.reservoir.init": {
+							"initial_state": "default",
+							"states": {
+								"default": {
+									"on_entry": [
+										"/function reservoir/init"
+									]
+								}
+							}
+						}
+					}
+				},
+				"key": "animation_controllers",
+				"children": [
+					{
+						"open": {
+							"controller.animation.reservoir.init": {
+								"initial_state": "default",
+								"states": {
+									"default": {
+										"on_entry": [
+											"/function reservoir/init"
+										]
+									}
+								}
+							}
+						},
+						"key": "controller.animation.reservoir.init",
+						"children": [
+							{
+								"data": "default",
+								"key": "initial_state"
+							},
+							{
+								"open": {
+									"initial_state": "default",
+									"states": {
+										"default": {
+											"on_entry": [
+												"/function reservoir/init"
+											]
+										}
+									}
+								},
+								"key": "states",
+								"children": [
+									{
+										"open": {
+											"default": {
+												"on_entry": [
+													"/function reservoir/init"
+												]
+											}
+										},
+										"key": "default",
+										"children": [
+											{
+												"open": {
+													"on_entry": [
+														"/function reservoir/init"
+													]
+												},
+												"key": "on_entry",
+												"is_minified": true,
+												"array": [
+													"/function reservoir/init"
+												]
+											}
+										]
+									}
+								]
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+}

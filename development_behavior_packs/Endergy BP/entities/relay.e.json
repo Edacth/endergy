@@ -1,10 +1,7 @@
-//bridge-file-version: #30
+//bridge-file-version: #31
 {
 	"minecraft:entity": {
 		"description": {
-			"identifier": "endergy:relay",
-			"is_summonable": true,
-			"is_spawnable": true,
 			"animations": {
 				"block_immitation.init": "controller.animation.block_immitation.init",
 				"relay_direction": "controller.animation.relay.direction",
@@ -22,7 +19,10 @@
 						"redirect_tick": "(1.0)"
 					}
 				]
-			}
+			},
+			"identifier": "endergy:relay",
+			"is_summonable": true,
+			"is_spawnable": true
 		},
 		"component_groups": {
 			"endergy:direction_0": {

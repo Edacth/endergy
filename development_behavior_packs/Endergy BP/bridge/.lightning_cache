@@ -5,19 +5,19 @@
 				"controller.animation.bridge_custom_item_behavior"
 			]
 		},
-		"BP/animation_controllers/endermite.ac.json": {
-			"ids": [
-				"controller.animation.entermite.skin_id_triggers"
-			]
-		},
 		"BP/animation_controllers/block_immitation.ac.json": {
 			"ids": [
 				"controller.animation.block_immitation.init"
 			]
 		},
-		"BP/animation_controllers/relay.ac.json": {
+		"BP/animation_controllers/endergy_pulse.ac.json": {
 			"ids": [
-				"controller.animation.relay.direction"
+				"controller.animation.endergy_pulse.init"
+			]
+		},
+		"BP/animation_controllers/endermite.ac.json": {
+			"ids": [
+				"controller.animation.entermite.skin_id_triggers"
 			]
 		},
 		"BP/animation_controllers/player.ac.json": {
@@ -25,14 +25,36 @@
 				"controller.animation.player.scoreboard_init"
 			]
 		},
-		"BP/animation_controllers/endergy_pulse.ac.json/endergy_pulse.json": {
+		"BP/animation_controllers/relay.ac.json": {
 			"ids": [
-				"controller.animation.endergy_pulse.init"
+				"controller.animation.relay.direction"
 			]
 		},
-		"BP/animation_controllers/endergy_pulse.ac.json": {
+		"BP/animation_controllers/reservoir.ac.json": {
 			"ids": [
-				"controller.animation.endergy_pulse.init"
+				"controller.animation.reservoir.init"
+			]
+		}
+	},
+	"animation": {
+		"BP/animations/collector.a.json": {
+			"ids": [
+				"animation.collector.emit_loop"
+			]
+		},
+		"BP/animations/endergy_pulse.a.json": {
+			"ids": [
+				"animation.endergy_pulse.move"
+			]
+		},
+		"BP/animations/relay.a.json": {
+			"ids": [
+				"animation.relay.tick"
+			]
+		},
+		"BP/animations/reservoir.a.json": {
+			"ids": [
+				"animation.reservoir.tick"
 			]
 		}
 	},
@@ -47,8 +69,28 @@
 				"endergy:collector"
 			],
 			"animation_references": [
-				"block_immitation.init",
 				"emit_loop"
+			],
+			"families": []
+		},
+		"BP/entities/endergy_pulse.e.json": {
+			"events": [
+				"minecraft:entity_spawned",
+				" endergy:on_direction_0",
+				"endergy:on_direction_1",
+				"endergy:on_direction_2",
+				"endergy:on_direction_3",
+				"endergy:on_direction_4",
+				"endergy:on_direction_5"
+			],
+			"custom_components": [],
+			"bridge_core_tags": [],
+			"identifiers": [
+				"endergy:endergy_pulse"
+			],
+			"animation_references": [
+				"move",
+				"init"
 			],
 			"families": []
 		},
@@ -105,216 +147,30 @@
 				"endergy:relay"
 			],
 			"animation_references": [
-				"block_immitation.init",
 				"relay_direction",
 				"redirect_tick"
 			],
 			"families": []
 		},
-		"BP/tags/block_immitation.json": {
-			"events": [],
-			"custom_components": [],
-			"bridge_core_tags": [],
-			"identifiers": [
+		"BP/entities/reservoir.e.json": {
+			"events": [
+				"endergy:cycle_level",
+				"endergy:on_level_0",
+				"endergy:on_level_1",
+				"endergy:on_level_2",
+				"endergy:on_level_3",
+				"endergy:on_level_4"
+			],
+			"custom_components": [
 				"endergy:block_immitation"
 			],
-			"animation_references": [],
-			"families": []
-		},
-		"BP/tags/test.json": {
-			"events": [
-				"minecraft:entity_spawned",
-				"gm1:add_clockwise",
-				"gm1:add_counter_clockwise",
-				"gm1:reset_skin_id"
-			],
-			"custom_components": [],
 			"bridge_core_tags": [],
 			"identifiers": [
-				"gm1:decor"
+				"endergy:reservoir"
 			],
 			"animation_references": [
-				"decor_init",
-				"rotate"
-			],
-			"families": []
-		},
-		"BP/ner BP/entities/tortoise/dragon_tortoise_female.json": {
-			"custom_components": []
-		},
-		"BP/ner BP/entities/tortoise/dragon_tortoise_male.json": {
-			"custom_components": []
-		},
-		"BP/ner BP/entities/draco_lizard/dragon_draco_lizard_female.json": {
-			"custom_components": []
-		},
-		"BP/ner BP/entities/draco_lizard/dragon_draco_lizard_male.json": {
-			"custom_components": []
-		},
-		"BP/ner BP/entities/frill_lizard/dragon_frill_lizard_female.json": {
-			"custom_components": []
-		},
-		"BP/ner BP/entities/frill_lizard/dragon_frill_lizard_male.json": {
-			"custom_components": []
-		},
-		"BP/ner BP/entities/frog/dragon_frog_female.entity.json": {
-			"custom_components": []
-		},
-		"BP/ner BP/entities/frog/dragon_frog_male.entity.json": {
-			"custom_components": []
-		},
-		"BP/ner BP/entities/serpent/dragon_serpent_female.entity.json": {
-			"custom_components": []
-		},
-		"BP/ner BP/entities/serpent/dragon_serpent_male.entity.json": {
-			"custom_components": []
-		},
-		"BP/ner BP/entities/slug/dragon_slug_female.entity.json": {
-			"custom_components": []
-		},
-		"BP/ner BP/entities/slug/dragon_slug_male.entity.json": {
-			"custom_components": []
-		},
-		"BP/ner BP/entities/lizard/dragon_lizard_female.json": {
-			"custom_components": []
-		},
-		"BP/ner BP/entities/lizard/dragon_lizard_male.json": {
-			"custom_components": []
-		},
-		"BP/ner BP/entities/bat/dragon_bat_child.entity.json": {
-			"custom_components": []
-		},
-		"BP/ner BP/entities/bat/dragon_bat_whelp.entity.json": {
-			"custom_components": []
-		},
-		"BP/ner BP/entities/chameleon/dragon_chameleon_child.entity.json": {
-			"custom_components": []
-		},
-		"BP/ner BP/entities/chameleon/dragon_chameleon_whelp.entity.json": {
-			"custom_components": []
-		},
-		"BP/ner BP/entities/draco_lizard/dragon_draco_lizard_child.entity.json": {
-			"custom_components": []
-		},
-		"BP/ner BP/entities/draco_lizard/dragon_draco_lizard_whelp.entity.json": {
-			"custom_components": []
-		},
-		"BP/ner BP/entities/frill_lizard/dragon_frill_lizard_child.entity.json": {
-			"custom_components": []
-		},
-		"BP/ner BP/entities/frill_lizard/dragon_frill_lizard_whelp.entity.json": {
-			"custom_components": []
-		},
-		"BP/ner BP/entities/frog/dragon_frog_child.entity.json": {
-			"custom_components": []
-		},
-		"BP/ner BP/entities/frog/dragon_frog_whelp.entity.json": {
-			"custom_components": []
-		},
-		"BP/ner BP/entities/serpent/dragon_serpent_child.entity.json": {
-			"custom_components": []
-		},
-		"BP/ner BP/entities/serpent/dragon_serpent_whelp.entity.json": {
-			"custom_components": []
-		},
-		"BP/ner BP/entities/slug/dragon_slug_child.entity.json": {
-			"custom_components": []
-		},
-		"BP/ner BP/entities/slug/dragon_slug_whelp.entity.json": {
-			"custom_components": []
-		},
-		"BP/ner BP/entities/tortoise/dragon_tortoise_child.json": {
-			"custom_components": []
-		},
-		"BP/ner BP/entities/tortoise/dragon_tortoise_whelp.entity.json": {
-			"custom_components": []
-		},
-		"BP/ner BP/entities/lizard/dragon_lizard_whelp.entity.json": {
-			"custom_components": []
-		},
-		"BP/ner BP/entities/lizard/dragon_lizard_child.entity.json": {
-			"custom_components": []
-		},
-		"BP/ner BP/entities/bat/dragon_bat_egg.entity.json": {
-			"custom_components": []
-		},
-		"BP/ner BP/entities/chameleon/dragon_chameleon_egg.entity.json": {
-			"custom_components": []
-		},
-		"BP/ner BP/entities/draco_lizard/dragon_draco_lizard_egg.entity.json": {
-			"custom_components": []
-		},
-		"BP/ner BP/entities/frill_lizard/dragon_frill_lizard_egg.entity.json": {
-			"custom_components": []
-		},
-		"BP/ner BP/entities/frog/dragon_frog_egg.entity.json": {
-			"custom_components": []
-		},
-		"BP/ner BP/entities/serpent/dragon_serpent_egg.entity.json": {
-			"custom_components": []
-		},
-		"BP/ner BP/entities/slug/dragon_slug_egg.entity.json": {
-			"custom_components": []
-		},
-		"BP/ner BP/entities/tortoise/dragon_tortoise_egg.entity.json": {
-			"custom_components": []
-		},
-		"BP/ner BP/entities/lizard/dragon_lizard_egg.entity.json": {
-			"custom_components": []
-		},
-		"BP/ner BP/entities/misc/spawning_demo.json": {
-			"custom_components": []
-		},
-		"BP/ner BP/entities/bat/dragon_bat_female.entity.json": {
-			"custom_components": []
-		},
-		"BP/ner BP/entities/bat/dragon_bat_male.entity.json": {
-			"custom_components": []
-		},
-		"BP/ner BP/entities/chameleon/dragon_chameleon_female.entity.json": {
-			"custom_components": []
-		},
-		"BP/ner BP/entities/chameleon/dragon_chameleon_male.entity.json": {
-			"custom_components": []
-		},
-		"BP/ner BP/entities/ancient/dragon_ancient_blue.json": {
-			"custom_components": []
-		},
-		"BP/ner BP/entities/ancient/dragon_ancient_green.json": {
-			"custom_components": []
-		},
-		"BP/entities/endergy_pulse.e.json/endergy_pulse.json": {
-			"events": [
-				"minecraft:entity_spawned"
-			],
-			"custom_components": [],
-			"bridge_core_tags": [],
-			"identifiers": [
-				"endergy:endergy_pulse"
-			],
-			"animation_references": [
-				"move"
-			],
-			"families": []
-		},
-		"BP/entities/endergy_pulse.e.json": {
-			"events": [
-				"minecraft:entity_spawned",
-				" endergy:on_direction_0",
-				"endergy:on_direction_1",
-				"endergy:on_direction_2",
-				"endergy:on_direction_3",
-				"endergy:on_direction_4",
-				"endergy:on_direction_5"
-			],
-			"custom_components": [],
-			"bridge_core_tags": [],
-			"identifiers": [
-				"endergy:endergy_pulse"
-			],
-			"animation_references": [
-				"move",
-				"init"
+				"reservoir_init",
+				"reservoir_tick"
 			],
 			"families": []
 		}
@@ -323,6 +179,25 @@
 		"BP/items/end_nacre.json": {
 			"identifiers": [
 				"endergy:end_nacre"
+			]
+		}
+	},
+	"rp_animation_controller": {
+		"RP/animation_controllers/relay.cac.json": {
+			"ids": [
+				"controller.animation.relay.direction"
+			]
+		}
+	},
+	"rp_animation": {
+		"RP/animations/relay.animation.json": {
+			"ids": [
+				"animation.relay.direction_0",
+				"animation.relay.direction_1",
+				"animation.relay.direction_2",
+				"animation.relay.direction_3",
+				"animation.relay.direction_4",
+				"animation.relay.direction_5"
 			]
 		}
 	},
@@ -345,6 +220,26 @@
 			],
 			"geometry_identifiers": [
 				"geometry.collector"
+			]
+		},
+		"RP/entity/endergy_pulse.ce.json": {
+			"identifiers": [
+				"endergy:endergy_pulse"
+			],
+			"particle_references": [],
+			"animation_references": [],
+			"sound_references": [],
+			"texture_references": [
+				"default"
+			],
+			"material_references": [
+				"default"
+			],
+			"geometry_references": [
+				"default"
+			],
+			"geometry_identifiers": [
+				"geometry.endergy_pulse"
 			]
 		},
 		"RP/entity/relay.ce.json": {
@@ -374,12 +269,15 @@
 				"geometry.relay"
 			]
 		},
-		"RP/entity/endergy_pulse.ce.json": {
+		"RP/entity/reservoir.ce.json": {
 			"identifiers": [
-				"endergy:endergy_pulse"
+				"endergy:reservoir"
 			],
 			"particle_references": [],
-			"animation_references": [],
+			"animation_references": [
+				"liquid_visible",
+				"liquid_level"
+			],
 			"sound_references": [],
 			"texture_references": [
 				"default"
@@ -391,7 +289,7 @@
 				"default"
 			],
 			"geometry_identifiers": [
-				"geometry.endergy_pulse"
+				"geometry.reservoir"
 			]
 		}
 	},
@@ -399,6 +297,11 @@
 		"RP/models/entity/collector.geo.json": {
 			"identifiers": [
 				"geometry.collector"
+			]
+		},
+		"RP/models/entity/endergy_pulse.geo.json": {
+			"identifiers": [
+				"geometry.endergy_pulse"
 			]
 		},
 		"RP/models/entity/relay.geo.json": {
@@ -414,38 +317,17 @@
 			]
 		}
 	},
-	"rp_animation_controller": {
-		"RP/animation_controllers/relay.cac.json": {
-			"ids": [
-				"controller.animation.relay.direction"
-			]
-		}
-	},
-	"animation": {
-		"BP/animations/endergy_pulse.a.json": {
-			"ids": [
-				"animation.endergy_pulse.move"
-			]
-		},
-		"BP/animations/collector.a.json": {
-			"ids": [
-				"animation.collector.emit_loop"
-			]
-		},
-		"BP/animations/relay.a.json": {
-			"ids": [
-				"animation.relay.tick"
-			]
-		}
-	},
 	"function": {
-		"BP/functions/endergy_pulse/move.mcfunction": {
-			"custom_commands": []
-		},
 		"BP/functions/scoreboard_init.mcfunction": {
 			"custom_commands": []
 		},
-		"BP/functions/relay/redirect.mcfunction": {
+		"BP/functions/reservoir/tick.mcfunction": {
+			"custom_commands": []
+		},
+		"BP/functions/reservoir/init.mcfunction": {
+			"custom_commands": []
+		},
+		"BP/functions/reservoir/calc_display.mcfunction": {
 			"custom_commands": []
 		}
 	}

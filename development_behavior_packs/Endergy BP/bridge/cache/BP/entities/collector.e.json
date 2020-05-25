@@ -3,7 +3,7 @@
 	"file_type": "entity",
 	"format_version": 1,
 	"file_uuid": "4c0749b7_cfe2_4fa1_9278_4bbfd3cebd93",
-	"file_version": 25,
+	"file_version": 26,
 	"cache_content": {
 		"children": [
 			{
@@ -19,14 +19,10 @@
 							"is_summonable": true,
 							"is_spawnable": true,
 							"animations": {
-								"block_immitation.init": "controller.animation.block_immitation.init",
 								"emit_loop": "animation.collector.emit_loop"
 							},
 							"scripts": {
 								"animate": [
-									{
-										"block_immitation.init": "(1.0)"
-									},
 									{
 										"emit_loop": "(1.0)"
 									}
@@ -56,14 +52,10 @@
 								"is_summonable": true,
 								"is_spawnable": true,
 								"animations": {
-									"block_immitation.init": "controller.animation.block_immitation.init",
 									"emit_loop": "animation.collector.emit_loop"
 								},
 								"scripts": {
 									"animate": [
-										{
-											"block_immitation.init": "(1.0)"
-										},
 										{
 											"emit_loop": "(1.0)"
 										}
@@ -103,14 +95,10 @@
 									"is_summonable": true,
 									"is_spawnable": true,
 									"animations": {
-										"block_immitation.init": "controller.animation.block_immitation.init",
 										"emit_loop": "animation.collector.emit_loop"
 									},
 									"scripts": {
 										"animate": [
-											{
-												"block_immitation.init": "(1.0)"
-											},
 											{
 												"emit_loop": "(1.0)"
 											}
@@ -120,7 +108,6 @@
 								"key": "animations",
 								"is_minified": true,
 								"children": {
-									"block_immitation.init": "controller.animation.block_immitation.init",
 									"emit_loop": "animation.collector.emit_loop"
 								}
 							},
@@ -130,14 +117,10 @@
 									"is_summonable": true,
 									"is_spawnable": true,
 									"animations": {
-										"block_immitation.init": "controller.animation.block_immitation.init",
 										"emit_loop": "animation.collector.emit_loop"
 									},
 									"scripts": {
 										"animate": [
-											{
-												"block_immitation.init": "(1.0)"
-											},
 											{
 												"emit_loop": "(1.0)"
 											}
@@ -150,9 +133,6 @@
 										"open": {
 											"animate": [
 												{
-													"block_immitation.init": "(1.0)"
-												},
-												{
 													"emit_loop": "(1.0)"
 												}
 											]
@@ -161,23 +141,6 @@
 										"array": [
 											{
 												"open": [
-													{
-														"block_immitation.init": "(1.0)"
-													},
-													{
-														"emit_loop": "(1.0)"
-													}
-												],
-												"is_minified": true,
-												"children": {
-													"block_immitation.init": "(1.0)"
-												}
-											},
-											{
-												"open": [
-													{
-														"block_immitation.init": "(1.0)"
-													},
 													{
 														"emit_loop": "(1.0)"
 													}
@@ -200,14 +163,10 @@
 								"is_summonable": true,
 								"is_spawnable": true,
 								"animations": {
-									"block_immitation.init": "controller.animation.block_immitation.init",
 									"emit_loop": "animation.collector.emit_loop"
 								},
 								"scripts": {
 									"animate": [
-										{
-											"block_immitation.init": "(1.0)"
-										},
 										{
 											"emit_loop": "(1.0)"
 										}
@@ -238,14 +197,10 @@
 								"is_summonable": true,
 								"is_spawnable": true,
 								"animations": {
-									"block_immitation.init": "controller.animation.block_immitation.init",
 									"emit_loop": "animation.collector.emit_loop"
 								},
 								"scripts": {
 									"animate": [
-										{
-											"block_immitation.init": "(1.0)"
-										},
 										{
 											"emit_loop": "(1.0)"
 										}
@@ -285,14 +240,10 @@
 								"is_summonable": true,
 								"is_spawnable": true,
 								"animations": {
-									"block_immitation.init": "controller.animation.block_immitation.init",
 									"emit_loop": "animation.collector.emit_loop"
 								},
 								"scripts": {
 									"animate": [
-										{
-											"block_immitation.init": "(1.0)"
-										},
 										{
 											"emit_loop": "(1.0)"
 										}

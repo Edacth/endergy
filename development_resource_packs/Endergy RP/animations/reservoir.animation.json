@@ -1,0 +1,21 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.reservoir.liquid_visible": {
+			"loop": true,
+			"bones": {
+				"liquid": {
+					"scale": "query.variant > 0 ? 1.0 : 0.0"
+				}
+			}
+		},
+		"animation.reservoir.liquid_level": {
+			"loop": true,
+			"bones": {
+				"liquid": {
+					"position": [0, "0 + (query.variant - 1) * (10 - 0) / (4 - 1)", 0]
+				}
+			}
+		}
+	}
+}

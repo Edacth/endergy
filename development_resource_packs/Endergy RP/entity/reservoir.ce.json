@@ -1,0 +1,38 @@
+//bridge-file-version: #4
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "endergy:reservoir",
+			"materials": {
+				"default": "villager"
+			},
+			"textures": {
+				"default": "textures/entity/reservoir"
+			},
+			"geometry": {
+				"default": "geometry.reservoir"
+			},
+			"render_controllers": [
+				"controller.render.default"
+			],
+			"spawn_egg": {
+				"texture": "spawn_egg_reservoir"
+			},
+			"animations": {
+				"liquid_visible": "animation.reservoir.liquid_visible",
+				"liquid_level": "animation.reservoir.liquid_level"
+			},
+			"scripts": {
+				"animate": [
+					{
+						"liquid_visible": "(1.0)"
+					},
+					{
+						"liquid_level": "(1.0)"
+					}
+				]
+			}
+		}
+	}
+}

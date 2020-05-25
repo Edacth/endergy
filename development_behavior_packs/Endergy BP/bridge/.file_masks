@@ -32,7 +32,18 @@
 		"data": {
 			"component@endergy:block_immitation": {
 				"minecraft:entity": {
-					"description": {},
+					"description": {
+						"animations": {
+							"block_immitation.init": "controller.animation.block_immitation.init"
+						},
+						"scripts": {
+							"animate": [
+								{
+									"block_immitation.init": "(1.0)"
+								}
+							]
+						}
+					},
 					"component_groups": {},
 					"components": {
 						"minecraft:health": {
@@ -206,7 +217,18 @@
 		"data": {
 			"component@endergy:block_immitation": {
 				"minecraft:entity": {
-					"description": {},
+					"description": {
+						"animations": {
+							"block_immitation.init": "controller.animation.block_immitation.init"
+						},
+						"scripts": {
+							"animate": [
+								{
+									"block_immitation.init": "(1.0)"
+								}
+							]
+						}
+					},
 					"component_groups": {},
 					"components": {
 						"minecraft:health": {
@@ -314,6 +336,74 @@
 		"data": {}
 	},
 	"BP/animations/relay.a.json": {
+		"data": {}
+	},
+	"BP/entities/reservoir.e.json": {
+		"data": {
+			"component@endergy:block_immitation": {
+				"minecraft:entity": {
+					"description": {
+						"animations": {
+							"block_immitation.init": "controller.animation.block_immitation.init"
+						},
+						"scripts": {
+							"animate": [
+								{
+									"block_immitation.init": "(1.0)"
+								}
+							]
+						}
+					},
+					"component_groups": {},
+					"components": {
+						"minecraft:health": {
+							"value": 1,
+							"max": 1
+						},
+						"minecraft:physics": {
+							"has_collision": true,
+							"has_gravity": false
+						},
+						"minecraft:damage_sensor": {
+							"triggers": [
+								{
+									"on_damage": {
+										"filters": {
+											"all_of": [
+												{
+													"subject": "other",
+													"test": "is_family",
+													"value": "player"
+												}
+											]
+										}
+									}
+								},
+								{
+									"deals_damage": false
+								}
+							]
+						},
+						"minecraft:pushable": {
+							"is_pushable": false,
+							"is_pushable_by_piston": true
+						}
+					},
+					"events": {}
+				}
+			}
+		}
+	},
+	"BP/components/block_immitation..js": {
+		"data": {}
+	},
+	"RP/entity/reservoir.ce.json": {
+		"data": {}
+	},
+	"BP/animations/reservoir.a.json": {
+		"data": {}
+	},
+	"BP/animation_controllers/reservoir.ac.json": {
 		"data": {}
 	}
 }

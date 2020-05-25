@@ -1,0 +1,383 @@
+{
+	"file_path": "C:\\Users\\cadea\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_resource_packs\\Endergy RP/entity/reservoir.ce.json",
+	"file_type": "client_entity",
+	"format_version": 1,
+	"file_uuid": "0ac1f975_b19b_4a15_bdf6_9589dd758213",
+	"file_version": 4,
+	"cache_content": {
+		"children": [
+			{
+				"data": "1.10.0",
+				"key": "format_version"
+			},
+			{
+				"open": {
+					"format_version": "1.10.0",
+					"minecraft:client_entity": {
+						"description": {
+							"identifier": "endergy:reservoir",
+							"materials": {
+								"default": "villager"
+							},
+							"textures": {
+								"default": "textures/entity/reservoir"
+							},
+							"geometry": {
+								"default": "geometry.reservoir"
+							},
+							"render_controllers": [
+								"controller.render.default"
+							],
+							"spawn_egg": {
+								"texture": "spawn_egg_reservoir"
+							},
+							"animations": {
+								"liquid_visible": "animation.reservoir.liquid_visible",
+								"liquid_level": "animation.reservoir.liquid_level"
+							},
+							"scripts": {
+								"animate": [
+									{
+										"liquid_visible": "(1.0)"
+									},
+									{
+										"liquid_level": "(1.0)"
+									}
+								]
+							}
+						}
+					}
+				},
+				"key": "minecraft:client_entity",
+				"children": [
+					{
+						"open": {
+							"description": {
+								"identifier": "endergy:reservoir",
+								"materials": {
+									"default": "villager"
+								},
+								"textures": {
+									"default": "textures/entity/reservoir"
+								},
+								"geometry": {
+									"default": "geometry.reservoir"
+								},
+								"render_controllers": [
+									"controller.render.default"
+								],
+								"spawn_egg": {
+									"texture": "spawn_egg_reservoir"
+								},
+								"animations": {
+									"liquid_visible": "animation.reservoir.liquid_visible",
+									"liquid_level": "animation.reservoir.liquid_level"
+								},
+								"scripts": {
+									"animate": [
+										{
+											"liquid_visible": "(1.0)"
+										},
+										{
+											"liquid_level": "(1.0)"
+										}
+									]
+								}
+							}
+						},
+						"key": "description",
+						"children": [
+							{
+								"data": "endergy:reservoir",
+								"key": "identifier"
+							},
+							{
+								"key": "materials",
+								"is_minified": true,
+								"children": {
+									"default": "villager"
+								}
+							},
+							{
+								"open": {
+									"identifier": "endergy:reservoir",
+									"materials": {
+										"default": "villager"
+									},
+									"textures": {
+										"default": "textures/entity/reservoir"
+									},
+									"geometry": {
+										"default": "geometry.reservoir"
+									},
+									"render_controllers": [
+										"controller.render.default"
+									],
+									"spawn_egg": {
+										"texture": "spawn_egg_reservoir"
+									},
+									"animations": {
+										"liquid_visible": "animation.reservoir.liquid_visible",
+										"liquid_level": "animation.reservoir.liquid_level"
+									},
+									"scripts": {
+										"animate": [
+											{
+												"liquid_visible": "(1.0)"
+											},
+											{
+												"liquid_level": "(1.0)"
+											}
+										]
+									}
+								},
+								"key": "textures",
+								"is_minified": true,
+								"children": {
+									"default": "textures/entity/reservoir"
+								}
+							},
+							{
+								"open": {
+									"identifier": "endergy:reservoir",
+									"materials": {
+										"default": "villager"
+									},
+									"textures": {
+										"default": "textures/entity/reservoir"
+									},
+									"geometry": {
+										"default": "geometry.reservoir"
+									},
+									"render_controllers": [
+										"controller.render.default"
+									],
+									"spawn_egg": {
+										"texture": "spawn_egg_reservoir"
+									},
+									"animations": {
+										"liquid_visible": "animation.reservoir.liquid_visible",
+										"liquid_level": "animation.reservoir.liquid_level"
+									},
+									"scripts": {
+										"animate": [
+											{
+												"liquid_visible": "(1.0)"
+											},
+											{
+												"liquid_level": "(1.0)"
+											}
+										]
+									}
+								},
+								"key": "geometry",
+								"is_minified": true,
+								"children": {
+									"default": "geometry.reservoir"
+								}
+							},
+							{
+								"open": {
+									"identifier": "endergy:reservoir",
+									"materials": {
+										"default": "villager"
+									},
+									"textures": {
+										"default": "textures/entity/reservoir"
+									},
+									"geometry": {
+										"default": "geometry.reservoir"
+									},
+									"render_controllers": [
+										"controller.render.default"
+									],
+									"spawn_egg": {
+										"texture": "spawn_egg_reservoir"
+									},
+									"animations": {
+										"liquid_visible": "animation.reservoir.liquid_visible",
+										"liquid_level": "animation.reservoir.liquid_level"
+									},
+									"scripts": {
+										"animate": [
+											{
+												"liquid_visible": "(1.0)"
+											},
+											{
+												"liquid_level": "(1.0)"
+											}
+										]
+									}
+								},
+								"key": "render_controllers",
+								"is_minified": true,
+								"array": [
+									"controller.render.default"
+								]
+							},
+							{
+								"open": {
+									"identifier": "endergy:reservoir",
+									"materials": {
+										"default": "villager"
+									},
+									"textures": {
+										"default": "textures/entity/reservoir"
+									},
+									"geometry": {
+										"default": "geometry.reservoir"
+									},
+									"render_controllers": [
+										"controller.render.default"
+									],
+									"spawn_egg": {
+										"texture": "spawn_egg_reservoir"
+									},
+									"animations": {
+										"liquid_visible": "animation.reservoir.liquid_visible",
+										"liquid_level": "animation.reservoir.liquid_level"
+									},
+									"scripts": {
+										"animate": [
+											{
+												"liquid_visible": "(1.0)"
+											},
+											{
+												"liquid_level": "(1.0)"
+											}
+										]
+									}
+								},
+								"key": "spawn_egg",
+								"is_minified": true,
+								"children": {
+									"texture": "spawn_egg_reservoir"
+								}
+							},
+							{
+								"open": {
+									"identifier": "endergy:reservoir",
+									"materials": {
+										"default": "villager"
+									},
+									"textures": {
+										"default": "textures/entity/reservoir"
+									},
+									"geometry": {
+										"default": "geometry.reservoir"
+									},
+									"render_controllers": [
+										"controller.render.default"
+									],
+									"spawn_egg": {
+										"texture": "spawn_egg_reservoir"
+									},
+									"animations": {
+										"liquid_visible": "animation.reservoir.liquid_visible",
+										"liquid_level": "animation.reservoir.liquid_level"
+									},
+									"scripts": {
+										"animate": [
+											{
+												"liquid_visible": "(1.0)"
+											},
+											{
+												"liquid_level": "(1.0)"
+											}
+										]
+									}
+								},
+								"key": "animations",
+								"is_minified": true,
+								"children": {
+									"liquid_visible": "animation.reservoir.liquid_visible",
+									"liquid_level": "animation.reservoir.liquid_level"
+								}
+							},
+							{
+								"open": {
+									"identifier": "endergy:reservoir",
+									"materials": {
+										"default": "villager"
+									},
+									"textures": {
+										"default": "textures/entity/reservoir"
+									},
+									"geometry": {
+										"default": "geometry.reservoir"
+									},
+									"render_controllers": [
+										"controller.render.default"
+									],
+									"spawn_egg": {
+										"texture": "spawn_egg_reservoir"
+									},
+									"animations": {
+										"liquid_visible": "animation.reservoir.liquid_visible",
+										"liquid_level": "animation.reservoir.liquid_level"
+									},
+									"scripts": {
+										"animate": [
+											{
+												"liquid_visible": "(1.0)"
+											},
+											{
+												"liquid_level": "(1.0)"
+											}
+										]
+									}
+								},
+								"key": "scripts",
+								"children": [
+									{
+										"open": {
+											"animate": [
+												{
+													"liquid_visible": "(1.0)"
+												},
+												{
+													"liquid_level": "(1.0)"
+												}
+											]
+										},
+										"key": "animate",
+										"array": [
+											{
+												"open": [
+													{
+														"liquid_visible": "(1.0)"
+													},
+													{
+														"liquid_level": "(1.0)"
+													}
+												],
+												"is_minified": true,
+												"children": {
+													"liquid_visible": "(1.0)"
+												}
+											},
+											{
+												"open": [
+													{
+														"liquid_visible": "(1.0)"
+													},
+													{
+														"liquid_level": "(1.0)"
+													}
+												],
+												"is_minified": true,
+												"children": {
+													"liquid_level": "(1.0)"
+												}
+											}
+										]
+									}
+								]
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+}

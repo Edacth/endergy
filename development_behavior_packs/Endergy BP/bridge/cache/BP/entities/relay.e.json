@@ -3,7 +3,7 @@
 	"file_type": "entity",
 	"format_version": 1,
 	"file_uuid": "ed9a0660_9357_4833_a12e_0df3d7e39069",
-	"file_version": 30,
+	"file_version": 31,
 	"cache_content": {
 		"children": [
 			{
@@ -19,15 +19,11 @@
 							"is_summonable": true,
 							"is_spawnable": true,
 							"animations": {
-								"block_immitation.init": "controller.animation.block_immitation.init",
 								"relay_direction": "controller.animation.relay.direction",
 								"redirect_tick": "animation.relay.tick"
 							},
 							"scripts": {
 								"animate": [
-									{
-										"block_immitation.init": "(1.0)"
-									},
 									{
 										"relay_direction": "(1.0)"
 									},
@@ -232,15 +228,11 @@
 								"is_summonable": true,
 								"is_spawnable": true,
 								"animations": {
-									"block_immitation.init": "controller.animation.block_immitation.init",
 									"relay_direction": "controller.animation.relay.direction",
 									"redirect_tick": "animation.relay.tick"
 								},
 								"scripts": {
 									"animate": [
-										{
-											"block_immitation.init": "(1.0)"
-										},
 										{
 											"relay_direction": "(1.0)"
 										},
@@ -455,15 +447,11 @@
 									"is_summonable": true,
 									"is_spawnable": true,
 									"animations": {
-										"block_immitation.init": "controller.animation.block_immitation.init",
 										"relay_direction": "controller.animation.relay.direction",
 										"redirect_tick": "animation.relay.tick"
 									},
 									"scripts": {
 										"animate": [
-											{
-												"block_immitation.init": "(1.0)"
-											},
 											{
 												"relay_direction": "(1.0)"
 											},
@@ -476,7 +464,6 @@
 								"key": "animations",
 								"is_minified": true,
 								"children": {
-									"block_immitation.init": "controller.animation.block_immitation.init",
 									"relay_direction": "controller.animation.relay.direction",
 									"redirect_tick": "animation.relay.tick"
 								}
@@ -487,15 +474,11 @@
 									"is_summonable": true,
 									"is_spawnable": true,
 									"animations": {
-										"block_immitation.init": "controller.animation.block_immitation.init",
 										"relay_direction": "controller.animation.relay.direction",
 										"redirect_tick": "animation.relay.tick"
 									},
 									"scripts": {
 										"animate": [
-											{
-												"block_immitation.init": "(1.0)"
-											},
 											{
 												"relay_direction": "(1.0)"
 											},
@@ -511,9 +494,6 @@
 										"open": {
 											"animate": [
 												{
-													"block_immitation.init": "(1.0)"
-												},
-												{
 													"relay_direction": "(1.0)"
 												},
 												{
@@ -526,26 +506,6 @@
 											{
 												"open": [
 													{
-														"block_immitation.init": "(1.0)"
-													},
-													{
-														"relay_direction": "(1.0)"
-													},
-													{
-														"redirect_tick": "(1.0)"
-													}
-												],
-												"is_minified": true,
-												"children": {
-													"block_immitation.init": "(1.0)"
-												}
-											},
-											{
-												"open": [
-													{
-														"block_immitation.init": "(1.0)"
-													},
-													{
 														"relay_direction": "(1.0)"
 													},
 													{
@@ -559,9 +519,6 @@
 											},
 											{
 												"open": [
-													{
-														"block_immitation.init": "(1.0)"
-													},
 													{
 														"relay_direction": "(1.0)"
 													},
@@ -587,15 +544,11 @@
 								"is_summonable": true,
 								"is_spawnable": true,
 								"animations": {
-									"block_immitation.init": "controller.animation.block_immitation.init",
 									"relay_direction": "controller.animation.relay.direction",
 									"redirect_tick": "animation.relay.tick"
 								},
 								"scripts": {
 									"animate": [
-										{
-											"block_immitation.init": "(1.0)"
-										},
 										{
 											"relay_direction": "(1.0)"
 										},
@@ -903,15 +856,11 @@
 								"is_summonable": true,
 								"is_spawnable": true,
 								"animations": {
-									"block_immitation.init": "controller.animation.block_immitation.init",
 									"relay_direction": "controller.animation.relay.direction",
 									"redirect_tick": "animation.relay.tick"
 								},
 								"scripts": {
 									"animate": [
-										{
-											"block_immitation.init": "(1.0)"
-										},
 										{
 											"relay_direction": "(1.0)"
 										},
@@ -1198,15 +1147,11 @@
 								"is_summonable": true,
 								"is_spawnable": true,
 								"animations": {
-									"block_immitation.init": "controller.animation.block_immitation.init",
 									"relay_direction": "controller.animation.relay.direction",
 									"redirect_tick": "animation.relay.tick"
 								},
 								"scripts": {
 									"animate": [
-										{
-											"block_immitation.init": "(1.0)"
-										},
 										{
 											"relay_direction": "(1.0)"
 										},

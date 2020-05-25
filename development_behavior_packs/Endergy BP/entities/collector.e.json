@@ -1,10 +1,7 @@
-//bridge-file-version: #25
+//bridge-file-version: #26
 {
 	"minecraft:entity": {
 		"description": {
-			"identifier": "endergy:collector",
-			"is_summonable": true,
-			"is_spawnable": true,
 			"animations": {
 				"block_immitation.init": "controller.animation.block_immitation.init",
 				"emit_loop": "animation.collector.emit_loop"
@@ -18,7 +15,10 @@
 						"emit_loop": "(1.0)"
 					}
 				]
-			}
+			},
+			"identifier": "endergy:collector",
+			"is_summonable": true,
+			"is_spawnable": true
 		},
 		"component_groups": {},
 		"components": {

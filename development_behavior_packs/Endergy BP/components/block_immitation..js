@@ -1,10 +1,20 @@
-//bridge-file-version: #1
+//bridge-file-version: #2
 Bridge.register(class BlockImmitation {
 	static component_name = 'endergy:block_immitation'
 	
 	onApply() {
 		const TEMPLATE = {
             "description": {
+                "animations": {
+                    "block_immitation.init": "controller.animation.block_immitation.init"
+                },
+                "scripts": {
+                    "animate": [
+                        {
+                            "block_immitation.init": "(1.0)"
+                        }
+                    ]
+                }
             },
             "component_groups": {
             },
