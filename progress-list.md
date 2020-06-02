@@ -14,6 +14,7 @@ This page is for internal use to help keep track of features and monitor scope. 
  
  This machine redirects Endergy pulses as they float through the air. They can be used to construct complex networks of energy.
  - [x] Base Functionality - can redirect Endergy pulses that pass through it.
+ - [ ] Method of obtainment - crafting recipe.
  - [x] Spawn item is returned on death.
  
  ### - Reservoir
@@ -23,6 +24,7 @@ This page is for internal use to help keep track of features and monitor scope. 
  - [x] Base Storage Display - The amount of endergy stored within can be gagued by the level of liquid visible in the model
  - [ ] Refined Storage Display - The level of liquid is more accurately displayed with more intervals.
  - [ ] Quantitative storage reading - An item can be used to get an estimate (e.g. "The Reservoir is about 60% full") of the internal storage.
+ - [ ] Method of obtainment - crafting recipe.
  - [ ] Spawn item is returned on death.
  - [ ] A safeguard against losing Endergy when killing the machine.
   
@@ -63,6 +65,10 @@ Endermites play an inportant role in this addon. They are the first source of En
 - Silverfish eggs
 
 ## Miscellaneous
+### - Player Guidance
+Ideally, the addon would monitor player progress and provide then with guiding books at key points
+- [ ] Basic functionality - items can be detected in the player's inventory and books can be given.
+
 ### - Endergy Pulse
 
 Endergy Pulses are the entities used to transport Endergy around.
